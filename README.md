@@ -10,3 +10,6 @@ Since this was a self-directed study on programming, this document carries many 
 We chose [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org) as the two languages to begin the learning process with a [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming) paradigm.  Starting with two languages hase come quite naturally, since the student grew up bilingually ;-)  Clojure, as a modern LISP, is the language used on the "Klipse for Kids" website.  Doing the same coding excercises also in Scala, will later allow for a smooth incorporation of [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) concepts.
 
 See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0).
+
+## Table of Content
+[0. Preliminaries: Writing Text](ch0_preliminaries.md)
