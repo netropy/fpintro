@@ -1,0 +1,50 @@
+## 1. _Motivation:_ An Ever-Changing World of Languages?
+
+_All languages change continually._  For example:
+
+* <https://www.theguardian.com/education/gallery/2015/jan/23/a-language-family-tree-in-pictures>
+* <https://www.washingtonpost.com/news/worldviews/wp/2015/01/27/this-beautiful-language-tree-shows-how-india-is-as-linguistically-diverse-as-europe>
+
+___Questions:___
+
+* What are the forces driving [_language change_](https://en.wikipedia.org/wiki/Language_change) (languages evolving) and [_language shift_](https://en.wikipedia.org/wiki/Language_shift) (people changing languages)?
+* What's the relevance of knowing multiple languages?  Knowing at least one language really well?
+* How important is the choice of first language?  The choice of language concepts and programming paradigms?
+
+#### Further reading on the evolution of human languages.
+
+* <https://en.wikipedia.org/wiki/Language_family>,
+  <https://en.wikipedia.org/wiki/List_of_language_families>
+* <https://en.wikipedia.org/wiki/Historical_linguistics>
+* <https://en.wikipedia.org/wiki/Rosetta_Stone>
+* What is a language, dialect, accent? <https://en.wikipedia.org/wiki/Dialect>
+
+#### Further reading on the evolution of programming languages.
+
+* <https://en.wikipedia.org/wiki/Generational_list_of_programming_languages>,
+  <https://en.wikipedia.org/wiki/History_of_programming_languages>
+  <https://en.wikipedia.org/wiki/Timeline_of_programming_languages>
+* <http://www.digibarn.com/collections/posters/tongues/>,
+  <http://rigaux.org/language-study/diagram.html>,
+  <http://exploring-data.com/vis/programming-languages-influence-network/>,
+  <https://www.levenez.com/lang/>
+* <http://rosettacode.org/wiki/Rosetta_Code>
+* What is a dialect, variant, version? <https://web.archive.org/web/20160309214409/http://people.ku.edu/~nkinners/LangList/Extras/dialects.htm>
+
+#### Further reading on programming paradigms.
+
+* <https://en.wikipedia.org/wiki/Programming_paradigm>
+* <https://en.wikipedia.org/wiki/Functional_programming>
+* <https://en.wikipedia.org/wiki/Object-oriented_programming>
+* <https://en.wikipedia.org/wiki/Logic_programming>
+* <https://en.wikipedia.org/wiki/Declarative_programming> vs <https://en.wikipedia.org/wiki/Imperative_programming>
+
+#### Further reading on document markup languages.
+
+* <https://en.wikipedia.org/wiki/Markup_language>,
+  <https://en.wikipedia.org/wiki/List_of_document_markup_languages>,
+  <https://en.wikipedia.org/wiki/Comparison_of_document_markup_languages>
+* <https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language>
+* <https://en.wikipedia.org/wiki/Hypertext>,
+  <https://en.wikipedia.org/wiki/HTML>
+* <https://en.wikipedia.org/wiki/Markdown>

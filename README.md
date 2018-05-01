@@ -3,7 +3,7 @@ Learning How to Program with Examples in Clojure and Scala
 
 This tutorial contains the excercises and notes of an introductory programming session with a high school student.
 
-While there are many websites and tools for "getting kids excited about programming", [for example](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming), we choose to follow this great tutorial: [Klipse for Kids](http://kids.klipse.tech).
+While there are many websites and tools for ["getting kids excited about programming"](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming), we choose to try out this great tutorial: [Klipse for Kids](http://kids.klipse.tech).
 
 Since this was a self-directed study on programming, this document carries many links to useful articles from [Wikipedia](https://www.wikipedia.org/).
 
@@ -13,3 +13,5 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 
 ## Table of Content
 [0. Preliminaries: Writing Text](ch0_preliminaries.md)
+[1. Motivation: An Ever-Changing World of Languages?](ch1_motivation.md)
+
