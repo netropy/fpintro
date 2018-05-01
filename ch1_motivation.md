@@ -8,8 +8,9 @@ _All languages change continually._  For example:
 ___Questions:___
 
 * What are the forces driving [_language change_](https://en.wikipedia.org/wiki/Language_change) (languages evolving) and [_language shift_](https://en.wikipedia.org/wiki/Language_shift) (people changing languages)?
+* If different languages continually influence each other, then how accurate is it to speak of a language "tree" (instead of a "graph" of languages)?
 * What's the relevance of knowing multiple languages?  Knowing at least one language really well?
-* How important is the choice of first language?  The choice of language concepts and programming paradigms?
+* How important is the choice of the first language?  The choice of language concepts and programming paradigms?
 
 #### Further reading on the evolution of human languages.
 

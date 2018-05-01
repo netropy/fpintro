@@ -16,3 +16,19 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 [0. Preliminaries: Writing Text](ch0_preliminaries.md)
 
 [1. Motivation: An Ever-Changing World of Languages?](ch1_motivation.md)
+
+[2. Expressions](ch2_expressions.md)
+
+[3. Functions](ch3_functions.md)
+
+[4. Recursive Functions](ch4_recursive_functions.md)
+
+[4.1 Recursive `Sum`](ch4_1_recursive_sum.md)
+
+[4.2 Recursive `Factorial`](ch4_2_recursive_factorial.md)
+
+[4.3 Recursive `Add`](ch4_3_recursive_add.md)
+
+[4.4 Recursive `Multiply`](ch4_4_recursive_multiply.md)
+
+[5. Miscellaneous](ch5_miscellaneous.md)
