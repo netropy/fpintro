@@ -1,4 +1,4 @@
-## 1. _Motivation:_ An Ever-Changing World of Languages?
+## 1. Motivation: An Ever-Changing World of Languages?
 
 _All languages change continually._  For example:
 

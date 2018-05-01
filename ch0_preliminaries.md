@@ -1,4 +1,4 @@
-## 0. _Preliminaries:_ Writing Text
+## 0. Preliminaries: Writing Text
 
 #### Inspect some file formats for text documents (like .html/.doc/.txt).
 

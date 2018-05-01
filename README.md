@@ -12,6 +12,7 @@ We chose [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org) 
 See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0).
 
 ## Table of Content
-[0. Preliminaries: Writing Text](ch0_preliminaries.md)
-[1. Motivation: An Ever-Changing World of Languages?](ch1_motivation.md)
 
+[0. Preliminaries: Writing Text](ch0_preliminaries.md)
+
+[1. Motivation: An Ever-Changing World of Languages?](ch1_motivation.md)
