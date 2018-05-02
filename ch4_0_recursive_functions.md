@@ -7,7 +7,7 @@ In the previous chapter, we've learned how to
 * evaluate a function call with arguments (_apply_),
 * plot an evaluation as a "call graph" or "call stack" diagram.
 
-In this chapter we learn how to compose calculations that contain repetition.
+In this chapter we learn how to compose calculations that carries repetition.
 
 [4.1 What happens when a Function calls itself?](ch4_1_recursive_calls.md)
 
