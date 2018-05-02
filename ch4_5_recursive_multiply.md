@@ -2,7 +2,7 @@
 
 Similar to what was remarked about addition could be said about multiplication.  Yet, it makes another good excercise in thinking recursively :-)
 
-#### Find a recursive definition for the addition of two numbers `m`, `n`.
+#### 4.5.1 Find a recursive definition for the addition of two numbers `m`, `n`.
 
 Hint: Define multiplication in terms of decrement (-1) and `+`.
 
@@ -11,7 +11,7 @@ The following equation (or _invariant_) holds for the multiplication of 2 number
   m * n = ((m - 1) * n) + n
 ```
 
-#### Define a recursive function `multiply(m, n)` with a simple unit test.
+#### 4.5.2 Define a recursive function `multiply(m, n)` with a simple unit test.
 
 Hints:
 
@@ -43,7 +43,7 @@ ___Notes:___
 * Above code is not _robust_:  for any negative argument `m`, it keeps decrementing `m` resulting in a `StackOverflowError` (or [Integer Overflow](https://en.wikipedia.org/wiki/Integer_overflow)).
 * Above code is not _efficient_: it is not tail-recursive, hence, its evaluation consumes much time and memory for large input values.  Annotating the function with `@annotation.tailrec` would raise an error.
 
-#### Plot the evaluation of `multiply(3,5)`.
+#### 4.5.3 Plot the evaluation of `multiply(3,5)`.
 
 ```
 --> multiply(m=3, n=5)
@@ -79,7 +79,7 @@ ___Notes:___
 * The 2nd argument `n` remains unchanged  while being "passed through" all recursive calls.
 * The result is build up on "result position", which shows that `multiply` is not tail-recursive.
 
-#### Make `multiply` robust by extending it to negative arguments.
+#### 4.5.4 Make `multiply` robust by extending it to negative arguments.
 
 Hint: reduce the case of a negative argument to a positive `m` by this equation: `m * n = -(-m * n)`.
 
@@ -110,7 +110,7 @@ ___Notes:___
 * Above code is not tail-recursive.  Annotating the function with `@annotation.tailrec` would raise an error.
 * For "large" input values (here `m=100k` at current JVM settings), he above calculation results in a `StackOverflowError` since its not tail-recursive.
 
-#### Reformulate `multiply` to make it tail-recursive and handling negative arguments.
+#### 4.5.5 Reformulate `multiply` to make it tail-recursive and handling negative arguments.
 
 Hints:
 
@@ -154,7 +154,7 @@ ___Notes:___
 * Above code is tail-recursive: annotating the function with `@annotation.tailrec` won't raise an error.
 * Above code is also robust in accepting negative arguments :-)
 
-#### Plot the evaluation of tail-recursive `multiply(2,5)`.
+#### 4.5.6 Plot the evaluation of tail-recursive `multiply(2,5)`.
 
 ```
 --> multiply(m=2, n=5)
