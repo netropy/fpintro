@@ -1,7 +1,7 @@
 ### 4.4 Recursive Function `add`
 Obviously, adding two numbers is not an exciting calculation.  As a primitive operation offered by any CPU, it is "built into hardware".  Thus, it is inefficient to re-define an `add` operation "in software" as a recursive function.  However, it makes a good excercise in thinking recursively :-)
 
-#### Find a recursive definition for the addition of two numbers `m`, `n`.
+#### 4.4.1 Find a recursive definition for the addition of two numbers `m`, `n`.
 
 Hint: Define addition in terms of increment (+1) and decrement (-1).
 
@@ -10,7 +10,7 @@ The following equation (or _invariant_) holds for the addition of 2 numbers:
   (m + n) = ((m - 1) + n) + 1
 ```
 
-#### Define a recursive function `add(m, n)` with a simple unit test.
+#### 4.4.2 Define a recursive function `add(m, n)` with a simple unit test.
 
 Hints:
 
@@ -39,7 +39,7 @@ ___Notes:___
 * Above code is not _efficient_, meaning it is not tail-recursive, hence, its evaluation consumes much time and memory for large input values.  Annotating the function with `@annotation.tailrec` would raise an error.
 * Some Scala style guides prefer to split the `if (...) ... else ...` into two lines before the `else` (which requires to put the entire function body into `{ ... }`).
 
-#### Plot the evaluation of `add(3, 2)`.
+#### 4.4.3 Plot the evaluation of `add(3, 2)`.
 
 ```
 --> add(m=3, n=2)
@@ -83,7 +83,7 @@ ___Notes:___
 * The 2nd argument `n` remains unchanged  while being "passed through" all recursive calls.
 * The result is build up on "result position", which shows that `add` is not tail-recursive.
 
-#### Make `add` robust by extending it to negative arguments.
+#### 4.4.4 Make `add` robust by extending it to negative arguments.
 
 Hint: Modify above's equation to increment the 1st argument: `(m + n) = ((m + 1) + n) - 1`.
 
@@ -116,7 +116,7 @@ def add(m: Int, n: Int): Int = m match {
 }
 ```
 
-#### Make `add` robust by extending it to negative arguments -- alternative version.
+#### 4.4.5 Make `add` robust by extending it to negative arguments -- alternative version.
 
 Hint: Instead of incrementing `m` towards zero, reduce the case of a negative argument to a positive `m` by this equation: `(m + n) = -(-m - n)`.
 
@@ -140,7 +140,7 @@ ___Notes:___
 * For a negative argument `m`, the calculation "delegates" to `-add(-m, -n)` turning `m` positive.
 * Above code is not tail-recursive.  Annotating the function with `@annotation.tailrec` would raise an error.
 
-#### Plot the evaluation of `add(-2, -1)`.
+#### 4.4.6 Plot the evaluation of `add(-2, -1)`.
 
 ```
 --> add(m=-2, n=-1)
@@ -153,7 +153,7 @@ ___Notes:___
 <-- add(m=-2, n=1): -3
 ```
 
-#### Reformulate `add` to make it tail-recursive.
+#### 4.4.7 Reformulate `add` to make it tail-recursive.
 
 Hints:
 
@@ -179,7 +179,7 @@ ___Notes:___
 
 * Above code is tail-recursive, hence, efficient: annotating the function with `@annotation.tailrec` will not raise an error.
 
-#### Plot the evaluation of tail-recursive `add(3, 2)`.
+#### 4.4.8 Plot the evaluation of tail-recursive `add(3, 2)`.
 
 ```
 --> add(m=3, n=2)
@@ -198,7 +198,7 @@ ___Notes:___
 * The function's return value remains unchanged and just being "passed through", which shows `add` to be tail-recursive.
 
 
-#### Make the tail-recursive version of `add` robust by extending it to negative arguments.
+#### 4.4.9 Make the tail-recursive version of `add` robust by extending it to negative arguments.
 
 Hints:
 
