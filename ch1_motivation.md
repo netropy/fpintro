@@ -12,7 +12,7 @@ ___Questions:___
 * What's the relevance of knowing multiple languages?  Knowing at least one language really well?
 * How important is the choice of the first language?  The choice of language concepts and programming paradigms?
 
-#### Further reading on the evolution of human languages.
+#### Further Reading on the Evolution of Human Languages.
 
 * <https://en.wikipedia.org/wiki/Language_family>,
   <https://en.wikipedia.org/wiki/List_of_language_families>
@@ -20,7 +20,7 @@ ___Questions:___
 * <https://en.wikipedia.org/wiki/Rosetta_Stone>
 * What is a language, dialect, accent? <https://en.wikipedia.org/wiki/Dialect>
 
-#### Further reading on the evolution of programming languages.
+#### Further Reading on the Evolution of Programming Languages.
 
 * <https://en.wikipedia.org/wiki/Generational_list_of_programming_languages>,
   <https://en.wikipedia.org/wiki/History_of_programming_languages>
@@ -32,7 +32,7 @@ ___Questions:___
 * <http://rosettacode.org/wiki/Rosetta_Code>
 * What is a dialect, variant, version? <https://web.archive.org/web/20160309214409/http://people.ku.edu/~nkinners/LangList/Extras/dialects.htm>
 
-#### Further reading on programming paradigms.
+#### Further Reading on Programming Paradigms.
 
 * <https://en.wikipedia.org/wiki/Programming_paradigm>
 * <https://en.wikipedia.org/wiki/Functional_programming>
@@ -40,7 +40,7 @@ ___Questions:___
 * <https://en.wikipedia.org/wiki/Logic_programming>
 * <https://en.wikipedia.org/wiki/Declarative_programming> vs <https://en.wikipedia.org/wiki/Imperative_programming>
 
-#### Further reading on document markup languages.
+#### Further Reading on Document Markup Languages.
 
 * <https://en.wikipedia.org/wiki/Markup_language>,
   <https://en.wikipedia.org/wiki/List_of_document_markup_languages>,
