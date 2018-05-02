@@ -76,7 +76,7 @@ ___Notes:___
 
 #### Make `sum` robust by extending it to negative arguments.
 
-Hint: the summation of negative numbers looks straight forward:
+Hint: It is evident how to sum up negative numbers:
 ```
 ...
 -6 = 0 + -1 + -2 + -3
