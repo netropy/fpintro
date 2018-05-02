@@ -1,6 +1,6 @@
 ### 4.2 Recursive Function `sum`
 
-#### Continue the sequence in which each number is the sum of all previous numbers starting from 0.
+#### 4.2.1 Continue the sequence in which each number is the sum of all previous numbers starting from 0.
 
 ```
 0 ->  0 = 0
@@ -12,7 +12,7 @@
 ...
 ```
 
-#### Express `sum(n)`, which computes the sum of `0 + ... + n`, in terms of `sum(n-1)`.
+#### 4.2.2 Express `sum(n)`, which computes the sum of `0 + ... + n`, in terms of `sum(n-1)`.
 
 ```
 sum(0) =  0 = 0
@@ -25,7 +25,7 @@ sum(5) = 15 = 0 + 1 +  ...  + 4 + 5 = sum(4) + 5
 sum(n) =  ? = (0 + 1 + ... + n-1) + n = sum(n-1) + n
 ```
 
-#### Define the function `sum(n)` in terms of `sum(n-1)` and add a simple unit test.
+#### 4.2.3 Define the function `sum(n)` in terms of `sum(n-1)` and add a simple unit test.
 
 ```scala
 def sum(n: Int): Int =
@@ -47,7 +47,7 @@ ___Notes:___
 
 * The [summation](https://en.wikipedia.org/wiki/Summation) can also be computed by a non-recursive, closed formula: `sum(n) = n * (n + 1) / 2`.
 
-#### Plot the evaluation of `sum(4)`.
+#### 4.2.4 Plot the evaluation of `sum(4)`.
 
 ```
 --> sum(n=4)
@@ -62,7 +62,7 @@ ___Notes:___
 <-- sum(n=4): 10
 ```
 
-#### Make `sum` robust by rejecting negative arguments.
+#### 4.2.5 Make `sum` robust by rejecting negative arguments.
 
 ```scala
 def sum(n: Int): Int = {
@@ -74,7 +74,7 @@ ___Notes:___
 
 * TODO: explain `require` and `assert` in Scala/Clojure.
 
-#### Make `sum` robust by extending it to negative arguments.
+#### 4.2.6 Make `sum` robust by extending it to negative arguments.
 
 Hint: It is evident how to sum up negative numbers:
 ```
