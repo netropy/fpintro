@@ -17,7 +17,7 @@ def pong(n: Int): Int = ping(n + 1)
 
 ___Notes:___
 
-* Above functions are an example of [_mutual recursion_](https://en.wikipedia.org/wiki/Mutual_recursion) (also called or _indirect recursion_): two things being defined in terms of each other -- and, hence, by self-reference.
+* Above functions are an example of [_mutual recursion_](https://en.wikipedia.org/wiki/Mutual_recursion) (also called _indirect recursion_): two things being defined in terms of each other -- and, hence, by self-reference.
 
 #### 4.1.2 Run and plot the evaluation of `ping(2)`.
 
@@ -48,7 +48,7 @@ def increase(n: Int): Int = increase(n) + 1
 ___Notes:___
 
 * Function `increase` is an example of [_direct recursion_](https://en.wikipedia.org/wiki/Recursion), an immediate form of [_self-reference_](https://en.wikipedia.org/wiki/Self-reference).
-* In contrast to functions `ping` and `pong`, which increment the argument value before the recursive call, function `increase` "passes through" the argument but increments the recursive call's return value.
+* In contrast to the functions `ping` and `pong`, which increment the argument, the function `increase` increments the recursive call's return value.
 
 #### 4.1.4 Run and plot the evaluation of `increase(2)`.
 
@@ -59,7 +59,7 @@ java.lang.StackOverflowError
   ...
 ```
 
-Function `increase` keeps calling itself while reserving space for the call's result (to be later incremented); since the function never returns from a call, the execution aborts when (stack) memory becomes exhausted (`StackOverflowError`):
+Function `increase` keeps re-calling itself while reserving space for the call's result (to be later incremented); since the function never returns from a call, the execution aborts when (stack) memory becomes exhausted (`StackOverflowError`):
 
 ```
 --> increase(n=2)
@@ -77,7 +77,7 @@ def grow(n: Int): Int = grow(n + 1)
 ___Notes:___
 
 * Function `grow` is an example of [_tail-recursion_](https://en.wikipedia.org/wiki/Tail_recursion), a special form of direct recursion where the call's result is passed unchanged.
-* In contrast to functions `increase`, which increments the recursive call's result, function `grow` modifies the argument value but "passes back" the recursive call's return value.
+* In contrast to functions `increase`, which increments the recursive call's result, function `grow` modifies the argument's value but "passes back" the recursive call's return value.
 * While functions `ping` and `pong` also "pass back" their call's return value, function `grow` is _directly recursive_.
 * Tail-recursion is a practically important concept and is further explored below and in chapters [4.4](ch4_4_recursive_add.md) and [4.5](ch4_5_recursive_multiply.md).
 
@@ -111,7 +111,7 @@ def countDown(n: Int): Int =
 
 ___Notes:___
 
-* The test `(n == 0)` is called a _termination condition_ as it does not effect a recursive call.
+* The test `(n == 0)` is called a _termination condition_ as it does not effect the recursive call.
 * Function `countDown` is _tail-recursive_ as it "passes back" the call's result unchanged.
 * To ensure that a function is tail-recursive and, hence, can be implemented efficiently, the function definition can be preceded with [`@annotation.tailrec`](<https://www.scala-lang.org/api/current/scala/annotation/tailrec.html>). This annotation raises an error should the function turn out not to be tail-recursive.
 
