@@ -1,6 +1,5 @@
 ### 4.4 Recursive Function `add`
-
-Admitted, adding two numbers is not an exciting calculation.  As a primitive operation offered by any CPU, it is "built into hardware".  Thus, it is inefficient to re-define an `add` operation "in software" as a recursive function.  However, it makes a good excercise in thinking recursively :-)
+Obviously, adding two numbers is not an exciting calculation.  As a primitive operation offered by any CPU, it is "built into hardware".  Thus, it is inefficient to re-define an `add` operation "in software" as a recursive function.  However, it makes a good excercise in thinking recursively :-)
 
 #### Find a recursive definition for the addition of two numbers `m`, `n`.
 
@@ -37,8 +36,8 @@ ___Notes:___
 
 * Conceptually, the addition of natural numbers can be defined in terms of increment and decrement.
 * Above code is not _robust_:  for any negative argument `m`, it keeps decrementing `m` resulting in a `StackOverflowError` (or [Integer Overflow](https://en.wikipedia.org/wiki/Integer_overflow)).
-* Above code is not _efficient_: it is not tail-recursive, hence, its evaluation consumes much time and memory for large input values.  Annotating the function with `@annotation.tailrec` would raise an error.
-* Some Scala style guides prefer to be split the `if (...) ... else ...` into two lines before the `else` (which requires to put the entire function body into `{ ... }`).
+* Above code is not _efficient_, meaning it is not tail-recursive, hence, its evaluation consumes much time and memory for large input values.  Annotating the function with `@annotation.tailrec` would raise an error.
+* Some Scala style guides prefer to split the `if (...) ... else ...` into two lines before the `else` (which requires to put the entire function body into `{ ... }`).
 
 #### Plot the evaluation of `add(3, 2)`.
 
@@ -108,7 +107,7 @@ ___Notes:___
 * The `incr` and `decr` operations are reversed for negative `m` to "count up" to zero.
 * Above code is not tail-recursive.  Annotating the function with `@annotation.tailrec` would raise an error.
 * The chained expression `if (...) ... else if (...) ... else ...` is split into multiple lines for better readability; no need for additional round brackets `... else (if (...) ... else)`.
-* Notation: some Scala style guides prefer if-then-else chains over a value `m` to be writted as `m match { case x if (...) => ... ; case x ... }` like this:
+* Notation: some Scala style guides prefer if-then-else chains over a value `m` to be writted as `m match { case x if (...) => ... ; case x ... }` :
 ```scala
 def add(m: Int, n: Int): Int = m match {
   case x if (x == 0) => n
@@ -178,7 +177,7 @@ assert(add(0,-2) == -2)
 
 ___Notes:___
 
-* Above code is tail-recursive, hence, efficient: annotating the function with `@annotation.tailrec` won't raise an error.
+* Above code is tail-recursive, hence, efficient: annotating the function with `@annotation.tailrec` will not raise an error.
 
 #### Plot the evaluation of tail-recursive `add(3, 2)`.
 
