@@ -1,6 +1,6 @@
 ### 4.3 Recursive Function `factorial`
 
-#### Continue the sequence in which each number is the product of all previous numbers starting with 1.
+#### 4.3.1 Continue the sequence in which each number is the product of all previous numbers starting with 1.
 
 ```
 0 ->   1 
@@ -12,7 +12,7 @@
 ...
 ```
 
-#### Express `factorial(n)`, which computes the product of `1 * 1 * ... * n`, in terms of `factorial(n-1)`.
+#### 4.3.2 Express `factorial(n)`, which computes the product of `1 * 1 * ... * n`, in terms of `factorial(n-1)`.
 
 ```
 factorial(0) = 	 1
@@ -25,7 +25,7 @@ factorial(5) = 120 = 1 * 1 *  ...  * 4 * 5 = factorial(4) * 5
 factorial(n) = ... = (0 * 1 * ... * n-1) * n = factorial(n-1) * n
 ```
 
-#### Define the function `factorial(n)` in terms of `factorial(n-1)` and add a simple unit test.
+#### 4.3.3 Define the function `factorial(n)` in terms of `factorial(n-1)` and add a simple unit test.
 
 Hint: Also reject negative arguments.
 
@@ -40,7 +40,7 @@ ___Notes:___
 
 * Not used here, but the mathematical function [factorial](https://en.wikipedia.org/wiki/Factorial) has an extension to negative arguments.
 
-#### Plot the evaluation of `factorial(5)`.
+#### 4.3.4 Plot the evaluation of `factorial(5)`.
 
 ```
 --> factorial(n=5)
