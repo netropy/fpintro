@@ -1,6 +1,6 @@
 ### 4.1 What happens when a Function calls itself?
 
-#### Define two functions `ping(n)` and `pong(n)` that call each other with an incremented argument.
+#### 4.1.1 Define two functions `ping(n)` and `pong(n)` that call each other with an incremented argument.
 
 Hint: To avoid an error (`not found: value pong`) while defining `ping`, enter the definitions in the Scala REPL in "paste mode" and exit with ctrl-D.
 
@@ -19,7 +19,7 @@ ___Notes:___
 
 * Above functions are an example of [_mutual recursion_](https://en.wikipedia.org/wiki/Mutual_recursion) (also called or _indirect recursion_): two things being defined in terms of each other -- and, hence, by self-reference.
 
-#### Run and plot the evaluation of `ping(2)`.
+#### 4.1.2 Run and plot the evaluation of `ping(2)`.
 
 ```
 scala> ping(2)
@@ -39,7 +39,7 @@ Functions `ping` and `pong` keep calling each other while storing their incremen
                 --> ...
 ```
 
-#### Define a function `increase(n)` that calls itself and then returns an incremented result.
+#### 4.1.3 Define a function `increase(n)` that calls itself and then returns an incremented result.
 
 ```scala
 def increase(n: Int): Int = increase(n) + 1
@@ -50,7 +50,7 @@ ___Notes:___
 * Function `increase` is an example of [_direct recursion_](https://en.wikipedia.org/wiki/Recursion), an immediate form of [_self-reference_](https://en.wikipedia.org/wiki/Self-reference).
 * In contrast to functions `ping` and `pong`, which increment the argument value before the recursive call, function `increase` "passes through" the argument but increments the recursive call's return value.
 
-#### Run and plot the evaluation of `increase(2)`.
+#### 4.1.4 Run and plot the evaluation of `increase(2)`.
 
 ```
 scala> increase(n=2)
@@ -68,7 +68,7 @@ Function `increase` keeps calling itself while reserving space for the call's re
             --> ...
 ```
 
-#### Define a function `grow(n)` that calls itself with an incremented argument value.
+#### 4.1.5 Define a function `grow(n)` that calls itself with an incremented argument value.
 
 ```scala
 def grow(n: Int): Int = grow(n + 1)
@@ -81,7 +81,7 @@ ___Notes:___
 * While functions `ping` and `pong` also "pass back" their call's return value, function `grow` is _directly recursive_.
 * Tail-recursion is a practically important concept and is further explored below and in chapters [4.4](ch4_4_recursive_add.md) and [4.5](ch4_5_recursive_multiply.md).
 
-#### Run and plot the evaluation of `grow(2)`.
+#### 4.1.6 Run and plot the evaluation of `grow(2)`.
 
 ```
 scala> grow(2)
@@ -101,7 +101,7 @@ Unlike functions `ping`, `pong`, and `increase`, however, the Scala shell (or Sc
 
 This execution therefore avoids a `StackOverflowError` but results in an [_infinite loop_](https://en.wikipedia.org/wiki/Loop_(computing)#Infinite_loops).
 
-#### Define a function `count_down(n)` that calls itself with a decremented argument until zero, then returns zero.
+#### 4.1.7 Define a function `count_down(n)` that calls itself with a decremented argument until zero, then returns zero.
 
 ```scala
 @annotation.tailrec
@@ -115,7 +115,7 @@ ___Notes:___
 * Function `countDown` is _tail-recursive_ as it "passes back" the call's result unchanged.
 * To ensure that a function is tail-recursive and, hence, can be implemented efficiently, the function definition can be preceded with [`@annotation.tailrec`](<https://www.scala-lang.org/api/current/scala/annotation/tailrec.html>). This annotation raises an error should the function turn out not to be tail-recursive.
 
-#### Run and plot the evaluation of `count_down(2)`.
+#### 4.1.8 Run and plot the evaluation of `count_down(2)`.
 
 Unlike all recursive functions above, `countDown` properly _terminates_ (with a return value of zero, here):
 
