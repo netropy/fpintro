@@ -13,7 +13,7 @@ In this chapter we learn how to compose calculations that carries repetition.
 
 [4.2 Recursive Function `sum`](ch4_2_recursive_sum.md)
 
-// TODO: [4.3 Recursive Function `factorial`](ch4_3_recursive_factorial.md)
+[4.3 Recursive Function `factorial`](ch4_3_recursive_factorial.md)
 
 [4.4 Recursive Function `add`](ch4_4_recursive_add.md)
 
