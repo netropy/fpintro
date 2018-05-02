@@ -37,7 +37,7 @@ assert(multiply(-1,5) == -5) // !java.lang.StackOverflowError!
 assert(multiply(-1,-5) == 5) // !java.lang.StackOverflowError!
 ```
 
-__Notes:__
+___Notes:___
 
 * Conceptually, the multiplication of natural numbers can be defined in terms of increment and decrement (via addition).
 * Above code is not _robust_:  for any negative argument `m`, it keeps decrementing `m` resulting in a `StackOverflowError` (or [Integer Overflow](https://en.wikipedia.org/wiki/Integer_overflow)).
@@ -73,7 +73,7 @@ Or as a more detailed version, also showing the evaluation of `add` and `decr`:
 <-- multiply(m=3, n= 5): 15
 ```
 
-__Notes:__
+___Notes:___
 
 * The 1st argument `m` is being decremented until the "termination condition" `(m == 1)` holds.
 * The 2nd argument `n` remains unchanged  while being "passed through" all recursive calls.
@@ -104,7 +104,7 @@ assert(multiply(1000, 5) == 5000)
 assert(multiply(100000, 5) == 500000) // !java.lang.StackOverflowError!
 ```
 
-__Notes:__
+___Notes:___
 
 * For a negative argument `m`, the calculation "delegates" to `-(multiply(-m, n))` turning `m` positive.
 * Above code is not tail-recursive.  Annotating the function with `@annotation.tailrec` would raise an error.
@@ -148,7 +148,7 @@ assert(multiply(10000000, -5) == -50000000)
 assert(multiply(100000000, -5) == -500000000) // no java.lang.StackOverflowError
 ```
 
-__Notes:__
+___Notes:___
 
 * The handling of the "zero" case `if (m == 0) 0` can be done in either the "helper" or "wrapper" function.
 * Above code is tail-recursive: annotating the function with `@annotation.tailrec` won't raise an error.

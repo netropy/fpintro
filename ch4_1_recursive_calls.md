@@ -15,7 +15,7 @@ def pong(n: Int): Int = ping(n + 1)
 // Exiting paste mode, now interpreting.
 ```
 
-__Notes:__
+___Notes:___
 
 * Above functions are an example of [_mutual recursion_](https://en.wikipedia.org/wiki/Mutual_recursion) (also called or _indirect recursion_): two things being defined in terms of each other -- and, hence, by self-reference.
 
@@ -45,7 +45,7 @@ Functions `ping` and `pong` keep calling each other while storing their incremen
 def increase(n: Int): Int = increase(n) + 1
 ```
 
-__Notes:__
+___Notes:___
 
 * Function `increase` is an example of [_direct recursion_](https://en.wikipedia.org/wiki/Recursion), an immediate form of [_self-reference_](https://en.wikipedia.org/wiki/Self-reference).
 * In contrast to functions `ping` and `pong`, which increment the argument value before the recursive call, function `increase` "passes through" the argument but increments the recursive call's return value.
@@ -74,7 +74,7 @@ Function `increase` keeps calling itself while reserving space for the call's re
 def grow(n: Int): Int = grow(n + 1)
 ```
 
-__Notes:__
+___Notes:___
 
 * Function `grow` is an example of [_tail-recursion_](https://en.wikipedia.org/wiki/Tail_recursion), a special form of direct recursion where the call's result is passed unchanged.
 * In contrast to functions `increase`, which increments the recursive call's result, function `grow` modifies the argument value but "passes back" the recursive call's return value.
@@ -109,7 +109,7 @@ def countDown(n: Int): Int =
   if (n == 0) 0 else countDown(n - 1)
 ```
 
-__Notes:__
+___Notes:___
 
 * The test `(n == 0)` is called a _termination condition_ as it does not effect a recursive call.
 * Function `countDown` is _tail-recursive_ as it "passes back" the call's result unchanged.
@@ -135,7 +135,7 @@ Function `countDown` keeps calling itself with a decremented argument until it r
 <-- countDown(n=2): 0
 ```
 
-__Notes:__
+___Notes:___
 
 * Unlike [_circular reasoning_](https://en.wikipedia.org/wiki/Circular_reasoning), recursion with termination meaningfully describes computations.
 * Subsequent excercises explore how to find a recursive description of a computation, the choice of the termination conditions, and the reformulation as a tail-recursive version.

@@ -33,7 +33,7 @@ assert(add(0,-2) == -2)
 assert(add(-1,-2) == -3) // !java.lang.StackOverflowError!
 ```
 
-__Notes:__
+___Notes:___
 
 * Conceptually, the addition of natural numbers can be defined in terms of increment and decrement.
 * Above code is not _robust_:  for any negative argument `m`, it keeps decrementing `m` resulting in a `StackOverflowError` (or [Integer Overflow](https://en.wikipedia.org/wiki/Integer_overflow)).
@@ -78,7 +78,7 @@ Or as a more detailed version, also showing the evaluation of `decr` and `incr`:
 <-- add(m=3, n=2): 5
 ```
 
-__Notes:__
+___Notes:___
 
 * The 1st argument `m` is being decremented until the "termination condition" `(m == 0)` holds.
 * The 2nd argument `n` remains unchanged  while being "passed through" all recursive calls.
@@ -103,7 +103,7 @@ assert(add(-3,2) == -1)
 assert(add(-3,-2) == -5)
 ```
 
-__Notes:__
+___Notes:___
 
 * The `incr` and `decr` operations are reversed for negative `m` to "count up" to zero.
 * Above code is not tail-recursive.  Annotating the function with `@annotation.tailrec` would raise an error.
@@ -136,7 +136,7 @@ assert(add(-3,2) == -1)
 assert(add(-3,-2) == -5)
 ```
 
-__Notes:__
+___Notes:___
 
 * For a negative argument `m`, the calculation "delegates" to `-add(-m, -n)` turning `m` positive.
 * Above code is not tail-recursive.  Annotating the function with `@annotation.tailrec` would raise an error.
@@ -176,7 +176,7 @@ assert(add(0,-2) == -2)
 // assert(add(-3,-2) == -5)
 ```
 
-__Notes:__
+___Notes:___
 
 * Above code is tail-recursive, hence, efficient: annotating the function with `@annotation.tailrec` won't raise an error.
 
@@ -193,7 +193,7 @@ __Notes:__
 <-- add(m=3, n=2): 5
 ```
 
-__Notes:__
+___Notes:___
 
 * The result is build up on "parameter position" by incrementing `n`.
 * The function's return value remains unchanged and just being "passed through", which shows `add` to be tail-recursive.
@@ -225,7 +225,7 @@ assert(add(0,-2) == -2)
 assert(add(-3,2) == -1)
 assert(add(-3,-2) == -5)
 ```
-__Notes:__
+___Notes:___
 
 * Above code is tail-recursive (i.e., efficient) and robust :-)
 * Notation: since the "helper" function is not robust and hence to be used from "outside", the preferred style is it make it a _local_ function, typically just called `go` or `loop`, within a "wrapper" function:
