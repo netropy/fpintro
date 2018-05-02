@@ -43,6 +43,9 @@ assert(sum(5) == 15)
 
 (sum 4) ; = 10
 ```
+___Notes:___
+
+* The [summation](https://en.wikipedia.org/wiki/Summation) can also be computed by a non-recursive, closed formula: `sum(n) = n * (n + 1) / 2`.
 
 #### Plot the evaluation of `sum(4)`.
 
