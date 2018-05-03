@@ -179,3 +179,9 @@ ___TODO:___ explain, give exercises
 ___Notes:___
 
 * <https://en.wikipedia.org/wiki/Conditional_(computer_programming)>
+
+-------
+
+[<-- previous](ch1_motivation.md#1-motivation-an-ever-changing-world-of-languages)
+
+[--> next](ch3_0_functions.md#3-functions)
