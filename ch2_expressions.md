@@ -150,7 +150,7 @@ form and then evaluate the expression `(+ 3 4)` | `(eval (quote (+ 3 4)))` | `((
 ___Notes:___
 
 * In Lisp-based languages,
-  - to prevent evaluating an expression is itself an expression with an operator telling not to evaluate and a list of expressions as operand.
+  - preventing the evaluation of an expression is itself an expression, with an operator `quote` indicating _not_ to evaluate the subsequent expressions.
   - the short form `'( ...)` for `(quote ...)` is offered.
 * In Scala... ___TODO___
 
