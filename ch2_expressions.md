@@ -182,6 +182,6 @@ ___Notes:___
 
 -------
 
-[<-- previous](ch1_motivation.md#1-motivation-an-ever-changing-world-of-languages)
+[<-- previous](ch1_motivation.md)
 
-[--> next](ch3_0_functions.md#3-functions)
+[--> next](ch3_0_functions.md)
