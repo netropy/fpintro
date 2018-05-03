@@ -14,7 +14,7 @@ Before we start:
 
 ![](https://imgs.xkcd.com/comics/lisp_cycles.png)
 
-#### Write arithmetic expressions: [excercise KfK, chapter 1: What is computer programming?](http://kids.klipse.tech/clojure/2016/05/03/programming-kids-1.html).
+#### 2.1 Write arithmetic expressions: [excercise KfK, chapter 1: What is computer programming?](http://kids.klipse.tech/clojure/2016/05/03/programming-kids-1.html).
 
 Excercise | Clojure | Scala
 :-------|:------|:------
@@ -39,7 +39,7 @@ ___TODO:___
 
 Further Reading: [prefix notation](https://en.wikipedia.org/wiki/Polish_notation), [infix notation](https://en.wikipedia.org/wiki/Infix_notation), [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
 
-#### Write nested arithmetic expressions: [excercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
+#### 2.2 Write nested arithmetic expressions: [excercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
 
 Excercise | Clojure | Scala
 :-------|:------|:------
@@ -64,7 +64,7 @@ ___TODO:___
 
 Further reading: [operator precedence](https://en.wikipedia.org/wiki/Order_of_operations), [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation), [pocket calculator with postfix notation without parenthesis](https://en.wikipedia.org/wiki/HP-35)
 
-#### Write and use named expressions: [excercise KfK, chapter 3: Giving Names to Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-3.html).
+#### 2.3 Write and use named expressions: [excercise KfK, chapter 3: Giving Names to Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-3.html).
 
 Excercise | Clojure | Scala
 :-------|:------|:------
@@ -91,7 +91,7 @@ Further reading:
 
 * [language constructs of major Lisp dialects](http://hyperpolyglot.org/lisp)
 
-#### Write list expressions: [excercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-4.html).
+#### 2.4 Write list expressions: [excercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-4.html).
 
 Excercise | Clojure | Scala
 :-------|:------|:------
@@ -135,7 +135,7 @@ sets vs lists | example
 sets: no order, no multiples |  { 1 2 } = { 2 1 } = { 2 2 1 }
 lists: no order, multiples |  (list 2 1) != (list 1 2) != (list 1 2 2)
 
-#### Write expressions without evaluating them: [excercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-5.html).
+#### 2.5 Write expressions without evaluating them: [excercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-5.html).
 
 Excercise | Clojure | Scala
 :-------|:------|:------
@@ -145,7 +145,7 @@ form and then evaluate the expression `(+ 3 4)` | `(eval (quote (+ 3 4)))` | `((
 ... | `(eval '(+ 3 4))` _(alternative notation)_ |
 ...
 
-#### Write comparison operator expressions: [excercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-7.html).
+#### 2.6 Write comparison operator expressions: [excercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-7.html).
 
 Excercise | Clojure | Scala
 :-------|:------|:------
@@ -158,7 +158,7 @@ ___TODO:___ explain
 
 * <https://en.wikipedia.org/wiki/Boolean_data_type>, <https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)>
 
-#### Write boolean operator expressions.
+#### 2.7 Write boolean operator expressions.
 
 ___TODO:___ explain, give excercises
 
@@ -169,7 +169,7 @@ ___Notes:___
 
 <https://en.wikipedia.org/wiki/Boolean_algebra>
 
-#### Write conditional operator expressions.
+#### 2.8 Write conditional operator expressions.
 
 ___TODO:___ explain, give excercises
 
