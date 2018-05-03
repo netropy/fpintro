@@ -57,3 +57,8 @@ ___Notes:___
 <-- factorial(n=5): 120
 ```
 
+------------------
+
+[<-- previous page](ch4_2_recursive_sum.md)
+
+[--> next page](ch4_4_recursive_add.md)
