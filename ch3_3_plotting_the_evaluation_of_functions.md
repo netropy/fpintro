@@ -86,3 +86,9 @@ incr_twice(4) // = 6
     <-- incr(n=4): 5
 <-- incr_twice(n=3): 5
 ```
+
+-----------------
+
+[<-- previous page](ch3_2_more_function_exercises.md)
+
+[--> next page](ch4_0_recursive_functions.md)
