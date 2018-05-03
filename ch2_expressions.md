@@ -154,6 +154,8 @@ ___Notes:___
   - the short form `'( ...)` for `(quote ...)` is offered.
 * In Scala... ___TODO___
 
+#### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/08/05/chapter-7.html).
+
 Exercise | Clojure | Scala
 :-------|:------|:------
 ask if 7 times 6 equals 40 | `(= (* 7 6) 40)` | ` 7 * 6 == 40 `
@@ -169,23 +171,26 @@ ___TODO:___ explain
 
 ___TODO:___ explain, give exercises
 
-* What is a conditional?
 * exercise: implement and, or, not in terms of nand, xor, and, or, not
 
+Exercise | Clojure | Scala
+:-------|:------|:------
+ask if not true equals ... | `...` | `...`
+ask if not false equals ... | `...` | `...`
+ask if not not true equals ... | `...` | `...`
+ask if not not false equals ... | `...` | `...`
+ask if true and true equals ... | `...` | `...`
+ask if true and false equals ... | `...` | `...`
+ask if false and true equals ... | `...` | `...`
+ask if false and false equals ... | `...` | `...`
+ask if true or true equals ... | `...` | `...`
+ask if true or false equals ... | `...` | `...`
+ask if false or true equals ... | `...` | `...`
+ask if false or false equals ... | `...` | `...`
+
 ___Notes:___
 
-<https://en.wikipedia.org/wiki/Boolean_algebra>
-
-#### 2.0.8 Write conditional operator expressions.
-
-___TODO:___ explain, give exercises
-
-* What is a conditional?
-* exercise: implement and, or, not in terms of if-then-else
-
-___Notes:___
-
-* <https://en.wikipedia.org/wiki/Conditional_(computer_programming)>
+* <https://en.wikipedia.org/wiki/De_Morgan%27s_laws>, <https://en.wikipedia.org/wiki/Boolean_algebra>
 
 -------
 
