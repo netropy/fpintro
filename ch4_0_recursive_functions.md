@@ -9,6 +9,10 @@ In the previous chapter, we've learned how to
 
 In this chapter we learn how to write calculations that carry repetition.
 
+Before we start:
+
+![](http://xkcdsw.com/content/img/1105.gif)
+
 [4.1 What happens when a Function calls itself?](ch4_1_recursive_calls.md)
 
 [4.2 Recursive Function `sum`](ch4_2_recursive_sum.md)
