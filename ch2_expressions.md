@@ -2,7 +2,7 @@
 
 This chapter contains exercises on how to write [expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)).  Most exercises are taken from [Klipse for Kids](http://kids.klipse.tech) with some added for boolean operations.
 
-In summary, _expressions_
+In summary, _expressions_ ...
 
 * _evaluate_ to a value, when computed, for example: `3 + 4` yields `7`,
 * consist of _operators_ and _operands_ yielding values, for example: `2 + 3`,
