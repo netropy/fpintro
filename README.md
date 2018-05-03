@@ -15,7 +15,7 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 
 [1. Motivation: An Ever-Changing World of Languages?](ch1_motivation.md)
 
-// TODO: [2. Expressions](ch2_expressions.md)
+[2. Expressions](ch2_expressions.md)
 
 [3. Functions](ch3_0_functions.md)
 
