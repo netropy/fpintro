@@ -139,3 +139,9 @@ ___Notes:___
 
 * Unlike [_circular reasoning_](https://en.wikipedia.org/wiki/Circular_reasoning), recursion with termination meaningfully describes computations.
 * Subsequent exercises explore how to find a recursive description of a computation, the choice of the termination conditions, and the reformulation as a tail-recursive version.
+
+-----------------
+
+[<-- previous page](ch4_0_recursive_functions.md)
+
+[--> next page](ch4_2_recursive_sum.md)
