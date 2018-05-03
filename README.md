@@ -65,3 +65,6 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 [4.5.5 Reformulate multiply to make it tail-recursive and handling negative arguments.](ch4_5_recursive_multiply.md#455-reformulate-multiply-to-make-it-tail-recursive-and-handling-negative-arguments)\
 [4.5.6 Plot the evaluation of tail-recursive multiply(2,5).](ch4_5_recursive_multiply.md#456-plot-the-evaluation-of-tail-recursive-multiply25)
 
+... and now we understand:
+
+![](https://imgs.xkcd.com/comics/functional_2x.png)
