@@ -135,3 +135,9 @@ def myodd(i: Int): Boolean = !myeven(i)
 myodd(3) // = true
 myodd(8) // = false
 ```
+
+--------------------
+
+[<-- previous page](ch3_1_formulas_and_functions.md)
+
+[--> next page](ch3_3_plotting_the_evaluation_of_functions.md)
