@@ -113,3 +113,9 @@ ___Notes:___
 
 * If the argument is negative, the calculation "delegates" to a positive argument and adjusts the sign afterwards.
 * In Scala, there's no need to wrap the 2nd if-then-else in round brackets, hence, better written as chain: `if ... else if (...) ... else ...`.
+
+-----------------
+
+[<-- previous page](ch4_1_recursive_calls.md)
+
+[--> next page](ch4_3_recursive_factorial.md)
