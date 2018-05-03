@@ -31,7 +31,6 @@ In human and programming languages, what's the importance of usage, style, idiom
 
 ### Tools for Writing and Debugging Code
 
-* REPL, interpreter, language shell: <https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop>
 * <http://workspiration.org/best-coding-editors-mac-os-software>
 * <https://en.wikipedia.org/wiki/Editor_war>, <https://i.redd.it/798myjzkwmjz.jpg>
 * <https://en.wikipedia.org/wiki/Emacs>, <https://hackaday.com/2016/08/08/editor-wars-the-revenge-of-vim>

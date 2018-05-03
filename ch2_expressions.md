@@ -1,14 +1,17 @@
 ## 2.0 Expressions
 
-___TODO:___
+This chapter contains exercises on how to write [expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)).  Most exercises are taken from [Klipse for Kids](http://kids.klipse.tech) with some added for boolean operations.
 
-* this chapter about ... how to compose, evaluate, and name expressions
-* expressions are composed of operators and operands ... and expressions, meaning they can be nested
-* to construct, build, form, compose, write an expression
-* to evaluate an expression, to compute
-* to name an expression, which itself is an expression with an operator doing the naming, the name, and the "namee" as operand
-* to prevent evaluating an expression, which itself is an expression with an operator telling not to evaluate and the expression as operand
-* coding exercises from <http://kids.klipse.tech/>
+In summary, _expressions_
+
+* _evaluate_ to a value, when computed, for example: `3 + 4` yields `7`,
+* consist of _operators_ and _operands_ yielding values, for example: `2 + 3`,
+* are _well-formed_, for example: `1 +` is illformed as it lacks an operand for the operator,
+* may be _given a name_, for example: `a = 3 + 4`,
+* may refer to _names_ (constants or variables), for example: `a + 2`,
+* may be _nested_, for example: `3 + (4 * 5)`.
+
+In Lisp-based languages, expressions (or so-called _s-expressions_, _sexprs_, or _sexps_ for [symbolic expressions](https://en.wikipedia.org/wiki/S-expression)) take the form of a _list_, typically, with an operator as the 1st element followed by zero or more operands `( operator operands ... operands )`.
 
 Before we start:
 
@@ -34,8 +37,6 @@ ___TODO:___
 * purpose of computer languages: to give computer instructions and receive answers
 * symbolic expressions, parens, operator, operands
 * conversion between prefix/infix/postfix notations
-* what are expressions? how are they written in lisp-like languages?  s-expressions, sexprs or sexps or "symbolic expression"
-* <https://en.wikipedia.org/wiki/Expression_(computer_science)>, <https://en.wikipedia.org/wiki/S-expression>
 
 Further Reading: [prefix notation](https://en.wikipedia.org/wiki/Polish_notation), [infix notation](https://en.wikipedia.org/wiki/Infix_notation), [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
 
@@ -79,6 +80,7 @@ calculate 2\*3 + 4\*5; then multiply the result by 4 + 5; then multiply the resu
 ___Notes:___
 
 * Operator `def` defines a global variable (the operator for binding a local variable is called `let`).
+* In Lisp-based languages, to name an expression is itself an expression with an operator doing the naming and taking as operands the name and the named expression.
 * In Scala, keyword `val` names a constant value.
 
 ___TODO:___
@@ -145,7 +147,12 @@ form and then evaluate the expression `(+ 3 4)` | `(eval (quote (+ 3 4)))` | `((
 ... | `(eval '(+ 3 4))` _(alternative notation)_ |
 ...
 
-#### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/08/05/chapter-7.html).
+___Notes:___
+
+* In Lisp-based languages,
+  - to prevent evaluating an expression is itself an expression with an operator telling not to evaluate and a list of expressions as operand.
+  - the short form `'( ...)` for `(quote ...)` is offered.
+* In Scala... ___TODO___
 
 Exercise | Clojure | Scala
 :-------|:------|:------

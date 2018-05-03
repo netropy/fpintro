@@ -1,4 +1,9 @@
-## 0. Preliminaries: Writing Text
+## 0. Preliminaries: Writing Text, the Markdown Language, the Scala and Clojure Language Shells (REPL)
+
+Here, the bare minimum what one needs to know about
+
+* how to write a text document like this one
+* how to run Clojure and Scala code for the exercises.
 
 #### Inspect some file formats for text documents (like .html/.doc/.txt).
 
@@ -55,6 +60,47 @@ ___Notes:___
 * Markdown is widely used and has become the format of choice for "collaborative" editing.
 * Markdown can be easily converted to HTML, which is the standard markup language for web pages and web applications.
 * Pandoc is just one of many tools converting .md to .html.
+
+#### Install Clojure, Scala and run the language shells (REPL)
+
+___TODO:___ link to install Scala, Leiningen
+
+A _language shell_ or [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) reads (typically small) chunks of programming code as text input, then directly executes (evaluates) it, and prints the result as text output.  
+
+To run the Scala shell:
+```
+    $ scala
+    Welcome to Scala 2.12.5 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_172).
+    Type in expressions for evaluation. Or try :help.
+
+    scala> 
+```
+
+To run the Clojure shell:
+```
+    $ lein repl
+    nREPL server started on port 52117 on host 127.0.0.1 - nrepl://127.0.0.1:52117
+    REPL-y 0.3.7, nREPL 0.2.12
+    Clojure 1.8.0
+    Java HotSpot(TM) 64-Bit Server VM 1.8.0_172-b11
+        Docs: (doc function-name-here)
+              (find-doc "part-of-name-here")
+      Source: (source function-name-here)
+     Javadoc: (javadoc java-object-or-class-here)
+        Exit: Control+D or (exit) or (quit)
+     Results: Stored in vars *1, *2, *3, an exception in *e
+
+    user=> 
+```
+
+Further Reading:
+
+* <https://en.wikipedia.org/wiki/Interpreter_(computing)>,
+  <https://en.wikipedia.org/wiki/Compiler>,
+  <https://en.wikipedia.org/wiki/Interpreted_language>,
+  <https://en.wikipedia.org/wiki/Compiled_language>
+* for Clojure both, REPLs and a [compiler](https://clojure.org/reference/compilation), are available
+* for Scala both, REPLs and a [compiler](https://www.scala-lang.org/files/archive/nightly/docs/manual/html/scalac.html), are available
 
 ------------
 
