@@ -1,6 +1,6 @@
 ### 3.2 More Function Excercises
 
-#### Define and test a function `mydouble` that doubles a number.
+#### 3.2.1 Define and test a function `mydouble` that doubles a number.
 
 Hint: also give arity+type(s).
 
@@ -16,7 +16,7 @@ def mydouble(d: Int): Int = d * 2
 mydouble(4) // = 8
 ```
 
-#### Define and test a function that squares a number
+#### 3.2.2 Define and test a function that squares a number
 
 Hint: also give arity+type(s).
 
@@ -32,7 +32,7 @@ def squares(s: Int): Int = s * s
 squares(3) // = 9
 ```
 
-#### Define and test a function that doubles the square of a number.
+#### 3.2.3 Define and test a function that doubles the square of a number.
 
 Hint: also give arity+type(s).
 
@@ -49,7 +49,7 @@ doubles_the_square(2) // = 8
 
 ```
 
-#### Define and test a function that squares a number if the 1st operand is true, otherwise doubles the number.
+#### 3.2.4 Define and test a function that squares a number if the 1st operand is true, otherwise doubles the number.
 
 Hint: also give arity+type(s).
 
@@ -68,7 +68,7 @@ square_or_double(true, 3) // = 9
 square_or_double(false, 3) //  = 6
 ```
 
-#### Test the language's predefined quotient/remainder operators.
+#### 3.2.5 Test the language's predefined quotient/remainder operators.
 
 Hint: also give arity+type(s), <https://en.wikipedia.org/wiki/Remainder>
 
@@ -84,7 +84,7 @@ Hint: also give arity+type(s), <https://en.wikipedia.org/wiki/Remainder>
 13 % 4 // = 1
 ```
 
-#### Define and test a function that returns/gives/yields a list of the quotient and remainder of the division of 2 integers.
+#### 3.2.6 Define and test a function that returns/gives/yields a list of the quotient and remainder of the division of 2 integers.
 
 Hint: also give arity+type(s).
 
@@ -100,7 +100,7 @@ def quot_and_rem(k: Int, l: Int) = List(k / l, k % l)
 quot_and_rem(8, 3) // = List(2, 2)
 ```
 
-#### Define and test a function `myeven?` that test/tells/gives whether an integer number is even.
+#### 3.2.7 Define and test a function `myeven?` that test/tells/gives whether an integer number is even.
 
 Hint: also give arity+type(s); how to test whether a number is even: x is even if (x \ 2 = y remainder 0).
 
@@ -118,7 +118,7 @@ myeven(4) // = true
 myeven(5) // = false
 ```
 
-#### Define and test a function `myodd?` that tells whether an integer number is odd in terms of using the "...even..." function.
+#### 3.2.8 Define and test a function `myodd?` that tells whether an integer number is odd in terms of using the "...even..." function.
 
 Hint: also give arity+type(s).
 
