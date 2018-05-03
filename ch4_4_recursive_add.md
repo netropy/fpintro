@@ -241,3 +241,8 @@ def add(m: Int, n: Int): Int = {
 }
 
 ```
+
+------------
+[<-- previous page](ch4_3_recursive_factorial.md)
+
+[--> next page](ch4_5_recursive_multiply.md)
