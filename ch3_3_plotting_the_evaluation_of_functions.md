@@ -2,7 +2,7 @@
 
 The process of applying a function with an argument value can be rendered in a chart.  Sometimes, this process is also called "to evaluate" or "to call" a function.   The "entry" into a function with argument values (input) and the "return" or "exit" with a result value (output) can be marked with arrows '-->' and '<--'.  The entry and exit of nested functions are then marked with an indentation.
 
-#### Define and test functions `incr` and `decr` that increment (+1) respectively decrement (-1) a number `n`.
+#### 3.3.1 Define and test functions `incr` and `decr` that increment (+1) respectively decrement (-1) a number `n`.
 
 ```scala
 def incr(n: Int): Int = n + 1
@@ -20,7 +20,7 @@ decr(5) // = 4
 (decr 9) ; = 8
 ```
 
-#### Plot the evaluation of `incr(2)` and `decr(-1)`.
+#### 3.3.2 Plot the evaluation of `incr(2)` and `decr(-1)`.
 
 ```
 --> incr(n=2)
@@ -29,7 +29,7 @@ decr(5) // = 4
 <-- decr(n=-1): -2
 ```
 
-#### Define and test a function that decrements a number `n` if `n` is positive, otherwise returns `n` (use `decr`).
+#### 3.3.3 Define and test a function that decrements a number `n` if `n` is positive, otherwise returns `n` (use `decr`).
 
 ```scala
 def decr_if_positive(n: Int): Int =
@@ -45,14 +45,14 @@ decr_if_positive(-4) // = -4
 
 ```
 
-#### Plot the evaluation of `decr_if_positive(-1)`.
+#### 3.3.4 Plot the evaluation of `decr_if_positive(-1)`.
 
 ```
 --> decr_if_positive(n=-1)
 <-- decr_if_positive(n=-1): -1
 ```
 
-#### Plot the evaluation of `decr_if_positive(4)`.
+#### 3.3.5 Plot the evaluation of `decr_if_positive(4)`.
 
 ```
 --> decr_if_positive(n=4)
@@ -61,7 +61,7 @@ decr_if_positive(-4) // = -4
 <-- decr_if_positive(n=4): 3
 ```
 
-#### Define and test a function that twice increments a number `n` (use `incr`).
+#### 3.3.6 Define and test a function that twice increments a number `n` (use `incr`).
 
 ```scala
 def incr_twice(n: Int): Int =
@@ -76,7 +76,7 @@ incr_twice(4) // = 6
 
 ```
 
-#### Plot the evaluation of `incr_twice(3)`.
+#### 3.3.7 Plot the evaluation of `incr_twice(3)`.
 
 ```
 --> incr_twice(n=3)
