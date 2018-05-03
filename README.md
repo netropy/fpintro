@@ -96,3 +96,8 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 ... and now we understand:
 
 ![](https://imgs.xkcd.com/comics/functional_2x.png)
+
+
+-------------------
+
+[--> next page](ch0_preliminaries.md)
