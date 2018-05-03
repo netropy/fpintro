@@ -30,7 +30,7 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 [2.0.1 Write arithmetic expressions: exercise KfK, chapter 1: What is computer programming?](ch2_expressions.md#201-write-arithmetic-expressions-exercise-kfk-chapter-1-what-is-computer-programming)\
 [2.0.2 Write nested arithmetic expressions: exercise KfK, chapter 2: Expressions inside Expressions inside Expressions.](ch2_expressions.md#202-write-nested-arithmetic-expressions-exercise-kfk-chapter-2-expressions-inside-expressions-inside-expressions)\
 [2.0.3 Write and use named expressions: exercise KfK, chapter 3: Giving Names to Expressions.](ch2_expressions.md#203-write-and-use-named-expressions-exercise-kfk-chapter-3-giving-names-to-expressions)\
-[2.0.4 Write list expressions: exercise KfK, chapter 4: Evaluating Several Expressions.](ch2_expressions.md#204-write-list-expressions-exercise-kfk-chapter-4-evaluating-several-expressions)\
+[2.0.4 Write `list` expressions: exercise KfK, chapter 4: Evaluating Several Expressions.](ch2_expressions.md#204-write-list-expressions-exercise-kfk-chapter-4-evaluating-several-expressions)\
 [2.0.5 Write expressions without evaluating them: exercise KfK, chapter 5: Please, tell me "what's your name?".](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name)\
 [2.0.6 Write comparison operator expressions: exercise KfK, chapter 7: True or False (Pinocchio).](ch2_expressions.md#206-write-comparison-operator-expressions-exercise-kfk-chapter-7-true-or-false-pinocchio)\
 [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)\
