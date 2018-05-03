@@ -41,7 +41,7 @@ ___Notes:___
 
 * <https://en.wikipedia.org/wiki/Assertion_(software_development)>
 
-#### Define and evaluate functions: [excercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-6.html).
+####  3.1.1 Define and evaluate functions: [excercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-6.html).
 
 Excercise | Clojure | Scala
 :-------|:------|:------
