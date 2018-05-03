@@ -55,3 +55,9 @@ ___Notes:___
 * Markdown is widely used and has become the format of choice for "collaborative" editing.
 * Markdown can be easily converted to HTML, which is the standard markup language for web pages and web applications.
 * Pandoc is just one of many tools converting .md to .html.
+
+------------
+
+[<-- previous page](https://github.com/netropy/fpintro/blob/master/ch0_preliminaries.md)
+
+[next page -->](https://github.com/netropy/fpintro/blob/master/ch2_expressions.md)
