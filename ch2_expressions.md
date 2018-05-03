@@ -10,8 +10,7 @@ ___TODO:___
 * to prevent evaluating an expression, which itself is an expression with an operator telling not to evaluate and the expression as operand
 * coding exercises from <http://kids.klipse.tech/>
 
-
-Before we start, why should we learn how to write expressions -- in a language based on Lisp, that is?
+Before we start:
 
 ![](https://imgs.xkcd.com/comics/lisp_cycles.png)
 
