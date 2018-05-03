@@ -10,6 +10,11 @@ ___TODO:___
 * to prevent evaluating an expression, which itself is an expression with an operator telling not to evaluate and the expression as operand
 * coding exercises from <http://kids.klipse.tech/>
 
+
+Before we start, why should we learn how to write expressions -- in a language based on Lisp, that is?
+
+![](https://imgs.xkcd.com/comics/lisp_cycles.png)
+
 #### Write arithmetic expressions: [excercise KfK, chapter 1: What is computer programming?](http://kids.klipse.tech/clojure/2016/05/03/programming-kids-1.html).
 
 Excercise | Clojure | Scala
