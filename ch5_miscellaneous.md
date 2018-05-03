@@ -36,3 +36,7 @@ In human and programming languages, what's the importance of usage, style, idiom
 * <https://en.wikipedia.org/wiki/Editor_war>, <https://i.redd.it/798myjzkwmjz.jpg>
 * <https://en.wikipedia.org/wiki/Emacs>, <https://hackaday.com/2016/08/08/editor-wars-the-revenge-of-vim>
 * <https://en.wikipedia.org/wiki/Integrated_development_environment>
+
+------------
+
+[<-- previous page](ch4_5_recursive_multiply.md)
