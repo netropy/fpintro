@@ -91,7 +91,7 @@ Further reading:
 
 * [language constructs of major Lisp dialects](http://hyperpolyglot.org/lisp)
 
-#### 2.0.4 Write `list` expressions: [exercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-4.html).
+#### 2.0.4 Write `list` expressions: [exercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/21/programming-kids-4.html).
 
 Exercise | Clojure | Scala
 :-------|:------|:------
@@ -135,7 +135,7 @@ sets vs lists | example
 sets: no order, no multiples |  { 1 2 } = { 2 1 } = { 2 2 1 }
 lists: no order, multiples |  (list 2 1) != (list 1 2) != (list 1 2 2)
 
-#### 2.0.5 Write expressions without evaluating them: [exercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-5.html).
+#### 2.0.5 Write expressions without evaluating them: [exercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/07/21/chapter-5.html).
 
 Exercise | Clojure | Scala
 :-------|:------|:------
@@ -145,7 +145,7 @@ form and then evaluate the expression `(+ 3 4)` | `(eval (quote (+ 3 4)))` | `((
 ... | `(eval '(+ 3 4))` _(alternative notation)_ |
 ...
 
-#### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-7.html).
+#### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/08/05/chapter-7.html).
 
 Exercise | Clojure | Scala
 :-------|:------|:------
@@ -175,7 +175,6 @@ ___TODO:___ explain, give exercises
 
 * What is a conditional?
 * exercise: implement and, or, not in terms of if-then-else
-* not useful: [KfK, Chapter 8: If (Emoji)](http://kids.klipse.tech/clojure/2016/08/05/chapter-8.html)
 
 ___Notes:___
 
