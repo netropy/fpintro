@@ -91,7 +91,7 @@ Further reading:
 
 * [language constructs of major Lisp dialects](http://hyperpolyglot.org/lisp)
 
-#### 2.0.4 Write list expressions: [exercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-4.html).
+#### 2.0.4 Write `list` expressions: [exercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-4.html).
 
 Exercise | Clojure | Scala
 :-------|:------|:------
