@@ -44,7 +44,44 @@ https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#207-write-bool
 
 https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#208-write-conditional-operator-expressions
 
-(Chpt 3)
+(Chpt 3.1)
+
+https://github.com/netropy/fpintro/blob/master/ch3_1_formulas_and_functions.md#311-define-and-evaluate-functions-excercise-kfk-chapter-6-functions-happy-birthday
+
+(Chpt 3.2)
+https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#321-define-and-test-a-function-mydouble-that-doubles-a-number
+
+https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#322-define-and-test-a-function-that-squares-a-number
+
+https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#323-define-and-test-a-function-that-doubles-the-square-of-a-number
+
+https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#324-define-and-test-a-function-that-squares-a-number-if-the-1st-operand-is-true-otherwise-doubles-the-number
+
+https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#325-test-the-languages-predefined-quotientremainder-operators
+
+https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#326-define-and-test-a-function-that-returnsgivesyields-a-list-of-the-quotient-and-remainder-of-the-division-of-2-integers
+
+https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#327-define-and-test-a-function-myeven-that-testtellsgives-whether-an-integer-number-is-even
+
+https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#328-define-and-test-a-function-myodd-that-tells-whether-an-integer-number-is-odd-in-terms-of-using-the-even-function
+
+(Chpt 3.3)
+https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#331-define-and-test-functions-incr-and-decr-that-increment-1-respectively-decrement--1-a-number-n
+
+https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#332-plot-the-evaluation-of-incr2-and-decr-1
+
+https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#333-define-and-test-a-function-that-decrements-a-number-n-if-n-is-positive-otherwise-returns-n-use-decr
+
+https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#334-plot-the-evaluation-of-decr_if_positive-1
+
+https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#335-plot-the-evaluation-of-decr_if_positive4
+
+https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#336-define-and-test-a-function-that-twice-increments-a-number-n-use-incr
+
+https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#337-plot-the-evaluation-of-incr_twice3
+
+
+
 
 [4.1.1 Define two functions ping(n) and pong(n) that call each other with an incremented argument.](ch4_1_recursive_calls.md#411-define-two-functions-pingn-and-pongn-that-call-each-other-with-an-incremented-argument)\
 [4.1.2 Run and plot the evaluation of ping(2).](ch4_1_recursive_calls.md#412-run-and-plot-the-evaluation-of-ping2)\
