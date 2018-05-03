@@ -58,6 +58,6 @@ ___Notes:___
 
 ------------
 
-[<-- previous page](https://github.com/netropy/fpintro/blob/master/ch0_preliminaries.md)
+[<-- previous page](README.md)
 
-[next page -->](https://github.com/netropy/fpintro/blob/master/ch2_expressions.md)
+[next page -->](/ch2_expressions.md)
