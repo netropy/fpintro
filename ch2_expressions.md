@@ -182,6 +182,6 @@ ___Notes:___
 
 -------
 
-[<-- previous](ch1_motivation.md)
+[<-- previous page](ch1_motivation.md)
 
-[--> next](ch3_0_functions.md)
+[--> next page](ch3_0_functions.md)
