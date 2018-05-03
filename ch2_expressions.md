@@ -1,4 +1,4 @@
-## 2. Expresssions
+## 2. Expressions
 
 ___TODO:___
 
