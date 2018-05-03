@@ -25,6 +25,27 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 
 ## Coding Exercises
 
+
+(Chpt 2.0)
+
+https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#201-write-arithmetic-expressions-excercise-kfk-chapter-1-what-is-computer-programming
+
+https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#202-write-nested-arithmetic-expressions-excercise-kfk-chapter-2-expressions-inside-expressions-inside-expressions
+
+https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#203-write-and-use-named-expressions-excercise-kfk-chapter-3-giving-names-to-expressions
+
+https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#204-write-list-expressions-excercise-kfk-chapter-4-evaluating-several-expressions
+
+https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#205-write-expressions-without-evaluating-them-excercise-kfk-chapter-5-please-tell-me-whats-your-name
+
+https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#206-write-comparison-operator-expressions-excercise-kfk-chapter-7-true-or-false-pinocchio
+
+https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#207-write-boolean-operator-expressions
+
+https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#208-write-conditional-operator-expressions
+
+(Chpt 3)
+
 [4.1.1 Define two functions ping(n) and pong(n) that call each other with an incremented argument.](ch4_1_recursive_calls.md#411-define-two-functions-pingn-and-pongn-that-call-each-other-with-an-incremented-argument)\
 [4.1.2 Run and plot the evaluation of ping(2).](ch4_1_recursive_calls.md#412-run-and-plot-the-evaluation-of-ping2)\
 [4.1.3 Define a function increase(n) that calls itself and then returns an incremented result.](ch4_1_recursive_calls.md#413-define-a-function-increasen-that-calls-itself-and-then-returns-an-incremented-result)\
