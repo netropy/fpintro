@@ -71,3 +71,9 @@ ___Notes:___
 
 Further reading:
 * <https://en.wikipedia.org/wiki/Cartesian_product>, <https://en.wikipedia.org/wiki/Tuple>
+
+-----------------
+
+[<-- previous page](ch3_0_functions.md)
+
+[--> next page](ch3_2_more_function_exercises.md)
