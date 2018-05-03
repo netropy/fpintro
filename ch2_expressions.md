@@ -175,8 +175,8 @@ ___TODO:___ explain, give exercises
 
 Exercise | Clojure | Scala
 :-------|:------|:------
-ask if not true equals ... | `...` | `...`
-ask if not false equals ... | `...` | `...`
+ask if not true equals false | `(= (not true) false) ; = true` | `(!true == false) // = `
+ask if not false equals false | `(= (not false) false) ; = false` | `(!false == false)`
 ask if not not true equals ... | `...` | `...`
 ask if not not false equals ... | `...` | `...`
 ask if true and true equals ... | `...` | `...`
