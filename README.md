@@ -1,11 +1,11 @@
 # fpintro
 Learning How to Program with Examples in Clojure and Scala
 
-This tutorial contains the excercises and notes of an introductory programming session with a high school student.
+This tutorial contains the exercises and notes of an introductory programming session with a high school student.
 
 While there are many websites and tools for ["getting kids excited about programming"](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming), we choose to try out this great tutorial: [Klipse for Kids](http://kids.klipse.tech).  Since this was a self-directed study on programming, this document carries many links to helpful articles from [Wikipedia](https://www.wikipedia.org/).
 
-We chose [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org) as the two languages to begin the learning process with a [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming) paradigm.  Starting with two languages has come quite naturally, since the student grew up bilingually ;-)  Clojure, as a modern LISP, is the language used on the "Klipse for Kids" website.  Doing the same coding excercises also in Scala, will later allow for a smooth incorporation of [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) concepts.
+We chose [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org) as the two languages to begin the learning process with a [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming) paradigm.  Starting with two languages has come quite naturally, since the student grew up bilingually ;-)  Clojure, as a modern LISP, is the language used on the "Klipse for Kids" website.  Doing the same coding exercises also in Scala, will later allow for a smooth incorporation of [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) concepts.
 
 See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0).
 
@@ -26,62 +26,34 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 ## Coding Exercises
 
 
-(Chpt 2.0)
 
-https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#201-write-arithmetic-expressions-excercise-kfk-chapter-1-what-is-computer-programming
+[2.0.1 Write arithmetic expressions: exercise KfK, chapter 1: What is computer programming?](ch2_expressions.md#201-write-arithmetic-expressions-exercise-kfk-chapter-1-what-is-computer-programming)\
+[2.0.2 Write nested arithmetic expressions: exercise KfK, chapter 2: Expressions inside Expressions inside Expressions.](ch2_expressions.md#202-write-nested-arithmetic-expressions-exercise-kfk-chapter-2-expressions-inside-expressions-inside-expressions)\
+[2.0.3 Write and use named expressions: exercise KfK, chapter 3: Giving Names to Expressions.](ch2_expressions.md#203-write-and-use-named-expressions-exercise-kfk-chapter-3-giving-names-to-expressions)\
+[2.0.4 Write list expressions: exercise KfK, chapter 4: Evaluating Several Expressions.](ch2_expressions.md#204-write-list-expressions-exercise-kfk-chapter-4-evaluating-several-expressions)\
+[2.0.5 Write expressions without evaluating them: exercise KfK, chapter 5: Please, tell me "what's your name?".](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name)\
+[2.0.6 Write comparison operator expressions: exercise KfK, chapter 7: True or False (Pinocchio).](ch2_expressions.md#206-write-comparison-operator-expressions-exercise-kfk-chapter-7-true-or-false-pinocchio)\
+[2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)\
+[2.0.8 Write conditional operator expressions.](ch2_expressions.md#208-write-conditional-operator-expressions)
 
-https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#202-write-nested-arithmetic-expressions-excercise-kfk-chapter-2-expressions-inside-expressions-inside-expressions
+[ 3.1.1 Define and evaluate functions: exercise KfK, chapter 6: Functions (Happy birthday).](ch3_1_formulas_and_functions.md#311-define-and-evaluate-functions-exercise-kfk-chapter-6-functions-happy-birthday)
 
-https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#203-write-and-use-named-expressions-excercise-kfk-chapter-3-giving-names-to-expressions
+[3.2.1 Define and test a function `mydouble` that doubles a number.](ch3_2_more_function_exercises.md#321-define-and-test-a-function-mydouble-that-doubles-a-number)\
+[3.2.2 Define and test a function that squares a number](ch3_2_more_function_exercises.md#322-define-and-test-a-function-that-squares-a-number)\
+[3.2.3 Define and test a function that doubles the square of a number.](ch3_2_more_function_exercises.md#323-define-and-test-a-function-that-doubles-the-square-of-a-number)\
+[3.2.4 Define and test a function that squares a number if the 1st operand is true, otherwise doubles the number.](ch3_2_more_function_exercises.md#324-define-and-test-a-function-that-squares-a-number-if-the-1st-operand-is-true-otherwise-doubles-the-number)\
+[3.2.5 Test the language's predefined quotient/remainder operators.](ch3_2_more_function_exercises.md#325-test-the-languages-predefined-quotientremainder-operators)\
+[3.2.6 Define and test a function that returns a list of the quotient and remainder of the division of 2 integers.](ch3_2_more_function_exercises.md#326-define-and-test-a-function-that-returns-a-list-of-the-quotient-and-remainder-of-the-division-of-2-integers)\
+[3.2.7 Define and test a function `myeven?` that test/tells/gives whether an integer number is even.](ch3_2_more_function_exercises.md#327-define-and-test-a-function-myeven-that-testtellsgives-whether-an-integer-number-is-even)\
+[3.2.8 Define and test a function `myodd?` that tells whether an integer number is odd in terms of using the "...even..." function.](ch3_2_more_function_exercises.md#328-define-and-test-a-function-myodd-that-tells-whether-an-integer-number-is-odd-in-terms-of-using-the-even-function)
 
-https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#204-write-list-expressions-excercise-kfk-chapter-4-evaluating-several-expressions
-
-https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#205-write-expressions-without-evaluating-them-excercise-kfk-chapter-5-please-tell-me-whats-your-name
-
-https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#206-write-comparison-operator-expressions-excercise-kfk-chapter-7-true-or-false-pinocchio
-
-https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#207-write-boolean-operator-expressions
-
-https://github.com/netropy/fpintro/blob/master/ch2_expressions.md#208-write-conditional-operator-expressions
-
-(Chpt 3.1)
-
-https://github.com/netropy/fpintro/blob/master/ch3_1_formulas_and_functions.md#311-define-and-evaluate-functions-excercise-kfk-chapter-6-functions-happy-birthday
-
-(Chpt 3.2)
-https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#321-define-and-test-a-function-mydouble-that-doubles-a-number
-
-https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#322-define-and-test-a-function-that-squares-a-number
-
-https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#323-define-and-test-a-function-that-doubles-the-square-of-a-number
-
-https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#324-define-and-test-a-function-that-squares-a-number-if-the-1st-operand-is-true-otherwise-doubles-the-number
-
-https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#325-test-the-languages-predefined-quotientremainder-operators
-
-https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#326-define-and-test-a-function-that-returnsgivesyields-a-list-of-the-quotient-and-remainder-of-the-division-of-2-integers
-
-https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#327-define-and-test-a-function-myeven-that-testtellsgives-whether-an-integer-number-is-even
-
-https://github.com/netropy/fpintro/blob/master/ch3_2_more_function_excercises.md#328-define-and-test-a-function-myodd-that-tells-whether-an-integer-number-is-odd-in-terms-of-using-the-even-function
-
-(Chpt 3.3)
-https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#331-define-and-test-functions-incr-and-decr-that-increment-1-respectively-decrement--1-a-number-n
-
-https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#332-plot-the-evaluation-of-incr2-and-decr-1
-
-https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#333-define-and-test-a-function-that-decrements-a-number-n-if-n-is-positive-otherwise-returns-n-use-decr
-
-https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#334-plot-the-evaluation-of-decr_if_positive-1
-
-https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#335-plot-the-evaluation-of-decr_if_positive4
-
-https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#336-define-and-test-a-function-that-twice-increments-a-number-n-use-incr
-
-https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_functions.md#337-plot-the-evaluation-of-incr_twice3
-
-
-
+[3.3.1 Define and test functions `incr` and `decr` that increment (+1) respectively decrement (-1) a number `n`.](ch3_3_plotting_the_evaluation_of_functions.md#331-define-and-test-functions-incr-and-decr-that-increment-1-respectively-decrement--1-a-number-n)\
+[3.3.2 Plot the evaluation of `incr(2)` and `decr(-1)`.](ch3_3_plotting_the_evaluation_of_functions.md#332-plot-the-evaluation-of-incr2-and-decr-1)\
+[3.3.3 Define and test a function that decrements a number `n` if `n` is positive, otherwise returns `n` (use `decr`).](ch3_3_plotting_the_evaluation_of_functions.md#333-define-and-test-a-function-that-decrements-a-number-n-if-n-is-positive-otherwise-returns-n-use-decr)\
+[3.3.4 Plot the evaluation of `decr_if_positive(-1)`.](ch3_3_plotting_the_evaluation_of_functions.md#334-plot-the-evaluation-of-decr_if_positive-1)\
+[3.3.5 Plot the evaluation of `decr_if_positive(4)`.](ch3_3_plotting_the_evaluation_of_functions.md#335-plot-the-evaluation-of-decr_if_positive4)\
+[3.3.6 Define and test a function that twice increments a number `n` (use `incr`).](ch3_3_plotting_the_evaluation_of_functions.md#336-define-and-test-a-function-that-twice-increments-a-number-n-use-incr)\
+[3.3.7 Plot the evaluation of `incr_twice(3)`.](ch3_3_plotting_the_evaluation_of_functions.md#337-plot-the-evaluation-of-incr_twice3)
 
 [4.1.1 Define two functions ping(n) and pong(n) that call each other with an incremented argument.](ch4_1_recursive_calls.md#411-define-two-functions-pingn-and-pongn-that-call-each-other-with-an-incremented-argument)\
 [4.1.2 Run and plot the evaluation of ping(2).](ch4_1_recursive_calls.md#412-run-and-plot-the-evaluation-of-ping2)\
@@ -91,7 +63,6 @@ https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_
 [4.1.6 Run and plot the evaluation of grow(2).](ch4_1_recursive_calls.md#416-run-and-plot-the-evaluation-of-grow2)\
 [4.1.7 Define a function count_down(n) that calls itself with a decremented argument until zero, then returns zero.](ch4_1_recursive_calls.md#417-define-a-function-count_downn-that-calls-itself-with-a-decremented-argument-until-zero-then-returns-zero)\
 [4.1.8 Run and plot the evaluation of count_down(2).](ch4_1_recursive_calls.md#418-run-and-plot-the-evaluation-of-count_down2)
-
 
 [4.2.1 Continue the sequence in which each number is the sum of all previous numbers starting from 0.](ch4_2_recursive_sum.md#421-continue-the-sequence-in-which-each-number-is-the-sum-of-all-previous-numbers-starting-from-0)\
 [4.2.2 Express sum(n), which computes the sum of 0 + ... + n, in terms of sum(n-1).](ch4_2_recursive_sum.md#422-express-sumn-which-computes-the-sum-of-0----n-in-terms-of-sumn-1)\
@@ -105,7 +76,7 @@ https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_
 [4.3.3 Define the function factorial(n) in terms of factorial(n-1) and add a simple unit test.](ch4_3_recursive_factorial.md#433-define-the-function-factorialn-in-terms-of-factorialn-1-and-add-a-simple-unit-test)\
 [4.3.4 Plot the evaluation of factorial(5).](ch4_3_recursive_factorial.md#434-plot-the-evaluation-of-factorial5)
 
-[4.4.1 Find a recursive definition for the addition of two numbers m, n.](https://github.com/netropy/fpintro/blob/master/ch4_4_recursive_add.md#441-find-a-recursive-definition-for-the-addition-of-two-numbers-m-n)\
+[4.4.1 Find a recursive definition for the addition of two numbers m, n.](ch4_4_recursive_add.md#441-find-a-recursive-definition-for-the-addition-of-two-numbers-m-n)\
 [4.4.2 Define a recursive function add(m, n) with a simple unit test.](ch4_4_recursive_add.md#442-define-a-recursive-function-addm-n-with-a-simple-unit-test)\
 [4.4.3 Plot the evaluation of add(3, 2).](ch4_4_recursive_add.md#443-plot-the-evaluation-of-add3-2)\
 [4.4.4 Make add robust by extending it to negative arguments.](ch4_4_recursive_add.md#444-make-add-robust-by-extending-it-to-negative-arguments)\
@@ -115,11 +86,10 @@ https://github.com/netropy/fpintro/blob/master/ch3_3_plotting_the_evaluation_of_
 [4.4.8 Plot the evaluation of tail-recursive add(3, 2).](ch4_4_recursive_add.md#448-plot-the-evaluation-of-tail-recursive-add3-2)\
 [4.4.9 Make the tail-recursive version of add robust by extending it to negative arguments.](ch4_4_recursive_add.md#449-make-the-tail-recursive-version-of-add-robust-by-extending-it-to-negative-arguments)
 
-
 [4.5.1 Find a recursive definition for the addition of two numbers m, n.](ch4_5_recursive_multiply.md#451-find-a-recursive-definition-for-the-addition-of-two-numbers-m-n)\
 [4.5.2 Define a recursive function multiply(m, n) with a simple unit test.](ch4_5_recursive_multiply.md#452-define-a-recursive-function-multiplym-n-with-a-simple-unit-test)\
 [4.5.3 Plot the evaluation of multiply(3,5).](ch4_5_recursive_multiply.md#453-plot-the-evaluation-of-multiply35)\
-[4.5.4 Make multiply robust by extending it to negative arguments.](https://github.com/netropy/fpintro/blob/master/ch4_5_recursive_multiply.md#454-make-multiply-robust-by-extending-it-to-negative-arguments)\
+[4.5.4 Make multiply robust by extending it to negative arguments.](ch4_5_recursive_multiply.md#454-make-multiply-robust-by-extending-it-to-negative-arguments)\
 [4.5.5 Reformulate multiply to make it tail-recursive and handling negative arguments.](ch4_5_recursive_multiply.md#455-reformulate-multiply-to-make-it-tail-recursive-and-handling-negative-arguments)\
 [4.5.6 Plot the evaluation of tail-recursive multiply(2,5).](ch4_5_recursive_multiply.md#456-plot-the-evaluation-of-tail-recursive-multiply25)
 

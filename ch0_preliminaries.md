@@ -18,7 +18,7 @@ ___Notes:___
 * Binary file formats make collaboration difficult.  Tools may not be available on all "operating systems", may costs money.
 * A binary file format can fall out of fashion or become "unsupported", creating a problem for long-term archival of texts.
 * Plain text files can be written using a simple "text editor", easily exchanged, and viewed on different systems.
-* file formats of above excercise:
+* file formats of above exercise:
   - .doc is binary: `\320\317^Q\340\241\261^Z\341^@^@^@^@`
   - .rtf is plain text: `{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400 ... this is a sample text}`
   - .xml is plain text: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>...</w:body></w:wordDocument>`

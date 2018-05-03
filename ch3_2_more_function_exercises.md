@@ -1,4 +1,4 @@
-### 3.2 More Function Excercises
+### 3.2 More Function Exercises
 
 #### 3.2.1 Define and test a function `mydouble` that doubles a number.
 
@@ -84,7 +84,7 @@ Hint: also give arity+type(s), <https://en.wikipedia.org/wiki/Remainder>
 13 % 4 // = 1
 ```
 
-#### 3.2.6 Define and test a function that returns/gives/yields a list of the quotient and remainder of the division of 2 integers.
+#### 3.2.6 Define and test a function that returns a list of the quotient and remainder of the division of 2 integers.
 
 Hint: also give arity+type(s).
 

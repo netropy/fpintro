@@ -41,9 +41,9 @@ ___Notes:___
 
 * <https://en.wikipedia.org/wiki/Assertion_(software_development)>
 
-####  3.1.1 Define and evaluate functions: [excercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-6.html).
+####  3.1.1 Define and evaluate functions: [exercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-6.html).
 
-Excercise | Clojure | Scala
+Exercise | Clojure | Scala
 :-------|:------|:------
 A: write a function hours->minutes transforming hours into minutes | `(def hours-to-minutes #(* % 60))` | `val hoursToMinutes = (h :Int) => h * 60`
 ... | `(def hours-to-minutes (fn [h] (* h 60)))` | `val hoursToMinutes: Int => Int = h => h * 60`

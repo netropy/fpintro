@@ -1,6 +1,6 @@
 ### 4.5 Recursive Function `multiply`
 
-Similar to what was remarked about addition could be said about multiplication.  Yet, it makes another good excercise in thinking recursively :-)
+Similar to what was remarked about addition could be said about multiplication.  Yet, it makes another good exercise in thinking recursively :-)
 
 #### 4.5.1 Find a recursive definition for the addition of two numbers `m`, `n`.
 

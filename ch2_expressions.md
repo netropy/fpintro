@@ -14,9 +14,9 @@ Before we start:
 
 ![](https://imgs.xkcd.com/comics/lisp_cycles.png)
 
-#### 2.0.1 Write arithmetic expressions: [excercise KfK, chapter 1: What is computer programming?](http://kids.klipse.tech/clojure/2016/05/03/programming-kids-1.html).
+#### 2.0.1 Write arithmetic expressions: [exercise KfK, chapter 1: What is computer programming?](http://kids.klipse.tech/clojure/2016/05/03/programming-kids-1.html)
 
-Excercise | Clojure | Scala
+Exercise | Clojure | Scala
 :-------|:------|:------
 write a program that calculates 7*8 | `(* 7 8)` | `7 * 8`
 write a program that calculates 2\*3\*4\*5 | `(* 2 3 4 5)` | `2*3*4*5`
@@ -39,9 +39,9 @@ ___TODO:___
 
 Further Reading: [prefix notation](https://en.wikipedia.org/wiki/Polish_notation), [infix notation](https://en.wikipedia.org/wiki/Infix_notation), [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
 
-#### 2.0.2 Write nested arithmetic expressions: [excercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
+#### 2.0.2 Write nested arithmetic expressions: [exercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
 
-Excercise | Clojure | Scala
+Exercise | Clojure | Scala
 :-------|:------|:------
 add 10 to 12 and multiply the result by 3 | `(* (+ 10 12) 3)` | `(10 + 12) * 3`
 add 7 to 9 and multiply the result by 5 | `(* (+ 7 9) 5)` | `(7 + 9) * 5`
@@ -64,9 +64,9 @@ ___TODO:___
 
 Further reading: [operator precedence](https://en.wikipedia.org/wiki/Order_of_operations), [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation), [pocket calculator with postfix notation without parenthesis](https://en.wikipedia.org/wiki/HP-35)
 
-#### 2.0.3 Write and use named expressions: [excercise KfK, chapter 3: Giving Names to Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-3.html).
+#### 2.0.3 Write and use named expressions: [exercise KfK, chapter 3: Giving Names to Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-3.html).
 
-Excercise | Clojure | Scala
+Exercise | Clojure | Scala
 :-------|:------|:------
 calculate (4 + 7 + 8)\*3 + (4 + 7 + 8)\*7 + (4 + 7 + 8)\*9 | `(def a ( + 4 7 8)` | `val a = 4 + 7 + 8`
 ...     | `(+ (* a 3) (* a 7) (* a 9))` | `a * 3 + a * 7 + a * 9`
@@ -91,9 +91,9 @@ Further reading:
 
 * [language constructs of major Lisp dialects](http://hyperpolyglot.org/lisp)
 
-#### 2.0.4 Write list expressions: [excercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-4.html).
+#### 2.0.4 Write list expressions: [exercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-4.html).
 
-Excercise | Clojure | Scala
+Exercise | Clojure | Scala
 :-------|:------|:------
 display 2*3, 2*4 and 2*5 | `(list (* 2 3) (* 2 4) (* 2 5))` | `List(2 * 3, 2 * 4, 2 * 5)`
 display the numbers 1, 2, 3, 4 and 9 | `(list 1 2 3 4 9)` | `List(1, 2, 3, 4, 9)`
@@ -135,9 +135,9 @@ sets vs lists | example
 sets: no order, no multiples |  { 1 2 } = { 2 1 } = { 2 2 1 }
 lists: no order, multiples |  (list 2 1) != (list 1 2) != (list 1 2 2)
 
-#### 2.0.5 Write expressions without evaluating them: [excercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-5.html).
+#### 2.0.5 Write expressions without evaluating them: [exercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-5.html).
 
-Excercise | Clojure | Scala
+Exercise | Clojure | Scala
 :-------|:------|:------
 form the expression `(+ 3 4)` exactly as it is without evaluating it | `(quote (+ 3 4))` | `() => 3 + 4`
 ... | `'(+ 3 4)` _(alternative notation)_ |
@@ -145,9 +145,9 @@ form and then evaluate the expression `(+ 3 4)` | `(eval (quote (+ 3 4)))` | `((
 ... | `(eval '(+ 3 4))` _(alternative notation)_ |
 ...
 
-#### 2.0.6 Write comparison operator expressions: [excercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-7.html).
+#### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-7.html).
 
-Excercise | Clojure | Scala
+Exercise | Clojure | Scala
 :-------|:------|:------
 ask if 7 times 6 equals 40 | `(= (* 7 6) 40)` | ` 7 * 6 == 40 `
 ask if 7 times 6 is less/equal than 40 | `(<= (* 7 6) 40)` | ` 7 * 6 <= 40 `
@@ -160,7 +160,7 @@ ___TODO:___ explain
 
 #### 2.0.7 Write boolean operator expressions.
 
-___TODO:___ explain, give excercises
+___TODO:___ explain, give exercises
 
 * What is a conditional?
 * exercise: implement and, or, not in terms of nand, xor, and, or, not
@@ -171,7 +171,7 @@ ___Notes:___
 
 #### 2.0.8 Write conditional operator expressions.
 
-___TODO:___ explain, give excercises
+___TODO:___ explain, give exercises
 
 * What is a conditional?
 * exercise: implement and, or, not in terms of if-then-else

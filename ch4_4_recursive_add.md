@@ -1,5 +1,5 @@
 ### 4.4 Recursive Function `add`
-Obviously, adding two numbers is not an exciting calculation.  As a primitive operation offered by any CPU, it is "built into hardware".  Thus, it is inefficient to re-define an `add` operation "in software" as a recursive function.  However, it makes a good excercise in thinking recursively :-)
+Obviously, adding two numbers is not an exciting calculation.  As a primitive operation offered by any CPU, it is "built into hardware".  Thus, it is inefficient to re-define an `add` operation "in software" as a recursive function.  However, it makes a good exercise in thinking recursively :-)
 
 #### 4.4.1 Find a recursive definition for the addition of two numbers `m`, `n`.
 

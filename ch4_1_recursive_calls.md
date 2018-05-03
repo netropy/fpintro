@@ -138,4 +138,4 @@ Function `countDown` keeps calling itself with a decremented argument until it r
 ___Notes:___
 
 * Unlike [_circular reasoning_](https://en.wikipedia.org/wiki/Circular_reasoning), recursion with termination meaningfully describes computations.
-* Subsequent excercises explore how to find a recursive description of a computation, the choice of the termination conditions, and the reformulation as a tail-recursive version.
+* Subsequent exercises explore how to find a recursive description of a computation, the choice of the termination conditions, and the reformulation as a tail-recursive version.
