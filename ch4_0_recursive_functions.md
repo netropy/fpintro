@@ -1,4 +1,4 @@
-## 4. Recursive Functions
+## 4.0 Recursive Functions
 
 In the previous chapter, we've learned how to
 
@@ -22,3 +22,9 @@ Before we start:
 [4.4 Recursive Function `add`](ch4_4_recursive_add.md)
 
 [4.5 Recursive Function `multiply`](ch4_5_recursive_multiply.md)
+
+---------------
+
+[<-- previous page](ch3_3_plotting_the_evaluation_of_functions.md)
+
+[--> next page](ch4_1_recursive_calls.md)
