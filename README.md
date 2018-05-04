@@ -45,7 +45,9 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 [3.2.5 Test the language's predefined quotient/remainder operators.](ch3_2_more_function_exercises.md#325-test-the-languages-predefined-quotientremainder-operators)\
 [3.2.6 Define and test a function that returns a list of the quotient and remainder of the division of 2 integers.](ch3_2_more_function_exercises.md#326-define-and-test-a-function-that-returns-a-list-of-the-quotient-and-remainder-of-the-division-of-2-integers)\
 [3.2.7 Define and test a function `is_even` that tells whether an integer number is even.](ch3_2_more_function_exercises.md#327-define-and-test-a-function-iseven-that-tells-whether-an-integer-number-is-even)\
-[3.2.8 Define and test a function `is_odd` that tells whether an integer number is odd in terms of using the "...even..." function.](ch3_2_more_function_exercises.md#328-define-and-test-a-function-isodd-that-tells-whether-an-integer-number-is-odd-in-terms-of-using-the-even-function)
+[3.2.8 Define and test a function `is_odd` that tells whether an integer number is odd in terms of using the "...even..." function.](ch3_2_more_function_exercises.md#328-define-and-test-a-function-isodd-that-tells-whether-an-integer-number-is-odd-in-terms-of-using-the-even-function)\
+[3.2.9 Define predicates `not0` `and0`, `or0`, `nand0`, `xor0`, for the logical operators; use the conditional operator only.](ch3_2_more_function_exercises.md#329-define-predicates-not0-and0-or0-nand0-xor0-for-the-logical-operators-use-the-conditional-operator-only)\
+[3.2.10 Test the predicates `not0` `and0`, `or0`, `xor0`, `nand0`.](ch3_2_more_function_exercises.md#3210-test-the-predicates-not0-and0-or0-xor0-nand0)
 
 [3.3.1 Define and test functions `incr` and `decr` that increment (+1) respectively decrement (-1) a number `n`.](ch3_3_plotting_the_evaluation_of_functions.md#331-define-and-test-functions-incr-and-decr-that-increment-1-respectively-decrement--1-a-number-n)\
 [3.3.2 Plot the evaluation of `incr(2)` and `decr(-1)`.](ch3_3_plotting_the_evaluation_of_functions.md#332-plot-the-evaluation-of-incr2-and-decr-1)\
