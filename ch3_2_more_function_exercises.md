@@ -167,7 +167,7 @@ isOdd(3) // = true
 isOdd(8) // = false
 ```
 
-#### 3.2.9 Define predicates `not0` `and0`, `or0`, `xor0`, `nand0` for the logical operators; use the conditional operator only.
+#### 3.2.9 Define predicates `not0` `and0`, `or0`, `nand0`, `xor0`, for the logical operators; use the conditional operator only.
 
 Hints:
 
@@ -176,13 +176,31 @@ Hints:
 
 
 ```clojure
+(def not0 #(if %1 false true))
+
 (def and0 #(if %1 %2 false)) 
+
+(def or0 #(if %1 true %2))
+
+(def nand0 #(if %1 (if %2 false true) true))
+
+(def xor0 #(if (= %1 %2) false true))
 ```
+  --> `(def xor0 #(not= %1 %2))` (This is also another version of the answer, in a shorter and more compact manner.
+
 
 #### 3.2.10 Test the predicates `not0` `and0`, `or0`, `xor0`, `nand0`.
 
 ```clojure
-(and0 true false) ; = false
+(assert (= (not0 true) false))
+
+(assert (= (and0 true false) false))
+
+(assert (= (or0 true false) true))
+
+(assert (= (nand0 true false) true))
+
+(assert (= (xor0 true false) true))
 ```
 --------------------
 
