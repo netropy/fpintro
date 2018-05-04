@@ -125,7 +125,7 @@ assert(square_or_double(false, 3) == 6)
 
 #### 3.2.5 Test the language's predefined quotient/remainder operators.
 
-Hint: Also give arity+type(s), <https://en.wikipedia.org/wiki/Remainder>
+Hint: Also give arity+type(s), <https://en.wikipedia.org/wiki/Remainder>.
 
 ```clojure
 ; arity = 2, type(s) = (Integer, Integer) -> Integer
@@ -176,13 +176,11 @@ assert(isEven(5) == false)
 ___Notes:___
 
 * `even?` would be the preferred f in Clojure.
+* The unit tests could be shortened to `assert(isEven(4))` and `assert(!isEven(5))`.
 
 #### 3.2.8 Define and test a predicate `is_odd` that tells whether an integer number is odd in terms of the `is_even` function.
 
-Hint:
-
-* Also give arity+type(s).
-* For simplicity, disregard strictness, see [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions).
+Hint: Also give arity+type(s). For simplicity, disregard strictness, see [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions).
 
 ```
 ; arity = 1, type(s) = Integer -> Boolean
@@ -200,10 +198,7 @@ assert(isOdd(8) == false)
 
 #### 3.2.9 Define predicates `not0` `and0`, `or0`, `xor0`, `nand0`, for the logical operators; use the conditional operator only.
 
-Hints:
-
-* See the logical operators' [truth tables](https://en.wikipedia.org/wiki/Truth_table).
-* For simplicity, disregard strictness, see [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions).
+Hints: See the logical operators' [truth tables](https://en.wikipedia.org/wiki/Truth_table). For simplicity, disregard strictness, see [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions).
 
 ```clojure
 (def not0 #(if %1 false true))
