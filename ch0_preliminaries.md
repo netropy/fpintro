@@ -1,6 +1,6 @@
 ## 0. Preliminaries: Writing Text, the Markdown Language, the Scala and Clojure Language Shells (REPL)
 
-Here, the bare minimum what one needs to know about
+Here, the bare minimum of what one needs to know:
 
 * how to write a text document like this one
 * how to run Clojure and Scala code for the exercises.
