@@ -1,36 +1,39 @@
 ### 3.1 Formulas and Functions
 
-___TODO:___ explain, give example
+Most of the time, we want to write a calculation not with fixed, "hard-coded" numbers but in a general form using [variables](https://en.wikipedia.org/wiki/Variable_(mathematics)), like `(x + y) * z`.  In computing and other areas of science, this is often called a [formula](https://en.wikipedia.org/wiki/Formula).  Writing computations as formulas has several advantages, but mainly:
 
-* add links to: lambda calculus, lambda operator in lisp-like languages
-* What is a function, formula, parametrized expression, anonymous function, lambda?
+1) The abstract form highlights the essence of the computation in a concise way.
+2) A formula may be given a name, under which it then can be used (and discussed).
+3) A formula can be "applied" by substituting numbers for variable names.
 
-concept | meaning | example
-:---|:---|:---
-anonymous function ("formula") | a calculation that has one or more variables | `x -> x + 3`
-function definition | naming a formula, giving it a name like `f` | `f(x) = x + 3`
-application | evaluating a function with a value for each variable(s) | `f(2)`
+In computing (and mathematics or logic), the corresponding technical terms for working with formulas are:
 
-definition/application  |  Math Notation |  Lisp-like languages
-:----|:----|:----
-def  | `a = 3`               | `(def a 3)`
-def  | `f(x) = x + 4`        | `(def f #(+ % 4))`
-def  | `g: x -> x + 5`       | `(def g #(+ % 5))`
-appl | `f(a) = 3 + 4 = 7`    | `(f a) => 7`
-appl | `f(2) = 2 + 4 = 6`    | `(f 2) => 6`
-appl | `f(9) = 9 + 4 = 13`   | `(f 9) => 13`
-appl | `(x -> x + 4)(2)`     | `(#(* x 3) 2) => 6`
-appl | `g(a) = 3 + 5 = 8`    | `(g a) => 8`
+* formula: [anonymous function](https://en.wikipedia.org/wiki/Anonymous_function), function literal, lambda abstraction, or [lambda expression](https://en.wikipedia.org/wiki/Lambda_calculus)
+* writing a formula: [function definition](https://en.wikipedia.org/wiki/Function_(mathematics)), [user-defined operators](https://en.wikipedia.org/wiki/Operator_(computer_programming)), parametrization, or [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
+* appling a formula: [function application](https://en.wikipedia.org/wiki/Function_application), [function call](https://en.wikipedia.org/wiki/Subroutine), or [function evaluation](https://en.wikipedia.org/wiki/Evaluation_strategy)
+* variables: [parameters](https://en.wikipedia.org/wiki/Parameter_(computer_programming)) or formal parameters
+* numbers: [arguments](https://en.wikipedia.org/wiki/Argument_of_a_function), [operands](https://en.wikipedia.org/wiki/Operand), actual parameters, or (in general) [values](https://en.wikipedia.org/wiki/Value_(computer_science))
+
+Examples:
+
+definition/application | Math Notation | Clojure (et.al.) | Scala (et.al.)
+:----|:----|:----|:----
+def | `a = 3`              | `(def a 3)`             | `val a = 3`
+def | `f(x) = x + 4`       | `(def f #(+ % 4))`      | `def f(x: Int) = x + 4`
+def | `g: x -> x + 5`      | `(defn g [x] (+ x 5))`  | `val g: Int => Int = x => x + 5`
+app | `f(a) = 3 + 4 = 7`   | `(f a)         ; => 7`  | `f(a)                    // => 7`
+app | `f(2) = 2 + 4 = 6`   | `(f 2)         ; => 6`  | `f(2)                    // => 6`
+app | `f(9) = 9 + 4 = 13`  | `(f 9)         ; => 13` | `f(9)                    // => 13`
+app | `(x -> x + 4)(2)`    | `(#(* % 3) 2)  ; => 6`  | `((x: Int) => x + 4)(2)  // => 6`
+app | `g(a) = 3 + 5 = 8`   | `(g a)         ; => 8`  | `g(a)                    // => 8`
 
 ___Notes___:
 
-* the name of a function should capture the meaning of its calculation
-* the "arity" of a function (or formula) is the number of its variables (or parameters)
-* the parameters of a function (or formula) may have different types, like Boolean, Integer, String
-* <https://en.wikipedia.org/wiki/Function_(mathematics)>,
-  <https://en.wikipedia.org/wiki/Subroutine>,
-  <https://en.wikipedia.org/wiki/Anonymous_function>
-* <https://en.wikipedia.org/wiki/Letter_case#Special_case_styles>, <https://en.wikipedia.org/wiki/Camel_case>, <https://en.wikipedia.org/wiki/Snake_case>
+* Some programming languages offer multiple notations of varying brevity by which an anonymous or named function can be defined.
+* Functions should be given a name that's short yet meaningful (chosing a good name can be a task in itself).
+* Programming languages, developers, and projects have conventions about how to form composite names, like ["kebab case"](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles), ["snake case"](https://en.wikipedia.org/wiki/Snake_case), or ["camel case"](https://en.wikipedia.org/wiki/Camel_case)
+* The [arity](https://en.wikipedia.org/wiki/Arity) of a function (or formula) is the number of its parameters
+* The [type signature](https://en.wikipedia.org/wiki/Type_signature) of a function (or formula) lists the [data types](https://en.wikipedia.org/wiki/Data_type) of the parameters and the result.
 
 ####  3.1.1 Define and evaluate functions: [exercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/07/30/chapter-6.html).
 
