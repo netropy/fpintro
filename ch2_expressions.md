@@ -13,7 +13,7 @@ In summary, _expressions_ ...
 
 In Lisp-based languages, expressions (or so-called _s-expressions_, _sexprs_, or _sexps_ for [symbolic expressions](https://en.wikipedia.org/wiki/S-expression)) take the form of a _list_, typically, with an operator as the 1st element followed by zero or more operands `( operator operands ... operands )`.
 
-After the coding excercises in this chapter, this cartoon will become clearer ;-)
+After having done the coding excercises in this chapter, this cartoon will become clearer  ;-)
 
 ![](https://imgs.xkcd.com/comics/lisp_cycles.png)
 
@@ -63,11 +63,10 @@ ___Notes:___
 * Above expression can be written with operators only taking a predetermined amount of operands (like 2 operands for + or \*): for example, `(* (+ 7 9) (+ 3 8 9))` can be rewritten as `(* (+ 7 9) (+ (+ 3 8) 9))`.
 * Under a predetermined number of operands, parenthesis may be dropped, since the order of operations is unambigous: `(* (+ 7 9) (+ (+ 3 8) 9))` same as `* + 7 9 + + 3 8 9` (prefix notation) or `3 8 + 9 + 7 9 + *` (postfix notation).
 
-___TODO:___
+___Further reading:___
 
-* how to compose nested expressions
-
-Further reading: [operator precedence](https://en.wikipedia.org/wiki/Order_of_operations), [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation), [pocket calculator with postfix notation without parenthesis](https://en.wikipedia.org/wiki/HP-35)
+* [Operator Precedence](https://en.wikipedia.org/wiki/Order_of_operations), 
+* [Postfix Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation), [pocket calculator with Postfix Notation without Parenthesis](https://en.wikipedia.org/wiki/HP-35)
 
 #### 2.0.3 Write and use named expressions: [exercise KfK, chapter 3: Giving Names to Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-3.html).
 
@@ -182,13 +181,11 @@ ___Notes:___
 
 #### 2.0.7 Write boolean operator expressions.
 
-___TODO:___ explain
-
-* exercise: implement and, or, not in terms of nand, xor, and, or, not
+* Exercise: implement and, or, not in terms of nand, xor, and, or, not
 
 The [Boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type) consists of just two values `true` and `false`.
 
-Expressions yielding a Boolean value can be combined by the logical operators _not_, _and_, _or_ (among others).  How these operators "work" is easily seen by their so-called [_truth table_](https://en.wikipedia.org/wiki/Truth_table), which shows the 2 respectively 4 combinations of `true`/`false` for their operands.
+Expressions yielding a Boolean value can be combined by the logical operators such as _not_, _and_, _or_ .  How these operators "work" is easily seen by the so-called [_truth tables_](https://en.wikipedia.org/wiki/Truth_table), which shows the 2, respectively 4 combinations of `true`/`false` for their operands.
 
 Form the expressions below and compare them to `true` or `false` so that the result is `true` ...
 
@@ -208,7 +205,7 @@ false or false | `(= (or false false) false)`) | `(false \|\| false) == false`
 ___Notes:___
 
 * The `&&` and `||` operators in Scala (and other languages) have lower precedence than `==` or `!=`. 
-The round brackets are therefore needed in the code examples here.  Otherwise, `false && false == false`, for example, would be inferred as `false && (false == false)` yielding `false`.
+The round brackets are therefore needed in the code examples here.  Otherwise, `false && false == false`, for example, would be inferred as `false && (false == false)` yielding `false`. The correct way to code this expression would be as follows: `(false && false) == false`, in this case yielding `true`, 
 
 ___Further reading:___
 
