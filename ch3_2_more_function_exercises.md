@@ -31,7 +31,7 @@ An [_assertion_](<https://en.wikipedia.org/wiki/Assertion_(software_development)
     AssertionError Assert failed: (not= 1 1)  user$eval1760.invokeStatic (:1)
 ```
 
-Assertions are therefore a simple tool for _unit-testing_(https://en.wikipedia.org/wiki/Unit_testing) the correctness of a function: placing the function call with the expected result within an `assert`.
+Assertions are therefore a simple tool for [unit-testing](https://en.wikipedia.org/wiki/Unit_testing) the correctness of a function: placing the function call with the expected result within an `assert`.
 
 #### Conditionals.
 
