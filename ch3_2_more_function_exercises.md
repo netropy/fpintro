@@ -185,8 +185,10 @@ Hints:
 (def nand0 #(if %1 (if %2 false true) true))
 
 (def xor0 #(if (= %1 %2) false true))
-  --> `(def xor0 #(not= %1 %2))` (This is also another version of the answer, in a shorter and more compact manner.
 ```
+___Notes:___
+
+* An even more compact version of the function `xor0` would be: `(def xor0 #(not= %1 %2))`. 
 
 #### 3.2.10 Test the predicates `not0` `and0`, `or0`, `xor0`, `nand0`.
 
