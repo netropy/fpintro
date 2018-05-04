@@ -1,6 +1,6 @@
 ### 3.2 Predicates, Assertions, Conditionals, and More Function Exercises
 
-Many function are not just of arithmetic nature, taking and returning a number, but use some form of a [Boolean](https://en.wikipedia.org/wiki/Boolean_data_type), for example, as parameter or result type or within the definition.
+Many functions are not just of arithmetic nature, taking and returning a number, but using some form of a [Boolean](https://en.wikipedia.org/wiki/Boolean_data_type), for example, as a parameter or result type within the definition.
 
 See also exercise [2.0.7 Write boolean operator expressions](ch2_expressions.md#207-write-boolean-operator-expressions) on boolean operators and expressions.
 
@@ -12,7 +12,7 @@ A function that returns a boolean value is often called a _test_ or [predicate](
 
 #### Assertions.
 
-An [_assertion_](<https://en.wikipedia.org/wiki/Assertion_(software_development)) is an operator that takes a boolean operand.  If that values is `true` --  not much happens.  In case of `false`, however, an "error" is raised [AssertionError](https://docs.oracle.com/javase/8/docs/api/java/lang/AssertionError.html), which interrupts the ongoing evaluation:
+An [_assertion_](<https://en.wikipedia.org/wiki/Assertion_(software_development)) is an operator that takes a boolean operand.  If that value is `true`, not much happens. In case of `false`, however, an "error" is raised [AssertionError](https://docs.oracle.com/javase/8/docs/api/java/lang/AssertionError.html), which interrupts the ongoing evaluation:
 
 ```scala
     scala> assert(1 == 1)
@@ -31,13 +31,13 @@ An [_assertion_](<https://en.wikipedia.org/wiki/Assertion_(software_development)
     AssertionError Assert failed: (not= 1 1)  user$eval1760.invokeStatic (:1)
 ```
 
-Assertions are therefore a simple tool for _unit-testing_(https://en.wikipedia.org/wiki/Unit_testing) the correctness of a function: just place the function calls with their expected results within an `assert`.
+Assertions are therefore a simple tool for _unit-testing_(https://en.wikipedia.org/wiki/Unit_testing) the correctness of a function: placing the function call with the expected result within an `assert`.
 
 #### Conditionals.
 
 Sometimes a different value should be chosen depending upon a boolean condition.  A [_conditional_](<https://en.wikipedia.org/wiki/Conditional_(computer_programming)) or `if-then-else` is a predefined operator that takes 3 arguments: 1) a boolean value, 2) an expression for the "then case", and 3) an expression for the "else case".
 
-The first operand decides whether the "then"- or "else"-value is chosen as result of the entire conditional expression.  The syntax and behaviour:
+The first operand decides whether the "then"- or "else"-value is chosen as a result for the entire conditional expression.  The syntax and behaviour:
 
 ```scala
     scala> assert((if (true) 1 else 2) == 1)
