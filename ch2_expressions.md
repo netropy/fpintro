@@ -188,7 +188,7 @@ ___TODO:___ explain
 
 The [Boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type) consists of just two values `true` and `false`.
 
-Expressions yielding a Boolean value can be combined by the logical operators _not_, _and_, _or_ (among others).  How these operators "work" is easily seen by their so-called [_truth table_](https://en.wikipedia.org/wiki/Truth_table), which shows the 2 respectively 4 cases of `true`/`false` for their operands.
+Expressions yielding a Boolean value can be combined by the logical operators _not_, _and_, _or_ (among others).  How these operators "work" is easily seen by their so-called [_truth table_](https://en.wikipedia.org/wiki/Truth_table), which shows the 2 respectively 4 combinations of `true`/`false` for their operands.
 
 Form the expressions below and compare them to `true` or `false` so that the result is `true` ...
 
