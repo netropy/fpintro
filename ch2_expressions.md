@@ -207,7 +207,7 @@ false or false | `(= (or false false) false)`) | `(false \|\| false) == false`
 
 ___Notes:___
 
-* The `&&` and `\\` operators in Scala (and other languages) have lower precedence than `==` or `!=`. 
+* The `&&` and `||` operators in Scala (and other languages) have lower precedence than `==` or `!=`. 
 The round brackets are therefore needed in above code.  Otherwise, `false && false == false`, for example, would be inferred as `false && (false == false)` yielding `false`.
 
 ___Further reading:___
