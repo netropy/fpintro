@@ -40,7 +40,7 @@ ___TODO:___
 * symbolic expressions, parens, operator, operands
 * conversion between prefix/infix/postfix notations
 
-Further Reading: [prefix notation](https://en.wikipedia.org/wiki/Polish_notation), [infix notation](https://en.wikipedia.org/wiki/Infix_notation), [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
+Further Reading: [Prefix Notation](https://en.wikipedia.org/wiki/Polish_notation), [Infix Notation](https://en.wikipedia.org/wiki/Infix_notation), [Postfix Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
 
 #### 2.0.2 Write nested arithmetic expressions: [exercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
 
@@ -96,7 +96,7 @@ ___TODO:___
 
 Further reading:
 
-* [language constructs of major Lisp dialects](http://hyperpolyglot.org/lisp)
+* [Languages construct of major Lisp dialects](http://hyperpolyglot.org/lisp)
 
 #### 2.0.4 Write `list` expressions: [exercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/21/programming-kids-4.html).
 
