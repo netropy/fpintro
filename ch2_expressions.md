@@ -186,7 +186,9 @@ ___TODO:___ explain
 
 * exercise: implement and, or, not in terms of nand, xor, and, or, not
 
-The [Boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type) consists of just two values `true` and `false`.  Expressions yielding such a Boolean value can be further combined by predefined, logical operators _not_, _and_, _or_ (among others).
+The [Boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type) consists of just two values `true` and `false`.
+
+Expressions yielding a Boolean value can be combined by the logical operators _not_, _and_, _or_ (among others).  How these operators "work" is easily seen by their so-called [_truth table_](https://en.wikipedia.org/wiki/Truth_table), which shows the 2 respectively 4 cases of `true`/`false` for their operands.
 
 Form the expressions below and compare them to `true` or `false` so that the result is `true` ...
 
@@ -198,22 +200,21 @@ true and true | `(= (and true true) true)` | `(true && true) == true`
 true and false | `(= (and true false) false)` | `(true && false) == false`
 false and true | `(= (and false true) false)` | `(false && true) == false`
 false and false | `(= (and false false) false)` | `(false && false) == false`
-true or true | `(= (or true true) true)` | `true || true == true`
-true or false | `(= (or true false) false)` | `true || false == false`
-false or true | `(= (or false true) false)` | `false || true == false`
-false or false | `(= (or false false) false)`) | `false || false == false`
+true or true | `(= (or true true) true)` | `(true \|\| true) == true`
+true or false | `(= (or true false) false)` | `(true \|\| false) == false`
+false or true | `(= (or false true) false)` | `(false \|\| true) == false`
+false or false | `(= (or false false) false)`) | `(false \|\| false) == false`
 
 ___Notes:___
 
-* The `or` and `and` operator in Scala has a lower presidence than the equal operator. 
-Without the use of the brackets, (the computer) will result in yielding the wrong result - for example:
-`false && false == false // = false`
+* The `&&` and `\\` operators in Scala (and other languages) have lower precedence than `==` or `!=`. 
+The round brackets are therefore needed in above code.  Otherwise, `false && false == false`, for example, would be inferred as `false && (false == false)` yielding `false`.
 
-But with the application of the brackets in this boolean expression the `or` and `and` operator gets the presidence value, making the expression to yield the wanteed result:
-`(false && false) == false // = true`
+___Further reading:___
 
-* ___TODO:___ comment on operator's strictness...
-* ___TODO:___ link for truth tables...
+* Scala (and other languages) offer the addititional operators `&` and `|` as logical _and_ and _or_ besides `&&` and `||`.  These operators differ in their so-called [_strictness_](https://en.wikipedia.org/wiki/Strict_function): the "single letter" versions `&` and `|` are [_eager_](https://en.wikipedia.org/wiki/Eager_evaluation) in that they always evaluate _both_ their arguments.  If the evaluation of the `op2` in `op1 & op2` or `op1 | op2` yields some error, the entire expression results in an error.
+* In contrast, the Scala operators `&&`, `||` and the Clojure operators `and`/`or` are [_lazy_](https://en.wikipedia.org/wiki/Lazy_evaluation): the 2nd operand will not be evaluated once `op1` already decides the outcome.  That is, for `false & (...)` and `true | (...)`, any expression `(...)` will not even be evaluated, and any error there would not be raised.  This is also called [short-circuit_evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation).
+* Besides logical _and_, _or_, there are more boolean operators called _xor_, _nand_, _nor_, and _implies_ whose semantics is easily seen by their [truth table](https://en.wikipedia.org/wiki/Truth_table) as well.
 
 -------
 
