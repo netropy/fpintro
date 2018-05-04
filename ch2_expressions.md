@@ -13,7 +13,7 @@ In summary, _expressions_ ...
 
 In Lisp-based languages, expressions (or so-called _s-expressions_, _sexprs_, or _sexps_ for [symbolic expressions](https://en.wikipedia.org/wiki/S-expression)) take the form of a _list_, typically, with an operator as the 1st element followed by zero or more operands `( operator operands ... operands )`.
 
-Before we start:
+After the coding excercises in this chapter, this cartoon will become clearer ;-)
 
 ![](https://imgs.xkcd.com/comics/lisp_cycles.png)
 
