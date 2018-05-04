@@ -175,7 +175,7 @@ assert(isEven(5) == false)
 
 ___Notes:___
 
-* `even?` would be the preferred f in Clojure.
+* In Clojure (and Scheme), `even?` would be the preferred function name.
 * The unit tests could be shortened to `assert(isEven(4))` and `assert(!isEven(5))`.
 
 #### 3.2.8 Define and test a predicate `is_odd` that tells whether an integer number is odd in terms of the `is_even` function.
