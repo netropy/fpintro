@@ -194,14 +194,14 @@ Exercise | Clojure | Scala
 :-------|:------|:------
 not true | `(= (not true) false)` | `!true == false`
 not false | `(= (not false) false)` | `!false == false`
-true and true | `...` | `...`
-true and false | `...` | `...`
-false and true | `...` | `...`
-false and false | `...` | `...`
-true or true | `...` | `...`
-true or false | `...` | `...`
-false or true | `...` | `...`
-false or false | `...` | `...`
+true and true | `(and true true) ; = true` | `true && true \\ = true`
+true and false | `(and true false) ; = false` | `(true && false) \\ = false`
+false and true | `(and false true) ; = false` | `false && true \\ = false`
+false and false | `(and false false) ; = false` | `false && false \\ = false`
+true or true | `(or true true) ; = true` | `true || true \\ = true`
+true or false | `(or true false) ; = false` | `true || false \\ = false`
+false or true | `(or false true) ; = false` | `false || true \\ = false`
+false or false | `(or false false) ; = false` | `false || false \\ = false`
 
 ___Notes:___
 
