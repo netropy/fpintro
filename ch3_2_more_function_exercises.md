@@ -175,14 +175,14 @@ Hints:
 * For this excercise, define the operators as strict/eager, see [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)\
 
 
-```scala
-...
+```clojure
+(def and0 #(if %1 %2 false)) 
 ```
 
 #### 3.2.10 Test the predicates `not0` `and0`, `or0`, `xor0`, `nand0`.
 
-```scala
-...
+```clojure
+(and0 true false) ; = false
 ```
 --------------------
 
