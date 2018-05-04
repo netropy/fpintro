@@ -19,11 +19,13 @@ Before we start:
 
 #### 2.0.1 Write arithmetic expressions: [exercise KfK, chapter 1: What is computer programming?](http://kids.klipse.tech/clojure/2016/05/03/programming-kids-1.html)
 
+Write an expression that calculates ...
+
 Exercise | Clojure | Scala
 :-------|:------|:------
-write a program that calculates 7*8 | `(* 7 8)` | `7 * 8`
-write a program that calculates 2\*3\*4\*5 | `(* 2 3 4 5)` | `2*3*4*5`
-write a program that calculates 2+3+4+5 | `(+ 2 3 4 5)` | `2+3+4+5`
+7*8 | `(* 7 8)` | `7 * 8`
+2\*3\*4\*5 | `(* 2 3 4 5)` | `2*3*4*5`
+2+3+4+5 | `(+ 2 3 4 5)` | `2+3+4+5`
 
 ___Notes:___
 
@@ -41,6 +43,8 @@ ___TODO:___
 Further Reading: [prefix notation](https://en.wikipedia.org/wiki/Polish_notation), [infix notation](https://en.wikipedia.org/wiki/Infix_notation), [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
 
 #### 2.0.2 Write nested arithmetic expressions: [exercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
+
+Write this calculation as arithmetic expression ...
 
 Exercise | Clojure | Scala
 :-------|:------|:------
@@ -67,15 +71,17 @@ Further reading: [operator precedence](https://en.wikipedia.org/wiki/Order_of_op
 
 #### 2.0.3 Write and use named expressions: [exercise KfK, chapter 3: Giving Names to Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-3.html).
 
+Factor out common subexpressions by assigning them a name (constant) ...
+
 Exercise | Clojure | Scala
 :-------|:------|:------
-calculate (4 + 7 + 8)\*3 + (4 + 7 + 8)\*7 + (4 + 7 + 8)\*9 | `(def a ( + 4 7 8)` | `val a = 4 + 7 + 8`
+(4 + 7 + 8)\*3 + (4 + 7 + 8)\*7 + (4 + 7 + 8)\*9 | `(def a ( + 4 7 8)` | `val a = 4 + 7 + 8`
 ...     | `(+ (* a 3) (* a 7) (* a 9))` | `a * 3 + a * 7 + a * 9`
-calculate (2\*3 + 4)\*3 + (2\*3 + 4)\*7 + (2\*3 + 4)\*9 | `(def b (+ (* 2 3) 4)` | `val b = 2 * 3 + 4`
+(2\*3 + 4)\*3 + (2\*3 + 4)\*7 + (2\*3 + 4)\*9 | `(def b (+ (* 2 3) 4)` | `val b = 2 * 3 + 4`
 ...     | `(+ (* b 3) (* b 7) (* b 9))` | `b * 3 + b * 7 + b * 9`
-calculate 2\*3 + 4\*5; then multiply the result by 4 + 5 | `(def c (* (+ (* 2 3) (* 4 5)) (+ 4 5)))` | `val c = (2 * 3 + 4 * 5) * (4 + 5)`
+2\*3 + 4\*5; then multiply by 4 + 5 | `(def c (* (+ (* 2 3) (* 4 5)) (+ 4 5)))` | `val c = (2 * 3 + 4 * 5) * (4 + 5)`
 ... | |
-calculate 2\*3 + 4\*5; then multiply the result by 4 + 5; then multiply the result by 19 | `(* c 19)` | `c * 19`
+2\*3 + 4\*5; then multiply by 4 + 5; then multiply by 19 | `(* c 19)` | `c * 19`
 
 ___Notes:___
 
@@ -95,15 +101,17 @@ Further reading:
 
 #### 2.0.4 Write `list` expressions: [exercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/21/programming-kids-4.html).
 
+Compose a list of ...
+
 Exercise | Clojure | Scala
 :-------|:------|:------
-display 2*3, 2*4 and 2*5 | `(list (* 2 3) (* 2 4) (* 2 5))` | `List(2 * 3, 2 * 4, 2 * 5)`
-display the numbers 1, 2, 3, 4 and 9 | `(list 1 2 3 4 9)` | `List(1, 2, 3, 4, 9)`
-display the ages of your siblings (or friends) | `(def ages (list 12 7 7))` | `val ages = List(12, 7, 7)`
-display a list that contains a list of your siblings' ages... | `(list ages 3 10 10)` | `List(ages, 3, 10, 10)`
+the numbers 1, 2, 3, 4 and 9 | `(list 1 2 3 4 9)` | `List(1, 2, 3, 4, 9)`
+2*3, 2*4 and 2*5 | `(list (* 2 3) (* 2 4) (* 2 5))` | `List(2 * 3, 2 * 4, 2 * 5)`
+the ages of your siblings or friends | `(def ages (list 12 7 7))` | `val ages = List(12, 7, 7)`
+a list of your siblings' ages... | `(list ages 3 10 10)` | `List(ages, 3, 10, 10)`
 ...followed by the age differences between them and you | `;   -> ((12 7 7) 3 10 10)` | `//   -> List(List(12, 7, 7), 3, 10, 10)`
-display a list that contains _two lists_: the ages of your siblings... | `(list ages (list 3 10 10))` | `List(ages, List(3 10 10))`
-...and the age differences between them and you | `;   -> ((12 7 7) (3 10 10))` | `//   -> List(List(12, 7, 7), List(3, 10, 10))`
+a list of the ages of your siblings or friends and... | `(list ages (list 3 10 10))` | `List(ages, List(3 10 10))`
+...a list of the age differences between them and you | `;   -> ((12 7 7) (3 10 10))` | `//   -> List(List(12, 7, 7), List(3, 10, 10))`
 
 ___Notes:___
 
@@ -139,13 +147,14 @@ lists: no order, multiples |  (list 2 1) != (list 1 2) != (list 1 2 2)
 
 #### 2.0.5 Write expressions without evaluating them: [exercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/07/21/chapter-5.html).
 
+Form the expression as it is (without evaluating it) ...
+
 Exercise | Clojure | Scala
 :-------|:------|:------
-form the expression `(+ 3 4)` exactly as it is without evaluating it | `(quote (+ 3 4))` | `() => 3 + 4`
+`(+ 3 4)` as it is | `(quote (+ 3 4))` | `() => 3 + 4`
 ... | `'(+ 3 4)` _(alternative notation)_ |
-form and then evaluate the expression `(+ 3 4)` | `(eval (quote (+ 3 4)))` | `(() => 3 + 4)()`
+`(+ 3 4)` as it is, then evaluate | `(eval (quote (+ 3 4)))` | `(() => 3 + 4)()`
 ... | `(eval '(+ 3 4))` _(alternative notation)_ |
-...
 
 ___Notes:___
 
@@ -156,41 +165,48 @@ ___Notes:___
 
 #### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/08/05/chapter-7.html).
 
-Exercise | Clojure | Scala
-:-------|:------|:------
-ask if 7 times 6 equals 40 | `(= (* 7 6) 40)` | ` 7 * 6 == 40 `
-ask if 7 times 6 is less/equal than 40 | `(<= (* 7 6) 40)` | ` 7 * 6 <= 40 `
-ask if 7 times 6 is greater/equal than 40 | `(>= (* 7 6) 40)` | ` 7 * 6 >= 40 `
-ask if 7 times 6 is not equal to 40 | `(not= (* 7 6) 40)` | ` 7 * 6 != 40 `
-
-___TODO:___ explain
-
-* <https://en.wikipedia.org/wiki/Boolean_data_type>, <https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)>
-
-#### 2.0.7 Write boolean operator expressions.
-
-___TODO:___ explain, give exercises
-
-* exercise: implement and, or, not in terms of nand, xor, and, or, not
+Ask if 7 times 6 ...
 
 Exercise | Clojure | Scala
 :-------|:------|:------
-ask if not true equals false | `(= (not true) false) ; = true` | `(!true == false) // = `
-ask if not false equals false | `(= (not false) false) ; = false` | `(!false == false)`
-ask if not not true equals ... | `...` | `...`
-ask if not not false equals ... | `...` | `...`
-ask if true and true equals ... | `...` | `...`
-ask if true and false equals ... | `...` | `...`
-ask if false and true equals ... | `...` | `...`
-ask if false and false equals ... | `...` | `...`
-ask if true or true equals ... | `...` | `...`
-ask if true or false equals ... | `...` | `...`
-ask if false or true equals ... | `...` | `...`
-ask if false or false equals ... | `...` | `...`
+equals 40 | `(= (* 7 6) 40)` | ` 7 * 6 == 40 `
+is less than 40 | `(< (* 7 6) 40)` | ` 7 * 6 < 40 `
+is less/equal than 40 | `(<= (* 7 6) 40)` | ` 7 * 6 <= 40 `
+is greater/equal than 40 | `(>= (* 7 6) 40)` | ` 7 * 6 >= 40 `
+is greater than 40 | `(> (* 7 6) 40)` | ` 7 * 6 > 40 `
+is not equal to 40 | `(not= (* 7 6) 40)` | ` 7 * 6 != 40 `
 
 ___Notes:___
 
-* <https://en.wikipedia.org/wiki/De_Morgan%27s_laws>, <https://en.wikipedia.org/wiki/Boolean_algebra>
+* ___TODO:___ check for comparison's strictness...
+
+#### 2.0.7 Write boolean operator expressions.
+
+___TODO:___ explain
+
+* exercise: implement and, or, not in terms of nand, xor, and, or, not
+
+The [Boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type) consists of just two values `true` and `false`.  Expressions yielding such a Boolean value can be further combined by predefined, logical operators _not_, _and_, _or_ (among others).
+
+Form the expressions below and compare them to `true` or `false` so that the result is `true` ...
+
+Exercise | Clojure | Scala
+:-------|:------|:------
+not true | `(= (not true) false)` | `!true == false`
+not false | `(= (not false) false)` | `!false == false`
+true and true | `...` | `...`
+true and false | `...` | `...`
+false and true | `...` | `...`
+false and false | `...` | `...`
+true or true | `...` | `...`
+true or false | `...` | `...`
+false or true | `...` | `...`
+false or false | `...` | `...`
+
+___Notes:___
+
+* ___TODO:___ comment on operator's strictness...
+* ___TODO:___ link for truth tables...
 
 -------
 

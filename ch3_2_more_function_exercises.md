@@ -1,5 +1,11 @@
 ### 3.2 More Function Exercises
 
+___TODO:___ explain
+
+* [boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type),
+  [predicate](https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)),
+   <https://en.wikipedia.org/wiki/De_Morgan%27s_laws>, <https://en.wikipedia.org/wiki/Boolean_algebra>
+
 #### 3.2.1 Define and test a function `mydouble` that doubles a number.
 
 Hint: also give arity+type(s).
@@ -100,40 +106,44 @@ def quot_and_rem(k: Int, l: Int) = List(k / l, k % l)
 quot_and_rem(8, 3) // = List(2, 2)
 ```
 
-#### 3.2.7 Define and test a function `myeven?` that test/tells/gives whether an integer number is even.
+#### 3.2.7 Define and test a predicate `is_even` that tells whether an integer number is even.
 
 Hint: also give arity+type(s); how to test whether a number is even: x is even if (x \ 2 = y remainder 0).
 
 ```
 ; arity = 1, type(s) = Integer -> Boolean
-(def myeven? #(= (rem %1 2) 0))
-(myeven? 6) ; = true
-(myeven? 7) ; = false
+(def is-even #(= (rem %1 2) 0))
+(is-even 6) ; = true
+(is-even 7) ; = false
 ```
 
 ```scala
 arity = 1, type(s) = Int -> Boolean
-def myeven(p: Int): Boolean = p % 2 == 0
-myeven(4) // = true
-myeven(5) // = false
+def isEven(p: Int): Boolean = p % 2 == 0
+isEven(4) // = true
+isEven(5) // = false
 ```
 
-#### 3.2.8 Define and test a function `myodd?` that tells whether an integer number is odd in terms of using the "...even..." function.
+__Notes:__
+
+* Preferred naming in Clojure would be `even?`
+
+#### 3.2.8 Define and test a predicate `is_odd` that tells whether an integer number is odd in terms of using the "...even..." function.
 
 Hint: also give arity+type(s).
 
 ```
 ; arity = 1, type(s) = Integer -> Boolean
-(def myodd? #(not (myeven? %1)))
-(myodd? 9); = true
-(myodd? 8); = false
+(def is-odd #(not (is-even %1)))
+(is-odd 9); = true
+(is-odd 8); = false
 ```
 
 ```scala
 arity = 1, type(s) = Int -> Boolean
-def myodd(i: Int): Boolean = !myeven(i)
-myodd(3) // = true
-myodd(8) // = false
+def isOdd(i: Int): Boolean = !isEven(i)
+isOdd(3) // = true
+isOdd(8) // = false
 ```
 
 --------------------
