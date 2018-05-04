@@ -34,13 +34,10 @@ ___Notes:___
 * Clojure: multiple operands allowed for `+`, `*` ... operator.
 * Scala: white-space (blanks etc) between operator and operands are optional.
 
-___TODO:___
 
-* purpose of computer languages: to give computer instructions and receive answers
-* symbolic expressions, parens, operator, operands
-* conversion between prefix/infix/postfix notations
-
-Further Reading: [Prefix Notation](https://en.wikipedia.org/wiki/Polish_notation), [Infix Notation](https://en.wikipedia.org/wiki/Infix_notation), [Postfix Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
+___Further Reading:___
+* [Prefix Notation](https://en.wikipedia.org/wiki/Polish_notation), [Infix Notation](https://en.wikipedia.org/wiki/Infix_notation), [Postfix Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) 
+* [Relation between the Prefix, Infix, and Postfix Notations](https://en.wikipedia.org/wiki/Shunting-yard_algorithm)
 
 #### 2.0.2 Write nested arithmetic expressions: [exercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
 
@@ -209,7 +206,7 @@ The round brackets are therefore needed in the code examples here.  Otherwise, `
 
 ___Further reading:___
 
-* Scala (and other languages) offer the addititional operators `&` and `|` as logical _and_ and _or_ besides `&&` and `||`.  These operators differ in their so-called [_strictness_](https://en.wikipedia.org/wiki/Strict_function): the "single letter" versions `&` and `|` are [_eager_](https://en.wikipedia.org/wiki/Eager_evaluation) in that they always evaluate _both_ their arguments.  If the evaluation of the `op2` in `op1 & op2` or `op1 | op2` yields some error, the entire expression results in an error.
+* Scala (and other languages) offer the addititional operators `&` and `|` as logical _and_ and _or_ besides `&&` and `||`.  These operators differ in their so-called [_strictness_](https://en.wikipedia.org/wiki/Strict_function): the "single letter" versions `&` and `|` are [_eager_](https://en.wikipedia.org/wiki/Eager_evaluation) in that they always evaluate _both_ their operands.  If the evaluation of the `op2` in `op1 & op2` or `op1 | op2` yields some error, the entire expression results in an error.
 * In contrast, the Scala operators `&&`, `||` and the Clojure operators `and`/`or` are [_lazy_](https://en.wikipedia.org/wiki/Lazy_evaluation): the 2nd operand will not be evaluated once `op1` already decides the outcome.  That is, for `false & (...)` and `true | (...)`, any expression `(...)` will not even be evaluated, and any error there would not be raised.  This is also called [short-circuit_evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation).
 * Besides logical _and_, _or_, there are more boolean operators called _xor_, _nand_, _nor_, and _implies_ whose semantics is easily seen by their [truth table](https://en.wikipedia.org/wiki/Truth_table) as well.
 
