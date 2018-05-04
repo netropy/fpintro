@@ -194,16 +194,23 @@ Exercise | Clojure | Scala
 :-------|:------|:------
 not true | `(= (not true) false)` | `!true == false`
 not false | `(= (not false) false)` | `!false == false`
-true and true | `(and true true) ; = true` | `true && true \\ = true`
-true and false | `(and true false) ; = false` | `(true && false) \\ = false`
-false and true | `(and false true) ; = false` | `false && true \\ = false`
-false and false | `(and false false) ; = false` | `false && false \\ = false`
-true or true | `(or true true) ; = true` | `true || true \\ = true`
-true or false | `(or true false) ; = false` | `true || false \\ = false`
-false or true | `(or false true) ; = false` | `false || true \\ = false`
-false or false | `(or false false) ; = false` | `false || false \\ = false`
+true and true | `(= (and true true) true)` | `(true && true) == true`
+true and false | `(= (and true false) false)` | `(true && false) == false`
+false and true | `(= (and false true) false)` | `(false && true) == false`
+false and false | `(= (and false false) false)` | `(false && false) == false`
+true or true | `(= (or true true) true)` | `true || true == true`
+true or false | `(= (or true false) false)` | `true || false == false`
+false or true | `(= (or false true) false)` | `false || true == false`
+false or false | `(= (or false false) false)`) | `false || false == false`
 
 ___Notes:___
+
+* The `or` and `and` operator in Scala has a lower presidence than the equal operator. 
+Without the use of the brackets, (the computer) will result in yielding the wrong result - for example:
+`false && false == false // = false`
+
+But with the application of the brackets in this boolean expression the `or` and `and` operator gets the presidence value, making the expression to yield the wanteed result:
+`(false && false) == false // = true`
 
 * ___TODO:___ comment on operator's strictness...
 * ___TODO:___ link for truth tables...
