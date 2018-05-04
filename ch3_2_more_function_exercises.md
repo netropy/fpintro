@@ -1,10 +1,31 @@
 ### 3.2 More Function Exercises
 
-___TODO:___ explain
+___TODO:___ explain: predicate, assertion, conditional
 
 * [boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type),
   [predicate](https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)),
    <https://en.wikipedia.org/wiki/De_Morgan%27s_laws>, <https://en.wikipedia.org/wiki/Boolean_algebra>
+
+___TODO:___ explain, give example
+
+* What is an assertion?
+* why useful for testing
+
+___Notes:___
+
+* <https://en.wikipedia.org/wiki/Assertion_(software_development)>
+
+
+___TODO:___ explain, give exercises
+
+* What is a conditional?
+* exercise: implement and, or, not in terms of if-then-else
+
+___Notes:___
+
+* <https://en.wikipedia.org/wiki/Conditional_(computer_programming)>
+
+-----
 
 #### 3.2.1 Define and test a function `mydouble` that doubles a number.
 
@@ -146,6 +167,23 @@ isOdd(3) // = true
 isOdd(8) // = false
 ```
 
+#### 3.2.9 Define predicates `not0` `and0`, `or0`, `xor0`, `nand0` for the logical operators; use the conditional operator only.
+
+Hints:
+
+* See the operators' [truth tables](https://en.wikipedia.org/wiki/Truth_table).
+* For this excercise, define the operators as strict/eager, see [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)\
+
+
+```scala
+...
+```
+
+#### 3.2.10 Test the predicates `not0` `and0`, `or0`, `xor0`, `nand0`.
+
+```scala
+...
+```
 --------------------
 
 [<-- previous page](ch3_1_formulas_and_functions.md)

@@ -2,6 +2,7 @@
 
 ___TODO:___ explain, give example
 
+* add links to: lambda calculus, lambda operator in lisp-like languages
 * What is a function, formula, parametrized expression, anonymous function, lambda?
 
 concept | meaning | example
@@ -29,17 +30,7 @@ ___Notes___:
 * <https://en.wikipedia.org/wiki/Function_(mathematics)>,
   <https://en.wikipedia.org/wiki/Subroutine>,
   <https://en.wikipedia.org/wiki/Anonymous_function>
-
 * <https://en.wikipedia.org/wiki/Letter_case#Special_case_styles>, <https://en.wikipedia.org/wiki/Camel_case>, <https://en.wikipedia.org/wiki/Snake_case>
-
-___TODO:___ explain, give example
-
-* What is an assertion?
-* why useful for testing
-
-___Notes:___
-
-* <https://en.wikipedia.org/wiki/Assertion_(software_development)>
 
 ####  3.1.1 Define and evaluate functions: [exercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/07/30/chapter-6.html).
 
