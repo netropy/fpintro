@@ -37,7 +37,7 @@ ___Notes:___
 
 ___Further Reading:___
 * [Prefix Notation](https://en.wikipedia.org/wiki/Polish_notation), [Infix Notation](https://en.wikipedia.org/wiki/Infix_notation), [Postfix Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) 
-* [Relation between the Prefix, Infix, and Postfix Notations](https://en.wikipedia.org/wiki/Shunting-yard_algorithm)
+* The Prefix, Infix, and Postfix Notations can be [converted from one to another](https://en.wikipedia.org/wiki/Shunting-yard_algorithm)
 
 #### 2.0.2 Write nested arithmetic expressions: [exercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
 
