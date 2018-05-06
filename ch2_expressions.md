@@ -16,10 +16,7 @@ In summary, _expressions_ ...
 
 In Lisp-based languages, expressions (or so-called _s-expressions_, _sexprs_, or _sexps_ for [symbolic expressions](https://en.wikipedia.org/wiki/S-expression)) take the form of a _list_, typically, with an operator as the 1st element followed by zero or more operands `( operator operands ... operands )`.
 
-Bonus excercise. Lookup the language constructs learned in this chapter in these "cheat-sheets":
-
-* [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp)
-* [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet)
+_Bonus excercise:_ Lookup the language constructs learned in this chapter in these "cheat-sheets": [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp), [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet).
 
 After having done the coding excercises in this chapter, this cartoon will become clearer  ;-)
 
