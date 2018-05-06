@@ -5,7 +5,7 @@ This tutorial contains the exercises and notes of an introductory programming se
 
 While there are many websites and tools for ["getting kids excited about programming"](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming), we choose to try out this great tutorial: [Klipse for Kids](http://kids.klipse.tech).  Since this was a self-directed study on programming, this document carries many links to helpful articles from [Wikipedia](https://www.wikipedia.org/).
 
-We chose [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org) as the two languages to begin the learning process with a [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming) paradigm.  Starting with two languages has come quite naturally, since the student grew up bilingually ;-)  Clojure, as a modern LISP, is the language used on the "Klipse for Kids" website.  Doing the same coding exercises also in Scala, will later allow for a smooth incorporation of [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) concepts.
+We chose [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org) as the two languages to begin the learning process with [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming).  Since the student happened to grow up bilingually, starting with two programming languages felt naturally as well :-)  Clojure, as a modern LISP, is the language used on the "Klipse for Kids" website.  Doing the same coding exercises also in Scala, will make it easy to later incorporate [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) concepts.
 
 See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0).
 
@@ -24,8 +24,6 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 [5. Miscellaneous](ch5_miscellaneous.md)
 
 ## Coding Exercises
-
-
 
 [2.0.1 Write arithmetic expressions: exercise KfK, chapter 1: What is computer programming?](ch2_expressions.md#201-write-arithmetic-expressions-exercise-kfk-chapter-1-what-is-computer-programming)\
 [2.0.2 Write nested arithmetic expressions: exercise KfK, chapter 2: Expressions inside Expressions inside Expressions.](ch2_expressions.md#202-write-nested-arithmetic-expressions-exercise-kfk-chapter-2-expressions-inside-expressions-inside-expressions)\

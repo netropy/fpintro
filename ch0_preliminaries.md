@@ -63,7 +63,7 @@ ___Notes:___
 
 #### Install Clojure, Scala and run the language shells (REPL)
 
-___TODO:___ link to install Scala, Leiningen
+___TODO:___ add links for how to install Java, Scala, Leiningen/Clojure
 
 A _language shell_ or [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) reads (typically small) chunks of programming code as text input, then directly executes (evaluates) it, and prints the result as text output.  
 

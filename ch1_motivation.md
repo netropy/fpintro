@@ -1,6 +1,8 @@
 ## 1. Motivation: An Ever-Changing World of Languages?
 
-_All languages change continually._  For example:
+___TOO:___ name links
+
+_All languages change continually._  This gives rise to language "family trees", for example:
 
 * <https://www.theguardian.com/education/gallery/2015/jan/23/a-language-family-tree-in-pictures>
 * <https://www.washingtonpost.com/news/worldviews/wp/2015/01/27/this-beautiful-language-tree-shows-how-india-is-as-linguistically-diverse-as-europe>
@@ -29,7 +31,7 @@ ___Questions:___
   <http://rigaux.org/language-study/diagram.html>,
   <http://exploring-data.com/vis/programming-languages-influence-network/>,
   <https://www.levenez.com/lang/>
-* <http://rosettacode.org/wiki/Rosetta_Code>
+* <http://rosettacode.org/wiki/Rosetta_Code>, <http://hyperpolyglot.org/>
 * What is a dialect, variant, version? <https://web.archive.org/web/20160309214409/http://people.ku.edu/~nkinners/LangList/Extras/dialects.htm>
 
 #### Further Reading on Programming Paradigms.

@@ -196,9 +196,14 @@ assert(isOdd(3) == true)
 assert(isOdd(8) == false)
 ```
 
-#### 3.2.9 Define predicates `not0` `and0`, `or0`, `xor0`, `nand0`, for the logical operators; use the conditional operator only.
+___Notes:___
 
-Hints: See the logical operators' [truth tables](https://en.wikipedia.org/wiki/Truth_table). For simplicity, disregard strictness, see [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions).
+* In Clojure (and Scheme), `odd?` would be the preferred function name.
+* The unit tests could be shortened to `assert(isOdd(3))` and `assert(!isOdd(8))`.
+
+#### 3.2.9 Define predicates for the logical operators `not` `and`, `or`, `xor`, `nand`; only use the conditional operator and equals.
+
+Hints: See the logical operators' [truth tables](https://en.wikipedia.org/wiki/Truth_table). Since some of the operators are predefined names, name the predicates `not0` `and0`, `or0`, `xor0`, `nand0`. For simplicity, disregard strictness, see [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions).
 
 ```clojure
 (def not0 #(if %1 false true))
@@ -213,7 +218,7 @@ Hints: See the logical operators' [truth tables](https://en.wikipedia.org/wiki/T
 ```
 ___Notes:___
 
-* An even more compact version of the function `xor0` would be: `(def xor0 #(not= %1 %2))`. 
+* An even more compact version of function `xor0` would be: `(def xor0 #(not= %1 %2))`. 
 
 #### 3.2.10 Test the predicates `not0` `and0`, `or0`, `nand0`, `xor0`.
 
@@ -228,6 +233,11 @@ ___Notes:___
 
 (assert (= (xor0 true false) true))
 ```
+
+___Notes:___
+
+* If preferred, the unit tests can be shortened: `(assert (= ... true))` -> `(assert ...)` and `(assert (= ... false))` -> `(assert !...)`.
+
 --------------------
 
 [<-- previous page](ch3_1_formulas_and_functions.md)

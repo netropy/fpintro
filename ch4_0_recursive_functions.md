@@ -23,6 +23,11 @@ Before we start:
 
 [4.5 Recursive Function `multiply`](ch4_5_recursive_multiply.md)
 
+Bonus excercise. Lookup the language constructs learned in this chapter in these "cheat-sheets":
+
+* [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp)
+* [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet)
+
 ---------------
 
 [<-- previous page](ch3_3_plotting_the_evaluation_of_functions.md)

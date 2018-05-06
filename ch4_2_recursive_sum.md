@@ -72,7 +72,7 @@ def sum(n: Int): Int = {
 ```
 ___Notes:___
 
-* TODO: explain `require` and `assert` in Scala/Clojure.
+* For checking arguments, Scala offers a predefined function `require` that is similar to `assert` (see [assertions](ch3_2_more_function_exercises.md#assertions)) but throws an `IllegalArgumentException`.
 
 #### 4.2.6 Make `sum` robust by extending it to negative arguments.
 

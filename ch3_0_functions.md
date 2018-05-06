@@ -12,6 +12,11 @@ In this chapter we learn how to define "formulas" or [anonymous functions](https
 
 [3.3 Plotting the Evaluation of Functions](ch3_3_plotting_the_evaluation_of_functions.md)
 
+Bonus excercise. Lookup the language constructs learned in this chapter in these "cheat-sheets":
+
+* [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp)
+* [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet)
+
 ------------------
 
 [<-- previous page](ch2_expressions.md)

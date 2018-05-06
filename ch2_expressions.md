@@ -1,17 +1,25 @@
 ## 2.0 Expressions
 
-This chapter contains exercises on how to write [expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)).  Most exercises are taken from [Klipse for Kids](http://kids.klipse.tech) with some added for boolean operations.
+This chapter contains exercises on how to write [expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)).  Most exercises are from the great tutorial [Klipse for Kids](http://kids.klipse.tech) with some added for boolean operations.
 
 In summary, _expressions_ ...
 
 * _evaluate_ to a value, when computed, for example: `3 + 4` yields `7`,
-* consist of _operators_ and _operands_ yielding values, for example: `2 + 3`,
+* consist of _operators_ and _operands_ yielding values, for example: `2 + 3` evaluates to `5`,
 * are _well-formed_, for example: `1 +` is illformed as it lacks an operand for the operator,
+* may be _nested_, for example: `3 * (4 + 5)` contains the sub-expression `4 + 5`
 * may be _given a name_, for example: `a = 3 + 4`,
-* may refer to _names_ (constants or variables), for example: `a + 2`,
-* may be _nested_, for example: `3 + (4 * 5)`.
+* may _reference names_, for example: `(a + 2) * (a - 4)` uses a constant or variable `a`,
+* may _group_ multiple values as lists (or other collections), for example: `List(1, 3, 1)` contains the numbers 1, 3, 1 in that order,
+* may just _describe_ expressions, for example: `"3 + 4"`, `(quote (+ 3 4))` or `() => 3 + 4` constructs but won't perform the calculation `3 + 4`.
+* may compare values and combine propositions, for example: `(a > 5) and (b <= 0)` states that both, `a > 5` and `b <= 0`, must be true.
 
 In Lisp-based languages, expressions (or so-called _s-expressions_, _sexprs_, or _sexps_ for [symbolic expressions](https://en.wikipedia.org/wiki/S-expression)) take the form of a _list_, typically, with an operator as the 1st element followed by zero or more operands `( operator operands ... operands )`.
+
+Bonus excercise. Lookup the language constructs learned in this chapter in these "cheat-sheets":
+
+* [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp)
+* [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet)
 
 After having done the coding excercises in this chapter, this cartoon will become clearer  ;-)
 
@@ -34,8 +42,8 @@ ___Notes:___
 * Clojure: multiple operands allowed for `+`, `*` ... operator.
 * Scala: white-space (blanks etc) between operator and operands are optional.
 
-
 ___Further Reading:___
+
 * [Prefix Notation](https://en.wikipedia.org/wiki/Polish_notation), [Infix Notation](https://en.wikipedia.org/wiki/Infix_notation), [Postfix Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) 
 * The Prefix, Infix, and Postfix Notations can be [converted from one to another](https://en.wikipedia.org/wiki/Shunting-yard_algorithm)
 
@@ -67,7 +75,9 @@ ___Further reading:___
 
 #### 2.0.3 Write and use named expressions: [exercise KfK, chapter 3: Giving Names to Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-3.html).
 
-Factor out common subexpressions by assigning them a name (constant) ...
+Often, it is useful to give expressions a name.  Not only may a name carry a meaning, it can also be referenced multiple times, giving a single definition for "common subexpressions".
+
+Factor out common subexpressions by a defining a constant ...
 
 Exercise | Clojure | Scala
 :-------|:------|:------
@@ -81,21 +91,18 @@ Exercise | Clojure | Scala
 
 ___Notes:___
 
-* Operator `def` defines a global variable (the operator for binding a local variable is called `let`).
+* In Clojure, the operator `def` defines a global variable.  (There's also an operator for binding a local variable is called `let`).
 * In Lisp-based languages, to name an expression is itself an expression with an operator doing the naming and taking as operands the name and the named expression.
-* In Scala, keyword `val` names a constant value.
-
-___TODO:___
-
-* why to name expressions: common subexpressions
-* how to name expressions: `def` is the operation that tells the computer to give a name to an expression. (The word def is a shorthand for define).
+* In Scala, keyword `val` names a constant value.  (There's also the keyword `var` to define a variable, which may be re-assigned new values.)
 * in comparison to Clojure, there is less a need of brackets in Scala calculations
 
 Further reading:
 
-* [Languages construct of major Lisp dialects](http://hyperpolyglot.org/lisp)
+* Programming languages, developers, and projects have conventions about how to form composite names, like ["kebab case"](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles), ["snake case"](https://en.wikipedia.org/wiki/Snake_case), or ["camel case"](https://en.wikipedia.org/wiki/Camel_case)
 
 #### 2.0.4 Write `list` expressions: [exercise KfK, chapter 4: Evaluating Several Expressions](http://kids.klipse.tech/clojure/2016/06/21/programming-kids-4.html).
+
+Lists define a collection of values.
 
 Compose a list of ...
 
@@ -115,31 +122,29 @@ ___Notes:___
 * In Clojure, a list is constructed as `(list ...)` with elements separated by a space.
 * In Scala, a list is constructed as `List(...)` with elements separated by a comma.
 * In Scala, functions and operators are usually written in lower case, while data types (eg. Int, Boolean, List...) are written in upper case.
+* Creating a list is itself an expression with `list/List` as operator followed by the list elements as operands.
 
-___TODO:___
+___Further Reading:___
 
-* motivation: display the result of several expressions
-* creating a `list` of expressions, `list` operator, expression operands to evaluate
-* list of lists
-* Scala `Seq`
+* Scala, Clojure, and most languages predefine other collection types as well, for example: [arrays or vectors](https://en.wikipedia.org/wiki/Array_data_structure), [set](https://en.wikipedia.org/wiki/Set_(abstract_data_type)), or [maps](https://en.wikipedia.org/wiki/Associative_array).
 
-___TODO:___ sets & lists
+* Refresher: sets vs. lists
 
-value X | elements, subsets, powersets
 :-----|:-----------------------------
-{ 1 2 3 } | X has 3 elements: 1 2 3
-{ {1} {2 3} } | X has 2 elements: inner set {1}, inner set {2 3}
-{ 1 } | X has 2 subsets: {}, {1}
-{ 1 2 3 } | the powerset of X is a set with 8 elements: { {} {1} {2} {3} {1 2} {2 3} {1 3} {1 2 3} }
-{}  | X has no elements, meaning, X is the empty set
-{1}  | X has 1 element: 1
-{ {} } | X has 1 element: the empty set {}
-{ { {} } } | X has 1 element: a set with 1 element that contains the empty set {}
+sets: no order, no multiples |  `{ 1 2 } = { 2 1 } = { 2 2 1 }`
+lists: no order, multiples |  `(list 2 1) != (list 1 2) != (list 1 2 2)`
 
-sets vs lists | example
+* Refresher: set operations, sets of sets, subsets, powersets
+
 :-----|:-----------------------------
-sets: no order, no multiples |  { 1 2 } = { 2 1 } = { 2 2 1 }
-lists: no order, multiples |  (list 2 1) != (list 1 2) != (list 1 2 2)
+`{ 1 2 3 }` | has 3 elements: `1`, `2`, and `3`
+`{ {1} {2 3} }` | has 2 elements: inner set `{1}`, inner set `{2 3}`
+`{ 1 }` | has 2 subsets: `{}`, `{1}`
+`{ 1 2 3 }` | has a powerset of 8 elements: `{ {} {1} {2} {3} {1 2} {2 3} {1 3} {1 2 3} }`
+`{} ` | has no elements, i.e., is the empty set `{}`
+`{1} ` | has 1 element: `1`
+`{ {} }` | has 1 element: the empty set `{}`
+`{ { {} } }` | has 1 element: a set with 1 element that contains the empty set `{}`
 
 #### 2.0.5 Write expressions without evaluating them: [exercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/07/21/chapter-5.html).
 
@@ -147,17 +152,18 @@ Form the expression as it is (without evaluating it) ...
 
 Exercise | Clojure | Scala
 :-------|:------|:------
-`(+ 3 4)` as it is | `(quote (+ 3 4))` | `() => 3 + 4`
+`3 + 4` as it is | `(quote (+ 3 4))` | |
 ... | `'(+ 3 4)` _(alternative notation)_ |
-`(+ 3 4)` as it is, then evaluate | `(eval (quote (+ 3 4)))` | `(() => 3 + 4)()`
-... | `(eval '(+ 3 4))` _(alternative notation)_ |
+... | `#(+ 3 4)` _(as a function)_ | `() => 3 + 4` |
+`(+ 3 4)` as it is, then evaluate | `(eval (quote (+ 3 4)))` | |
+... | `(eval '(+ 3 4))` _(alternative notation)_ | |
+... | `(#(+ 3 4))` _(as a function)_ | `(() => 3 + 4)()` |
 
 ___Notes:___
 
-* In Lisp-based languages,
-  - preventing the evaluation of an expression is itself an expression, with an operator `quote` indicating _not_ to evaluate the subsequent expressions.
-  - the short form `'( ...)` for `(quote ...)` is offered.
-* In Scala... ___TODO___
+* In Clojure and Scala, preventing the evaluation of an expression is itself an expression.
+* In Closure (and other Lisp-based languages), an operator `quote` indicates not to evaluate the subsequent expressions.  Often, the short form `'( ...)` for `(quote ...)` is preferred.
+* Another language construct, available in both Clojure and Scala, is to describe computations as lambdas or anonymous functions (taking no arguments), see [Formulas and Functions](ch3_1_formulas_and_functions.md).
 
 #### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/08/05/chapter-7.html).
 
@@ -171,10 +177,6 @@ is less/equal than 40 | `(<= (* 7 6) 40)` | ` 7 * 6 <= 40 `
 is greater/equal than 40 | `(>= (* 7 6) 40)` | ` 7 * 6 >= 40 `
 is greater than 40 | `(> (* 7 6) 40)` | ` 7 * 6 > 40 `
 is not equal to 40 | `(not= (* 7 6) 40)` | ` 7 * 6 != 40 `
-
-___Notes:___
-
-* ___TODO:___ check for comparison's strictness...
 
 #### 2.0.7 Write boolean operator expressions.
 
