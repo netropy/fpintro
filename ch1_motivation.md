@@ -24,46 +24,44 @@ ___Questions:___
   [idioms](https://en.wikipedia.org/wiki/Idiom) and
   [patterns](https://en.wikipedia.org/wiki/Software_design_pattern)?
 
-#### Further Reading on the Evolution of Human Languages.
+___Further reading :___
 
-* [language family](https://en.wikipedia.org/wiki/Language_family),
-  [list of families](https://en.wikipedia.org/wiki/List_of_language_families),
-  [historical linguistics](https://en.wikipedia.org/wiki/Historical_linguistics)
-* [Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone)
-* [language, dialect, accent](https://en.wikipedia.org/wiki/Dialect)
+* Evolution of Human Languages:
+  - [language family](https://en.wikipedia.org/wiki/Language_family),
+    [list of families](https://en.wikipedia.org/wiki/List_of_language_families),
+    [historical linguistics](https://en.wikipedia.org/wiki/Historical_linguistics)
+  - [Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone)
+  - [language, dialect, accent](https://en.wikipedia.org/wiki/Dialect)
 
-#### Further Reading on the Evolution of Programming Languages.
+* Evolution of Programming Languages:
+  - [programming languages](https://en.wikipedia.org/wiki/Generational_list_of_programming_languages),
+    [history](https://en.wikipedia.org/wiki/History_of_programming_languages),
+    [timeline](https://en.wikipedia.org/wiki/Timeline_of_programming_languages)
+  - [computer languages](http://www.digibarn.com/collections/posters/tongues),
+    [history](http://rigaux.org/language-study/diagram.html) (see left chart for simplified version),
+    [influence network](http://exploring-data.com/vis/programming-languages-influence-network),
+    [timeline](https://www.levenez.com/lang)
+  - [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code),
+    [hyperpolyglot](http://hyperpolyglot.org)
+  - [dialect, variant, version](https://web.archive.org/web/20160309214409/http://people.ku.edu/~nkinners/LangList/Extras/dialects.htm)
 
-* [programming languages](https://en.wikipedia.org/wiki/Generational_list_of_programming_languages),
-  [history](https://en.wikipedia.org/wiki/History_of_programming_languages),
-  [timeline](https://en.wikipedia.org/wiki/Timeline_of_programming_languages)
-* [computer languages](http://www.digibarn.com/collections/posters/tongues),
-  [history](http://rigaux.org/language-study/diagram.html) (see left chart for simplified version),
-  [influence network](http://exploring-data.com/vis/programming-languages-influence-network),
-  [timeline](https://www.levenez.com/lang)
-* [Rosetta Code](http://rosettacode.org/wiki/Rosetta_Code),
-  [hyperpolyglot](http://hyperpolyglot.org)
-* [dialect, variant, version](https://web.archive.org/web/20160309214409/http://people.ku.edu/~nkinners/LangList/Extras/dialects.htm)
+* Programming Paradigms:
+  - [paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
+  - [procedural](https://en.wikipedia.org/wiki/Procedural_programming) vs
+    [functional](https://en.wikipedia.org/wiki/Functional_programming) vs
+    [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) vs
+    [logic](https://en.wikipedia.org/wiki/Logic_programming)
+  - [declarative](https://en.wikipedia.org/wiki/Declarative_programming) vs
+    [imperative](https://en.wikipedia.org/wiki/Imperative_programming)
 
-#### Further Reading on Programming Paradigms.
-
-* [paradigms](https://en.wikipedia.org/wiki/Programming_paradigm)
-* [procedural](https://en.wikipedia.org/wiki/Procedural_programming) vs
-  [functional](https://en.wikipedia.org/wiki/Functional_programming) vs
-  [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) vs
-  [logic](https://en.wikipedia.org/wiki/Logic_programming)
-* [declarative](https://en.wikipedia.org/wiki/Declarative_programming) vs
-  [imperative](https://en.wikipedia.org/wiki/Imperative_programming)
-
-#### Further Reading on Document Markup Languages.
-
-* [markup language](https://en.wikipedia.org/wiki/Markup_language),
-  [list of languages](https://en.wikipedia.org/wiki/List_of_document_markup_languages),
-  [comparison](https://en.wikipedia.org/wiki/Comparison_of_document_markup_languages)
-* [SGML](https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language),
-  [Hypertext](https://en.wikipedia.org/wiki/Hypertext),
-  [HTML](https://en.wikipedia.org/wiki/HTML)
-* [Markdown](https://en.wikipedia.org/wiki/Markdown)
+* Document Markup Languages:
+  - [markup language](https://en.wikipedia.org/wiki/Markup_language),
+    [list of languages](https://en.wikipedia.org/wiki/List_of_document_markup_languages),
+    [comparison](https://en.wikipedia.org/wiki/Comparison_of_document_markup_languages)
+  - [SGML](https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language),
+    [Hypertext](https://en.wikipedia.org/wiki/Hypertext),
+    [HTML](https://en.wikipedia.org/wiki/HTML)
+  - [Markdown](https://en.wikipedia.org/wiki/Markdown)
 
 -------------
 
