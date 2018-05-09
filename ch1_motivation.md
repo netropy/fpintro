@@ -12,8 +12,9 @@ ___Questions:___
   [_tree_](https://en.wikipedia.org/wiki/Tree_(graph_theory)) vs a
   [_graph_](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) of languages?
 * What are the advantages of being
-  [multilingual](https://en.wikipedia.org/wiki/Multilingualism)?
-* Do languages come in and out of fashion, like
+  [multilingual](https://en.wikipedia.org/wiki/Multilingualism) or
+  [polyglot](https://en.wikipedia.org/wiki/Polyglotism)?
+* Do languages come in and out of fashion, as implied by an article like
   ["Top 10 Programming Languages for 2017"](https://www.rinftech.com/top-10-programming-languages-2017)?
 * In addition to the
   [syntax](https://en.wikipedia.org/wiki/Syntax) of a programming language,
