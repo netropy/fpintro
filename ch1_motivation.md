@@ -1,7 +1,7 @@
 ## 1. Motivation: An Ever-Changing World of Languages?
 
-_All languages change continually._  This gives rise to language "family trees", often rendered as
-[pictures](https://www.theguardian.com/education/gallery/2015/jan/23/a-language-family-tree-in-pictures)
+_All languages change continually._  This gives rise to language families, often rendered as
+["trees"](https://www.theguardian.com/education/gallery/2015/jan/23/a-language-family-tree-in-pictures).
 
 ___Questions:___
 
@@ -33,10 +33,10 @@ ___Questions:___
 
 #### Further Reading on the Evolution of Programming Languages.
 
-* [programming_languages](https://en.wikipedia.org/wiki/Generational_list_of_programming_languages),
+* [programming languages](https://en.wikipedia.org/wiki/Generational_list_of_programming_languages),
   [history](https://en.wikipedia.org/wiki/History_of_programming_languages),
   [timeline](https://en.wikipedia.org/wiki/Timeline_of_programming_languages)
-* ["mother tongues" of computer languages](http://www.digibarn.com/collections/posters/tongues),
+* [computer languages](http://www.digibarn.com/collections/posters/tongues),
   [history](http://rigaux.org/language-study/diagram.html) (see left chart for simplified version),
   [influence network](http://exploring-data.com/vis/programming-languages-influence-network),
   [timeline](https://www.levenez.com/lang)
