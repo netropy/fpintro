@@ -34,7 +34,7 @@ ___Notes:___
 
 How to write Markdown texts: see [cheat-sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf) and [summary](https://guides.github.com/features/mastering-markdown)
 
-___Further reading:___
+___Further Reading:___
 
 * [Lightweight_markup_language](https://en.wikipedia.org/wiki/Lightweight_markup_language)
 * Markdown: [cheat-sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [basic writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax), [organizing information with tables](https://help.github.com/articles/organizing-information-with-tables), [creating and highlighting code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks)
