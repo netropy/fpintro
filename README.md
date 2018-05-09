@@ -1,11 +1,13 @@
 # fpintro
-Learning How to Program with Examples in Clojure and Scala
+Learning How to Program -- with Examples in Clojure and Scala
 
-This tutorial contains the exercises and notes of an introductory programming session with a high school student.
+This tutorial contains the notes and ca. 60 coding exercises of an introductory session on programming with a high school student. 
 
-While there are many websites and tools for ["getting kids excited about programming"](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming), we choose to try out this great tutorial: [Klipse for Kids](http://kids.klipse.tech).  Since this was a self-directed study on programming, this document carries many links to helpful articles from [Wikipedia](https://www.wikipedia.org/).
+Many websites and tools for ["getting kids excited about programming"](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming) employ code with visual feedback, for example, moving around objects by directional commands, loops, and branches.  Our main interest, however, was to understand the core concepts of _abstraction_ and _application_, i.e., to start with [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming).  We therefore choose to try out this tutorial, whose coding examples are basic arithmetics in a Lisp-based language: [_Klipse for Kids_](http://kids.klipse.tech).
 
-We chose [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org) as the two languages to begin the learning process with [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming).  Since the student happened to grow up bilingually, starting with two programming languages felt naturally as well :-)  Clojure, as a modern LISP, is the language used on the "Klipse for Kids" website.  Doing the same coding exercises also in Scala, will make it easy to later incorporate [Object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) concepts.
+The _Klipse for Kids_ tutorial worked very well for us: It does not assume prior coding experience, quickly enables to write calculations and functions, and offers many, small coding excercises, which run locally in the browser's script engine and, thus, invite to experiment with language concepts just learned.  Due to rapid progress, we added exercises on working with [Booleans](https://en.wikipedia.org/wiki/Boolean_data_type), composing [functions](https://en.wikipedia.org/wiki/Function_(mathematics)), and added an entire chapter on [_recursion_](https://en.wikipedia.org/wiki/Recursion).  As the project became a self-directed study on programming, this document carries many links to technical terms and concepts on [Wikipedia](https://www.wikipedia.org/) for further reading.
+
+Moreover, we did most coding excercises in two languages, [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org).  Clojure, as a modern descendant of LISP, is the language used in _Klipse for Kids_.  Scala makes it easier to later incorporate [Object-oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming) concepts (or add [Java](https://java.com) as another language).  Starting with two programming languages turned out not delaying the learning progress but came naturally to the student who happened to grow up bilingually :-)
 
 See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0).
 
