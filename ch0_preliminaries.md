@@ -5,7 +5,7 @@ To begin, some information on:
 * how to write a "Markdown" text document (like this one),
 * how to run Clojure and Scala code for the exercises.
 
-#### Inspect some file formats for text documents (like .html/.doc/.txt).
+#### 0.0.1 Inspect some file formats for text documents (like .html/.doc/.txt).
 
 * MacOS: open TextEdit.app
 ```
@@ -30,7 +30,7 @@ ___Notes:___
   - .html is plain text: `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" ...><html>...</body></html>`  
 * File formats are _languages_.
 
-#### Write formatted text in plain-text "Markdown" and render in a browser.
+#### 0.0.2 Write formatted text in plain-text "Markdown" and render in a browser.
 
 How to write Markdown texts: see [cheat-sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf) and [summary](https://guides.github.com/features/mastering-markdown)
 
@@ -59,7 +59,7 @@ ___Notes:___
 * Pandoc is just one of many tools converting .md to .html.
 * Github automatically renders an .md file as .html for viewing and linking (embedded links to .md files carry over to the generated .html page).
 
-#### Install Java, Clojure, Scala and run the language shells (REPL)
+#### 0.0.3 Install Java, Clojure, Scala and run the language shells (REPL)
 
 Install manually or via a [package manager](https://en.wikipedia.org/wiki/Package_manager) (like [Homebrew](https://brew.sh) for [macOS](https://en.wikipedia.org/wiki/Macintosh_operating_systems)):
 
