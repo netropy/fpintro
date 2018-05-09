@@ -1,8 +1,8 @@
 ## 0. Preliminaries: Writing Text, the Markdown Language, the Scala and Clojure Language Shells (REPL)
 
-Here, the bare minimum of what one needs to know:
+To begin, some information on:
 
-* how to write a text document like this one
+* how to write a "Markdown" text document (like this one),
 * how to run Clojure and Scala code for the exercises.
 
 #### Inspect some file formats for text documents (like .html/.doc/.txt).
@@ -14,8 +14,8 @@ Here, the bare minimum of what one needs to know:
     ->Format->Make Plain/Rich Text
     ->Save .txt
 ```
-* <https://en.wikipedia.org/wiki/Text_editor>
-* <https://en.wikipedia.org/wiki/Plain_text>, <https://en.wikipedia.org/wiki/Binary_file>, <https://en.wikipedia.org/wiki/Formatted_text>
+* What is a [text editor](https://en.wikipedia.org/wiki/Text_editor)?
+* What is a [file format](https://en.wikipedia.org/wiki/File_format)? What is a [plain text](https://en.wikipedia.org/wiki/Plain_text) vs. a [binary file](https://en.wikipedia.org/wiki/Binary_file) format vs. [formatted text](https://en.wikipedia.org/wiki/Formatted_text)?
 
 ___Notes:___
 
@@ -32,27 +32,24 @@ ___Notes:___
 
 #### Write formatted text in plain-text "Markdown" and render in a browser.
 
-How to write Markdown texts ("cheat sheets"):
+How to write Markdown texts: see [cheat-sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf) and [summary](https://guides.github.com/features/mastering-markdown)
 
-* <https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf>
-* <https://guides.github.com/features/mastering-markdown>
+___Further reading:___
 
-Further reading:
+* [Lightweight_markup_language](https://en.wikipedia.org/wiki/Lightweight_markup_language)
+* Markdown: [cheat-sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [basic writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax), [organizing information with tables](https://help.github.com/articles/organizing-information-with-tables), [creating and highlighting code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks)
 
-* <https://en.wikipedia.org/wiki/Lightweight_markup_language>
-* <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>,
-* <https://help.github.com/articles/basic-writing-and-formatting-syntax>, <https://help.github.com/articles/organizing-information-with-tables>, <https://help.github.com/articles/creating-and-highlighting-code-blocks>
+How to view Markdown texts in a [web browser](https://en.wikipedia.org/wiki/Web_browser):
 
-How to render Markdown texts as HTML an view in a browser:
-
-* <https://en.wikipedia.org/wiki/Shell_(computing)>, <https://en.wikipedia.org/wiki/Command-line_interface>, <https://en.wikipedia.org/wiki/Graphical_user_interface>
-* run in shell
+* Upload a markdown file to [Github](https://github.com/about) and view it in a web browser.
+* What is a ["shell"](https://en.wikipedia.org/wiki/Shell_(computing))? What is a [command-line_interface](https://en.wikipedia.org/wiki/Command-line_interface) vs. a [graphical_user_interface](https://en.wikipedia.org/wiki/Graphical_user_interface)?
+* To locally convert and render an .md file as .html, install [pandoc](https://pandoc.org) and run any of these commands in shell:
 ```
     $ pandoc -o topics.html topics.md
     $ pandoc topics.md -o topics.html
     $ pandoc topics.md > topics.html
 ```
-* open generated .html in <https://en.wikipedia.org/wiki/Web_browser>
+* Open the generated .html file in a web browser.
 
 ___Notes:___
 
@@ -60,21 +57,17 @@ ___Notes:___
 * Markdown is widely used and has become the format of choice for "collaborative" editing.
 * Markdown can be easily converted to HTML, which is the standard markup language for web pages and web applications.
 * Pandoc is just one of many tools converting .md to .html.
+* Github automatically renders an .md file as .html for viewing and linking (embedded links to .md files carry over to the generated .html page).
 
-#### Install Clojure, Scala and run the language shells (REPL)
+#### Install Java, Clojure, Scala and run the language shells (REPL)
 
-___TODO:___ add links for how to install Java, Scala, Leiningen/Clojure
+Install manually or via a [package manager](https://en.wikipedia.org/wiki/Package_manager) (like [Homebrew](https://brew.sh) for [macOS](https://en.wikipedia.org/wiki/Macintosh_operating_systems)):
+
+* [Java](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html), preferrably a "Java SE Development Kit": [OpenJDK](http://openjdk.java.net) or [Oracle's JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Leiningen](https://leiningen.org) for [Clojure](https://clojure.org)
+* [Scala](https://www.scala-lang.org/download)
 
 A _language shell_ or [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) reads (typically small) chunks of programming code as text input, then directly executes (evaluates) it, and prints the result as text output.  
-
-To run the Scala shell:
-```
-    $ scala
-    Welcome to Scala 2.12.5 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_172).
-    Type in expressions for evaluation. Or try :help.
-
-    scala> 
-```
 
 To run the Clojure shell:
 ```
@@ -93,14 +86,20 @@ To run the Clojure shell:
     user=> 
 ```
 
-Further Reading:
+To run the Scala shell:
+```
+    $ scala
+    Welcome to Scala 2.12.5 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_172).
+    Type in expressions for evaluation. Or try :help.
 
-* <https://en.wikipedia.org/wiki/Interpreter_(computing)>,
-  <https://en.wikipedia.org/wiki/Compiler>,
-  <https://en.wikipedia.org/wiki/Interpreted_language>,
-  <https://en.wikipedia.org/wiki/Compiled_language>
-* for Clojure both, REPLs and a [compiler](https://clojure.org/reference/compilation), are available
-* for Scala both, REPLs and a [compiler](https://www.scala-lang.org/files/archive/nightly/docs/manual/html/scalac.html), are available
+    scala> 
+```
+
+___Further Reading:___
+
+* What is a [computer language](https://en.wikipedia.org/wiki/Computer_language) [interpreter](https://en.wikipedia.org/wiki/Interpreter_(computing)) vs a [compiler](https://en.wikipedia.org/wiki/Compiler)?  What is an [interpreted_language](https://en.wikipedia.org/wiki/Interpreted_language) vs a [compiled language](https://en.wikipedia.org/wiki/Compiled_language)?
+* for Clojure both, [REPLs](https://clojure.org/guides/repl/launching_a_basic_repl) and a [compiler](https://clojure.org/reference/compilation), are available
+* for Scala both, [REPLs](https://docs.scala-lang.org/overviews/repl/overview.html) and a [compiler](https://www.scala-lang.org/files/archive/nightly/docs/manual/html/scalac.html), are available
 
 ------------
 
