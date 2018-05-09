@@ -14,17 +14,16 @@ ___Questions:___
 * What are the advantages of being
   [multilingual](https://en.wikipedia.org/wiki/Multilingualism) or
   [polyglot](https://en.wikipedia.org/wiki/Polyglotism)?
-* Do languages come in and out of fashion, as implied by an article like
-  ["Top 10 Programming Languages for 2017"](https://www.rinftech.com/top-10-programming-languages-2017)?
-* In addition to the
-  [syntax](https://en.wikipedia.org/wiki/Syntax) of a programming language,
-  what's the importance of learning about
+* Do languages come in and out of fashion, as implied by
+  ["Top 10 Programming Languages for 2017"](https://www.rinftech.com/top-10-programming-languages-2017), for example?
+* In addition to learning the
+  [syntax](https://en.wikipedia.org/wiki/Syntax) of a programming language, what's the importance
   [style](https://en.wikipedia.org/wiki/Programming_style),
   [concepts](https://en.wikipedia.org/wiki/Fundamental_Concepts_in_Programming_Languages),
   [idioms](https://en.wikipedia.org/wiki/Idiom) and
   [patterns](https://en.wikipedia.org/wiki/Software_design_pattern)?
 
-___Further reading :___
+___Further Reading :___
 
 * Evolution of Human Languages:
   - [language family](https://en.wikipedia.org/wiki/Language_family),
