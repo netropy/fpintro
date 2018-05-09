@@ -63,7 +63,7 @@ ___Notes:___
 
 Install manually or via a [package manager](https://en.wikipedia.org/wiki/Package_manager) (like [Homebrew](https://brew.sh) for [macOS](https://en.wikipedia.org/wiki/Macintosh_operating_systems)):
 
-* [Java](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html), preferrably a "Java SE Development Kit": [OpenJDK](http://openjdk.java.net) or [Oracle's JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Java](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html), preferrably a [Java Development Kit](https://en.wikipedia.org/wiki/Java_Development_Kit) like [OpenJDK](http://openjdk.java.net) or [Oracle's JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * [Leiningen](https://leiningen.org) for [Clojure](https://clojure.org)
 * [Scala](https://www.scala-lang.org/download)
 
