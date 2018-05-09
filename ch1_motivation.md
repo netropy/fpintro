@@ -1,6 +1,6 @@
 ## 1. Motivation: An Ever-Changing World of Languages?
 
-_All languages change continually._  This gives rise to language families, often rendered as
+[_All languages change continually_](http://martinweisser.org/courses/intro/histLing.html#Language%20Change).  This gives rise to [language families](https://en.wikipedia.org/wiki/Language_family), often rendered as
 ["trees"](https://www.theguardian.com/education/gallery/2015/jan/23/a-language-family-tree-in-pictures).
 
 ___Questions:___
@@ -8,26 +8,26 @@ ___Questions:___
 * What are the forces driving
   [_language change_](https://en.wikipedia.org/wiki/Language_change) (languages evolving) and
   [_language shift_](https://en.wikipedia.org/wiki/Language_shift) (people changing languages)?
-* If languages not just split but influence each other, then how accurate is it to speak of a
-  [_tree_](https://en.wikipedia.org/wiki/Tree_(graph_theory)) vs a
+* If languages not just split but also influence each other, then how accurate is it to speak of a
+  [_tree_](https://en.wikipedia.org/wiki/Tree_(graph_theory)) and not a
   [_graph_](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) of languages?
 * What are the advantages of being
   [multilingual](https://en.wikipedia.org/wiki/Multilingualism) or
   [polyglot](https://en.wikipedia.org/wiki/Polyglotism)?
-* Do languages come in and out of fashion, as implied by
-  ["Top 10 Programming Languages for 2017"](https://www.rinftech.com/top-10-programming-languages-2017), for example?
 * In addition to learning the
-  [syntax](https://en.wikipedia.org/wiki/Syntax) of a programming language, what's the importance
+  [syntax](https://en.wikipedia.org/wiki/Syntax) of a
+  [programming language](https://en.wikipedia.org/wiki/Programming_language), what's the importance
   [style](https://en.wikipedia.org/wiki/Programming_style),
   [concepts](https://en.wikipedia.org/wiki/Fundamental_Concepts_in_Programming_Languages),
   [idioms](https://en.wikipedia.org/wiki/Idiom) and
   [patterns](https://en.wikipedia.org/wiki/Software_design_pattern)?
+* Do languages come in and out of fashion, as implied by an article like
+  ["Top 10 Programming Languages for 2017"](https://www.rinftech.com/top-10-programming-languages-2017)?
 
 ___Further Reading :___
 
 * Evolution of Human Languages:
-  - [language family](https://en.wikipedia.org/wiki/Language_family),
-    [list of families](https://en.wikipedia.org/wiki/List_of_language_families),
+  - [list of language families](https://en.wikipedia.org/wiki/List_of_language_families),
     [historical linguistics](https://en.wikipedia.org/wiki/Historical_linguistics)
   - [Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone)
   - [language, dialect, accent](https://en.wikipedia.org/wiki/Dialect)
