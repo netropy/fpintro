@@ -78,24 +78,23 @@ Exercise | Clojure | Scala
 
 ___Notes:___
 
+* Compared to Clojure, there is a less of a need for round brackets in Scala (see cartoon below ;-)
 * In Clojure, the operator `def` defines a global variable.  (There's also an operator for binding a local variable is called `let`).
 * In Lisp-based languages, assigning a name to an expression is itself an expression with an operator doing the naming and taking as operands the name and the named expression.
 * In Scala, keyword `val` names a constant value.  (There's also the keyword `var` to define a variable, which may be re-assigned new values.)
-* Compared to Clojure, there is a less of a need for round brackets in Scala (see cartoon below ;-).
+* Programming languages typically adopt (more or less strict) conventions about how to form and capitalize composite names, for example:
+
+Example | Informal letter case name | Prevalent in
+:-----|:-----|:-----
+`no-of-widgets` | [kebab case](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) | Lisp, Clojure
+`no_of_widgets` | [snake case](https://en.wikipedia.org/wiki/Snake_case) | C, C++
+`noOfWidgets` | [camel case](https://en.wikipedia.org/wiki/Camel_case) | Java, Scala, C++
 
 ___Further Reading:___
 
-* Programming languages typically adopt (more or less strict) conventions about how to form and capitalize composite names, for example:
-
-Example | Letter case name (informal) | Prevalent in
-:-----|:-----
-no-of-widgets | ["kebab case"](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles) | Lisp, Clojure
-no_of_widgets | ["snake case"](https://en.wikipedia.org/wiki/Snake_case) | C, C++
-noOfWidgets | ["camel case"](https://en.wikipedia.org/wiki/Camel_case) | Java, Scala, C++
-
-* Such conventions for names or code formatting are typically captured by general language
+* Conventions for names or code formatting are typically captured by general language
   [style guides](https://en.wikipedia.org/wiki/Style_guide),
-  which are often _overlaid_ by additional rules specific to projects, companies, or developers.
+  which are often overlaid by additional rules specific to projects, companies, or developers.
 * Take a peek at these widely used style guides for
   [Clojure](https://github.com/bbatsov/clojure-style-guide) and
   [Scala](https://docs.scala-lang.org/style).
