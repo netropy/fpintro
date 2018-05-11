@@ -47,8 +47,8 @@ Exercise | Clojure | Scala
 ___Notes:___
 
 * Expressions may contain sub-expressions.
-* [Parentheses or round brackets](https://en.wikipedia.org/wiki/Bracket#Parentheses_.28_.29) are sometimes needed to express grouping and order of operations.
-* In turn, precedence rules of operators may allow to drop parentheses.
+* [Parentheses or round brackets](https://en.wikipedia.org/wiki/Bracket#Parentheses_.28_.29) are needed to express grouping and order of operations.
+* However, precedence rules for operators may mitigate the need for parentheses.
 
 ___Further Reading:___
 
@@ -127,12 +127,15 @@ Compose a list of ...
 Exercise | Clojure | Scala
 :-------|:------|:------
 1\. | `(list 1 2 3 4 9)` | `List(1, 2, 3, 4, 9)`
+... | `;; => (1 2 3 4 9)` | `// -> List(1, 2, 3, 4, 9)`
 2\. | `(list (* 2 3) (* 2 4) (* 2 5))` | `List(2 * 3, 2 * 4, 2 * 5)`
+... | `;; => (6 8 10)` | `// -> List(6, 8, 10)` |
 3\. | `(def ages (list 12 7 7))` | `val ages = List(12, 7, 7)`
+... | `;; #'user/ages` | `// -> ages: List[Int] = List(12, 7, 7)`
 4\. | `(list ages 3 10 10)` | `List(ages, 3, 10, 10)`
-... | `;; => ((12 7 7) 3 10 10)` | `// -> List(List(12, 7, 7), 3, 10, 10)`
-5\. | `(list ages (list 3 10 10))` | `List(ages, List(3 10 10))`
-... | `;; => ((12 7 7) (3 10 10))` | `// -> List(List(12, 7, 7), List(3, 10, 10))`
+... | `;; => ((12 7 7) 3 10 10)` | `// -> List[Any] = List(List(12, 7, 7), 3, 10, 10)`
+5\. | `(list ages (list 3 10 10))` | `List(ages, List(3, 10, 10))`
+... | `;; => ((12 7 7) (3 10 10))` | `// -> List[List[Int]] = List(List(12, 7, 7), List(3, 10, 10))`
 
 ___Notes:___
 
