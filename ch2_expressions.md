@@ -2,7 +2,7 @@
 
 This chapter contains exercises on how to write [expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)).  Most coding exercises are from the tutorial [Klipse for Kids](http://kids.klipse.tech) with answers given here in Clojure and Scala; also added is an excercise for boolean operations.
 
-For information on how to form expressions in Clojure and Scala, see below's [Summary](#summary) or these "cheat-sheets": [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp), [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet).
+For information on how to form expressions in Clojure and Scala, see below's [Summary](#21-summary) or these "cheat-sheets": [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp), [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet).
 
 #### 2.0.1 Write arithmetic expressions: [exercise KfK, chapter 1: What is computer programming?](http://kids.klipse.tech/clojure/2016/05/03/programming-kids-1.html)
 
