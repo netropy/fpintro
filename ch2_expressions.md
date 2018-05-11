@@ -133,9 +133,9 @@ Exercise | Clojure | Scala
 3\. | `(def ages (list 12 7 7))` | `val ages = List(12, 7, 7)`
 ... | `;; #'user/ages` | `// -> ages: List[Int] = List(12, 7, 7)`
 4\. | `(list ages 3 10 10)` | `List(ages, 3, 10, 10)`
-... | `;; => ((12 7 7) 3 10 10)` | `// -> List[Any] = List(List(12, 7, 7), 3, 10, 10)`
+... | `;; => ((12 7 7) 3 10 10)` | `// -> List(List(12, 7, 7), 3, 10, 10)`
 5\. | `(list ages (list 3 10 10))` | `List(ages, List(3, 10, 10))`
-... | `;; => ((12 7 7) (3 10 10))` | `// -> List[List[Int]] = List(List(12, 7, 7), List(3, 10, 10))`
+... | `;; => ((12 7 7) (3 10 10))` | `// -> List(List(12, 7, 7), List(3, 10, 10))`
 
 ___Notes:___
 
