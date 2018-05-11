@@ -24,7 +24,7 @@ ___Questions:___
 * Do languages come in and out of fashion, as implied by an article like
   ["Top 10 Programming Languages for 2017"](https://www.rinftech.com/top-10-programming-languages-2017)?
 
-___Further Reading :___
+___Further Reading:___
 
 * Evolution of Human Languages:
   - [list of language families](https://en.wikipedia.org/wiki/List_of_language_families),

@@ -202,7 +202,7 @@ ___Notes:___
 
 Hints:
 
-* A negative sign operation in front of a recursive call, as in `-add(-m, -n)` would no longer make the function tail-recursive.
+* Putting a negative sign operation in front of a recursive call, as in `-add(-m, -n)`, would make the function call no longer tail-recursive.
 * Instead, put the tail-recursive code into a "helper" function `add_go(...) = ...` and call it from function `add(...) = ...`.
 
 ```scala
@@ -227,7 +227,14 @@ assert(add(-3,-2) == -5)
 ___Notes:___
 
 * Above code is tail-recursive (i.e., efficient) and robust :-)
-* Notation: since the "helper" function is not robust and hence to be used from "outside", the preferred style is it make it a _local_ function, typically just called `go` or `loop`, within a "wrapper" function:
+
+___Further Improvement:___
+
+* Since the "helper" function is not robust and, hence, should not be called directly, the preferred style is it make it a
+  [_local_ or _nested_ function](https://en.wikipedia.org/wiki/Nested_function),
+  typically just called `go` or `loop`, within the "outer" or
+  [_wrapper_ function](https://en.wikipedia.org/wiki/Wrapper_function):
+
 ```scala
 def add(m: Int, n: Int): Int = {
   @annotation.tailrec
@@ -239,7 +246,6 @@ def add(m: Int, n: Int): Int = {
   if (m < 0) -go(-m, -n)
   else go(m, n)  
 }
-
 ```
 
 ------------

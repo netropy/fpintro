@@ -2,9 +2,16 @@
 
 In the previous chapter, we've learned how to form, evaluate, and name expressions.
 
-So far, all names as introduced in the coding excercises represented [constants](https://en.wikipedia.org/wiki/Constant_(computer_programming)), which could be used as [operands](https://en.wikipedia.org/wiki/Operand) or [values](https://en.wikipedia.org/wiki/Value_(computer_science)) in general, i.e., after an operator `(op ...)` in Closure or `op(...)` in Scala.
+So far, all names as introduced in the coding excercises represented
+[constants](https://en.wikipedia.org/wiki/Constant_(computer_programming)), which could be used as
+[operands](https://en.wikipedia.org/wiki/Operand) or
+[values](https://en.wikipedia.org/wiki/Value_(computer_science)) in general, i.e., after an operator `(op ...)` in Clojure or `op(...)` in Scala.
 
-In this chapter we learn how to define "formulas" or [anonymous functions](https://en.wikipedia.org/wiki/Anonymous_function), which describe computations in terms of [parameters](https://en.wikipedia.org/wiki/Parameter_(computer_programming)).  Such functions may be given a name, and they can be "applied" like a user-defined [operator](https://en.wikipedia.org/wiki/Operator_(computer_programming)).
+In this chapter we learn how to define "formulas" or
+[anonymous functions](https://en.wikipedia.org/wiki/Anonymous_function), which describe computations in terms of
+[parameters](https://en.wikipedia.org/wiki/Parameter_(computer_programming)).
+Such functions may be given a name, and they can be "applied" like a user-defined
+[operator](https://en.wikipedia.org/wiki/Operator_(computer_programming)).
  
 [3.1 Formulas and Functions](ch3_1_formulas_and_functions.md)
 
@@ -12,7 +19,11 @@ In this chapter we learn how to define "formulas" or [anonymous functions](https
 
 [3.3 Plotting the Evaluation of Functions](ch3_3_plotting_the_evaluation_of_functions.md)
 
-_Bonus excercise:_ Lookup the language constructs learned in this chapter in these "cheat-sheets": [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp), [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet).
+_Bonus excercise:_ Lookup the language constructs learned in this chapter in these "cheat-sheets":
+[Clojure](https://clojure.org/api/cheatsheet),
+[Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp),
+[Scala](https://docs.scala-lang.org/cheatsheets),
+[Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet).
 
 ------------------
 

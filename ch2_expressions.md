@@ -1,8 +1,17 @@
 ## 2.0 Expressions
 
-This chapter contains exercises on how to write [expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)).  Most coding exercises are from the tutorial [Klipse for Kids](http://kids.klipse.tech) with answers given here in Clojure and Scala; also added is an excercise for boolean operations.
+This chapter contains exercises on how to write
+[expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)).
+Most coding exercises are from the tutorial
+[Klipse for Kids](http://kids.klipse.tech)
+with answers given here in Clojure and Scala; also added is an excercise for boolean operations.
 
-For a summary of Clojure's and Scala's expression syntax, see [below](#21-summary) or look up these "cheat-sheets": [Clojure](https://clojure.org/api/cheatsheet), [Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp), [Scala](https://docs.scala-lang.org/cheatsheets), [Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet).
+For a summary of Clojure's and Scala's expression syntax, see
+[below](#21-summary) or look up these "cheat-sheets":
+[Clojure](https://clojure.org/api/cheatsheet),
+[Clojure and other Lisp dialects](http://hyperpolyglot.org/lisp),
+[Scala](https://docs.scala-lang.org/cheatsheets),
+[Scala-to-Java](http://rea.tech/java-to-scala-cheatsheet).
 
 #### 2.0.1 Write arithmetic expressions: [exercise KfK, chapter 1: What is computer programming?](http://kids.klipse.tech/clojure/2016/05/03/programming-kids-1.html)
 
@@ -16,10 +25,13 @@ Exercise | Clojure | Scala
 
 ___Notes:___
 
-* Clojure uses [_prefix notation_](https://en.wikipedia.org/wiki/Polish_notation): `(operator operand operand)`
-* Scala supports the familiar [_infix notation_](https://en.wikipedia.org/wiki/Infix_notation): `operand operator operand`.
+* Clojure uses
+  [_prefix notation_](https://en.wikipedia.org/wiki/Polish_notation): `(operator operand operand)`
+* Scala supports the familiar
+  [_infix notation_](https://en.wikipedia.org/wiki/Infix_notation): `operand operator operand`.
 * Clojure: multiple operands allowed for `+`, `*` ... operator.
-* Scala: a blank (or other [white space characters](https://en.wikipedia.org/wiki/Whitespace_character)) between the operator and its operands is optional (but preferred).
+* Scala: a blank (or other
+  [white space characters](https://en.wikipedia.org/wiki/Whitespace_character)) between the operator and its operands is optional (but preferred).
 
 ___Further Reading:___
 
@@ -127,15 +139,15 @@ Compose a list of ...
 Exercise | Clojure | Scala
 :-------|:------|:------
 1\. | `(list 1 2 3 4 9)` | `List(1, 2, 3, 4, 9)`
-... | `;; => (1 2 3 4 9)` | `// -> List(1, 2, 3, 4, 9)`
+... | `;; => (1 2 3 4 9)` | `// => List(1, 2, 3, 4, 9)`
 2\. | `(list (* 2 3) (* 2 4) (* 2 5))` | `List(2 * 3, 2 * 4, 2 * 5)`
-... | `;; => (6 8 10)` | `// -> List(6, 8, 10)` |
+... | `;; => (6 8 10)` | `// => List(6, 8, 10)` |
 3\. | `(def ages (list 12 7 7))` | `val ages = List(12, 7, 7)`
-... | `;; #'user/ages` | `// -> ages: List[Int] = List(12, 7, 7)`
+... | `;; #'user/ages` | `// => ages: List[Int] = List(12, 7, 7)`
 4\. | `(list ages 3 10 10)` | `List(ages, 3, 10, 10)`
-... | `;; => ((12 7 7) 3 10 10)` | `// -> List(List(12, 7, 7), 3, 10, 10)`
+... | `;; => ((12 7 7) 3 10 10)` | `// => List(List(12, 7, 7), 3, 10, 10)`
 5\. | `(list ages (list 3 10 10))` | `List(ages, List(3, 10, 10))`
-... | `;; => ((12 7 7) (3 10 10))` | `// -> List(List(12, 7, 7), List(3, 10, 10))`
+... | `;; => ((12 7 7) (3 10 10))` | `// => List(List(12, 7, 7), List(3, 10, 10))`
 
 ___Notes:___
 
@@ -147,33 +159,37 @@ ___Notes:___
 
 ___Further Reading:___
 
-* Refresher:
+* Refresher (mathematics):
   [sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) vs.
-  [lists](https://en.wikipedia.org/wiki/List_(abstract_data_type))
-  - sets: no order, no multiples: `{ 1 2 } = { 2 1 } = { 2 2 1 }`
-  - lists: order counts, multiples allowed: `(list 2 1) != (list 1 2) != (list 1 2 2)`
+  [lists](https://en.wikipedia.org/wiki/List_(abstract_data_type)) vs.
+  [tuples](https://en.wikipedia.org/wiki/Tuple)
+  - sets: homogeneous, no order, no multiples: `{ 1 2 } = { 2 1 } = { 2 2 1 }`
+  - lists: homogeneous, order counts, multiples allowed: `(list 2 1) != (list 1 2) != (list 1 2 2)`
+  - tuples: heterogeneous, order counts, multiples allowed: `(1, 2, 'a') != ('a', 2, 1) != (2, 2, 1, 'a', 'a')`
 
 * Scala, Clojure, and most languages also provide other, predefined collection types, for example:
   [arrays or vectors](https://en.wikipedia.org/wiki/Array_data_structure) or
   [maps](https://en.wikipedia.org/wiki/Associative_array).
 
-* Refresher:
+* Refresher (mathematics):
   [elements](https://en.wikipedia.org/wiki/Element_(mathematics)),
   [empty set](https://en.wikipedia.org/wiki/Empty_set),
   [subsets](https://en.wikipedia.org/wiki/Subset),
   [power sets](https://en.wikipedia.org/wiki/Power_set),
-  [set operations](https://en.wikipedia.org/wiki/Algebra_of_sets)
+  [set operations](https://en.wikipedia.org/wiki/Algebra_of_sets),
+  [Cartesian product](https://en.wikipedia.org/wiki/Cartesian_product)
 
 Example | Meaning
 :-----|:-----------------------------
 `{ 1 2 3 }` | has 3 elements: `1`, `2`, and `3`
 `{ {1} {2 3} }` | has 2 elements: inner set `{1}`, inner set `{2 3}`
 `{ 1 }` | has 2 subsets: `{}`, `{1}`
-`{ 1 2 3 }` | has a powerset of 8 elements: `{ {} {1} {2} {3} {1 2} {2 3} {1 3} {1 2 3} }`
+`{ 1 2 3 }` | has a power set of 8 elements: `{ {} {1} {2} {3} {1 2} {2 3} {1 3} {1 2 3} }`
 `{} ` | has no elements, i.e., is the empty set `{}`
 `{1} ` | has 1 element: `1`
 `{ {} }` | has 1 element: the empty set `{}`
 `{ { {} } }` | has 1 element: a set with 1 element that contains the empty set `{}`
+`{ 1 2 } X { 3 4 5 }` | is a Cartesian product of 6 elements: `{ (1,3) (1,4) (1,5) (2,3) (2,4) (2,5) }`
 
 #### 2.0.5 Write expressions without evaluating them: [exercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/07/21/chapter-5.html).
 
@@ -194,11 +210,13 @@ Exercise | Clojure | Scala
 ___Notes:___
 
 * In Clojure and Scala, preventing the evaluation of an expression is itself an expression.
-* In Closure (and other Lisp-based languages), an operator
+* In Clojure (and other Lisp-based languages), an operator
   - [`quote`](https://clojuredocs.org/clojure.core/quote)
     indicates not to evaluate the subsequent expressions; often, the short form `'( ...)` for `(quote ...)` is preferred.
   - [`eval`](https://clojuredocs.org/clojure.core/eval) submits form data to the interpreter for evaluation and returns the result.
-* Quoting of expressions is not directly applicable to Scala.  However, a general language construct (available in both Clojure and Scala) is to describe computations as _lambdas_ or _anonymous functions_ taking no arguments, see [Formulas and Functions](ch3_1_formulas_and_functions.md) for notes and exercises.
+* Quoting of expressions is not directly applicable to Scala.
+  However, a general language construct (available in both Clojure and Scala) is to describe computations as _lambdas_ or _anonymous functions_ taking no arguments, see
+  [Formulas and Functions](ch3_1_formulas_and_functions.md) for notes and exercises.
 
 #### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/08/05/chapter-7.html).
 
@@ -226,7 +244,10 @@ ___Further Reading:___
 
 The [Boolean data type](https://en.wikipedia.org/wiki/Boolean_data_type)
 consists of just two values `true` and `false`.
-Expressions yielding a Boolean value can be combined by logical operators such as _not_, _and_, _or_ .
+Expressions yielding a Boolean value can be combined by logical operators such as
+[_not_ (negation)](https://en.wikipedia.org/wiki/Negation),
+[_and_ (conjunction)](https://en.wikipedia.org/wiki/Logical_conjunction),
+[_or_ (disjunction)](https://en.wikipedia.org/wiki/Logical_disjunction).
 How these operators "work" can be easily seen by their so-called
 [_truth tables_](https://en.wikipedia.org/wiki/Truth_table),
 which shows the 2, respectively 4  `true`/`false` combinations for their operands.
@@ -263,8 +284,10 @@ ___Further reading:___
   [_lazy_](https://en.wikipedia.org/wiki/Lazy_evaluation): the 2nd operand will not be evaluated once `op1` already decides the outcome.
   That is, for `false & (...)` and `true | (...)`, any expression `(...)` will not even be evaluated, so, any error there would not be raised.  This is also called
   [short-circuit_evaluation](https://en.wikipedia.org/wiki/Short-circuit_evaluation).
-* Besides logical _and_, _or_, there are more boolean operators called _xor_, _nand_, _nor_, and _implies_, whose behaviour can be easily seen by their
+* Besides logical _not_, _and_, _or_, there are more boolean operators called _xor_, _nand_, _nor_, and _implies_, whose behaviour is also easily seen by their
   [truth table](https://en.wikipedia.org/wiki/Truth_table).
+* For a general discussion of all boolean operators and their inter-relationship, see
+  [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra).
 
 ### 2.1 Summary
 

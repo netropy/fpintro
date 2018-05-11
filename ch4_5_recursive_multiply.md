@@ -115,7 +115,12 @@ ___Notes:___
 Hints:
 
 * Instead of modifying the _result_ of the recursive call, add another _parameter_ accumulating the intermediate results.
-* Make the 3-parameter function version a _local_ function within the 2-parameter "wrapper" function.
+* Similar as in
+  [exercise 4.4.9](#449-make-the-tail-recursive-version-of-add-robust-by-extending-it-to-negative-arguments),
+  make the 3-parameter version a
+  [_local_ or _nested_ function](https://en.wikipedia.org/wiki/Nested_function),
+  within the 2-parameter
+  [_wrapper_ function](https://en.wikipedia.org/wiki/Wrapper_function).
 * Delegate the calculation for negative `m` like in the 2nd definition of `multiply` above.
 
 ```scala
