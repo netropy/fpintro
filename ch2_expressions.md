@@ -28,15 +28,21 @@ ___Further Reading:___
 #### 2.0.2 Write nested arithmetic expressions: [exercise KfK, chapter 2: Expressions inside Expressions inside Expressions](http://kids.klipse.tech/clojure/2016/06/18/programming-kids-2.html).
 
 Write this calculation as arithmetic expression ...
+1. add 10 to 12 and multiply the result by 3
+2. add 7 to 9 and multiply the result by 5
+3. multiply 7 and 9 and add 6 to the result
+4. multiply 7 and 9 and add 6 and 9 to the result
+5. add 7 to 9 and multiply the result by 5 and by 3
+6. add 7 to 9 and multiply the result by 3 plus 8 plus 9
 
 Exercise | Clojure | Scala
 :-------|:------|:------
-add 10 to 12 and multiply the result by 3 | `(* (+ 10 12) 3)` | `(10 + 12) * 3`
-add 7 to 9 and multiply the result by 5 | `(* (+ 7 9) 5)` | `(7 + 9) * 5`
-multiply 7 and 9 and add 6 to the result | `(+ (* 7 9) 6)` |`(7 * 9) + 6` or `7 * 9 + 6`
-multiply 7 and 9 and add 6 and 9 to the result | `(+ (* 7 9) 6 9)` | `(7 * 9) + 6 + 9`
-add 7 to 9 and multiply the result by 5 and by 3 | `(* (+ 7 9) 5 3)` | `(7 + 9) * 5 * 3`
-add 7 to 9 and multiply the result by 3 plus 8 plus 9 | `(* (+ 7 9) (+ 3 8 9))` | `(7 + 9) * (3 + 8 + 9)`
+1\. | `(* (+ 10 12) 3)` | `(10 + 12) * 3`
+2\. | `(* (+ 7 9) 5)` | `(7 + 9) * 5`
+3\. | `(+ (* 7 9) 6)` |`(7 * 9) + 6` or `7 * 9 + 6`
+4\. | `(+ (* 7 9) 6 9)` | `(7 * 9) + 6 + 9`
+5\. | `(* (+ 7 9) 5 3)` | `(7 + 9) * 5 * 3`
+6\. | `(* (+ 7 9) (+ 3 8 9))` | `(7 + 9) * (3 + 8 + 9)`
 
 ___Notes:___
 
@@ -64,17 +70,25 @@ ___Further Reading:___
 
 It is often useful to assign expressions a name.  A name carries a meaning and it can be referenced multiple times, thus, giving a single definition for a "common subexpression".
 
-Factor out common subexpressions among these examples by a defining a constant ...
+Factor out common subexpressions among these examples by assigning them to a constant ...
+1. (4 + 7 + 8)\*3 + (4 + 7 + 8)\*7 + (4 + 7 + 8)\*9
+2. (2\*3 + 4)\*3 + (2\*3 + 4)\*7 + (2\*3 + 4)\*9
+3. (2\*3 + 4\*5) \* (4 + 5)
+4. (2\*3 + 4\*5) \* (4 + 5) \* 19
 
 Exercise | Clojure | Scala
 :-------|:------|:------
-(4 + 7 + 8)\*3 + (4 + 7 + 8)\*7 + (4 + 7 + 8)\*9 | `(def a (+ 4 7 8))` | `val a = 4 + 7 + 8`
+1\. | `(def a (+ 4 7 8))` | `val a = 4 + 7 + 8`
 ...     | `(+ (* a 3) (* a 7) (* a 9))` | `a * 3 + a * 7 + a * 9`
-(2\*3 + 4)\*3 + (2\*3 + 4)\*7 + (2\*3 + 4)\*9 | `(def b (+ (* 2 3) 4))` | `val b = 2 * 3 + 4`
+...     | `(* a (+ 3 7 9))` | `a * (3 + 7 + 9)`
+...     | `(def z (+ 3 7 9))` | `val z = (3 + 7 + 9)`
+...     | `(* a z)` | `a * z`
+2\. | `(def b (+ (* 2 3) 4))` | `val b = 2 * 3 + 4`
 ...     | `(+ (* b 3) (* b 7) (* b 9))` | `b * 3 + b * 7 + b * 9`
-2\*3 + 4\*5; then multiply by 4 + 5 | `(def c (* (+ (* 2 3) (* 4 5)) (+ 4 5)))` | `val c = (2 * 3 + 4 * 5) * (4 + 5)`
-... | |
-2\*3 + 4\*5; then multiply by 4 + 5; then multiply by 19 | `(* c 19)` | `c * 19`
+...     | `(* b (+ 3 7 9))` | `b * (3 + 7 + 9)`
+...     | `(* b z)` | `b * z`
+3\. | `(def c (* (+ (* 2 3) (* 4 5)) (+ 4 5)))` | `val c = (2 * 3 + 4 * 5) * (4 + 5)`
+4\. | `(* c 19)` | `c * 19`
 
 ___Notes:___
 
@@ -104,16 +118,21 @@ ___Further Reading:___
 [Lists](https://en.wikipedia.org/wiki/List_(abstract_data_type)) define a collection of values in which the order of elements counts and multiples are allowed.
 
 Compose a list of ...
+1. the numbers 1, 2, 3, 4 and 9
+2. 2\*3, 2\*4 and 2\*5
+3. the ages of your siblings or friends
+4. a list of the ages of your siblings or friends followed by the age differences between them and you
+5. a list of the ages of your siblings or friends and a list of the age differences between them and you
 
 Exercise | Clojure | Scala
 :-------|:------|:------
-the numbers 1, 2, 3, 4 and 9 | `(list 1 2 3 4 9)` | `List(1, 2, 3, 4, 9)`
-2*3, 2*4 and 2*5 | `(list (* 2 3) (* 2 4) (* 2 5))` | `List(2 * 3, 2 * 4, 2 * 5)`
-the ages of your siblings or friends | `(def ages (list 12 7 7))` | `val ages = List(12, 7, 7)`
-a list of your siblings' ages... | `(list ages 3 10 10)` | `List(ages, 3, 10, 10)`
-...followed by the age differences between them and you | `;   -> ((12 7 7) 3 10 10)` | `//   -> List(List(12, 7, 7), 3, 10, 10)`
-a list of the ages of your siblings or friends and... | `(list ages (list 3 10 10))` | `List(ages, List(3 10 10))`
-...a list of the age differences between them and you | `;   -> ((12 7 7) (3 10 10))` | `//   -> List(List(12, 7, 7), List(3, 10, 10))`
+1\. | `(list 1 2 3 4 9)` | `List(1, 2, 3, 4, 9)`
+2\. | `(list (* 2 3) (* 2 4) (* 2 5))` | `List(2 * 3, 2 * 4, 2 * 5)`
+3\. | `(def ages (list 12 7 7))` | `val ages = List(12, 7, 7)`
+4\. | `(list ages 3 10 10)` | `List(ages, 3, 10, 10)`
+... | `;; => ((12 7 7) 3 10 10)` | `// -> List(List(12, 7, 7), 3, 10, 10)`
+5\. | `(list ages (list 3 10 10))` | `List(ages, List(3 10 10))`
+... | `;; => ((12 7 7) (3 10 10))` | `// -> List(List(12, 7, 7), List(3, 10, 10))`
 
 ___Notes:___
 
