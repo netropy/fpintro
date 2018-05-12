@@ -68,14 +68,14 @@ n | [_n_-ary]
   [arguments](https://en.wikipedia.org/wiki/Argument_of_a_function).
   This often (but not always) means that the function returns a
   [constant](https://en.wikipedia.org/wiki/Constant_(mathematics)) value while deferring the calculation until being called.
-  Also see excercise
-  [2.0.5 Write expressions without evaluating them](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name).
+  Also see
+  [excercise 2.0.5](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name).
 
 * The [_type signature_](https://en.wikipedia.org/wiki/Type_signature) of a function (or formula) lists the
   [data types](https://en.wikipedia.org/wiki/Data_type) of the parameters and the
   [result](https://en.wikipedia.org/wiki/Return_type).
-  As values have types, the signature define's the function's
-  [type](https://en.wikipedia.org/wiki/Function_type).
+  As values have types, the signature define's the
+  [function's type](https://en.wikipedia.org/wiki/Function_type).
 
 ####  3.1.1 Define and evaluate functions: [exercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/07/30/chapter-6.html).
 
