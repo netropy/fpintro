@@ -181,19 +181,23 @@ ___Further Reading:___
 
 Example | Meaning
 :-----|:-----------------------------
-`{ 1 2 3 }` | has 3 elements: `1`, `2`, and `3`
+`{1 2 3}` | has 3 elements: `1`, `2`, and `3`
 `{ {1} {2 3} }` | has 2 elements: inner set `{1}`, inner set `{2 3}`
-`{ 1 }` | has 2 subsets: `{}`, `{1}`
-`{ 1 2 3 }` | has a power set of 8 elements: `{ {} {1} {2} {3} {1 2} {2 3} {1 3} {1 2 3} }`
-`{} ` | has no elements, i.e., is the empty set `{}`
-`{1} ` | has 1 element: `1`
+`{1}` | has 2 subsets: `{}`, `{1}`
+`{1 2 3}` | has a power set of 8 elements: `{ {} {1} {2} {3} {1 2} {2 3} {1 3} {1 2 3} }`
+`{}` | has no elements, i.e., is the empty set `{}`
+`{1}` | has 1 element: `1`
 `{ {} }` | has 1 element: the empty set `{}`
 `{ { {} } }` | has 1 element: a set with 1 element that contains the empty set `{}`
-`{ 1 2 } X { 3 4 5 }` | is a Cartesian product of 6 elements: `{ (1,3) (1,4) (1,5) (2,3) (2,4) (2,5) }`
+`{1 2} X {3 4 5}` | is a Cartesian product of 6 elements: `{ (1,3) (1,4) (1,5) (2,3) (2,4) (2,5) }`
+
+* As an interesting fact, the concept of sets containing sets containing ultimately only the
+  [empty set](https://en.wikipedia.org/wiki/Von_Neumann_definition_of_ordinals) can be used as a foundational definition of
+  [ordinal numbers](https://en.wikipedia.org/wiki/Von_Neumann_definition_of_ordinals).
 
 #### 2.0.5 Write expressions without evaluating them: [exercise KfK, chapter 5: Please, tell me "what's your name?"](http://kids.klipse.tech/clojure/2016/07/21/chapter-5.html).
 
-A function of quotes in human languages is to indicate when to take an expression literally instead of by its meaning.
+One purpose of quotes in human languages is to indicate when to take an expression literally instead of by its meaning.
 Similarly, programming languages offer constructs to refer to an expression "as it is", that is, without evaluating it.
 
 Form and refer to the expression as it is ...
@@ -202,21 +206,18 @@ Exercise | Clojure | Scala
 :-------|:------|:------
 `3 + 4` as it is | `(quote (+ 3 4))` | |
 ... | `'(+ 3 4)` _(alternative notation)_ |
-... | `#(+ 3 4)` _(as a function)_ | `() => 3 + 4` |
-`(+ 3 4)` as it is, then evaluate | `(eval (quote (+ 3 4)))` | |
+`3 + 4` as it is, then evaluate | `(eval (quote (+ 3 4)))` | |
 ... | `(eval '(+ 3 4))` _(alternative notation)_ | |
-... | `(#(+ 3 4))` _(as a function)_ | `(() => 3 + 4)()` |
 
 ___Notes:___
 
-* In Clojure and Scala, preventing the evaluation of an expression is itself an expression.
-* In Clojure (and other Lisp-based languages), an operator
+* In Clojure, preventing as well as calling the evaluation of an expression is itself an expression.  The operator
   - [`quote`](https://clojuredocs.org/clojure.core/quote)
     indicates not to evaluate the subsequent expressions; often, the short form `'( ...)` for `(quote ...)` is preferred.
   - [`eval`](https://clojuredocs.org/clojure.core/eval) submits form data to the interpreter for evaluation and returns the result.
 * Quoting of expressions is not directly applicable to Scala.
-  However, a general language construct (available in both Clojure and Scala) is to describe computations as _lambdas_ or _anonymous functions_ taking no arguments, see
-  [Formulas and Functions](ch3_1_formulas_and_functions.md) for notes and exercises.
+  However, a general language construct available in both clojure and scala is to describe computations as _lambdas_ or _anonymous functions_ taking no arguments, see
+  [Type Signature, Arity, and Nullary Functions](...) for notes and exercises.
 
 #### 2.0.6 Write comparison operator expressions: [exercise KfK, chapter 7: True or False (Pinocchio)](http://kids.klipse.tech/clojure/2016/08/05/chapter-7.html).
 
