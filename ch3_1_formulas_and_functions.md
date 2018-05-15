@@ -13,8 +13,8 @@ Writing computations as formulas has several advantages, mainly:
 
 These informal notions have corresponding, technical terms in computing (and mathematics or logic):
 
-* "Formula" -> [anonymous function](https://en.wikipedia.org/wiki/Anonymous_function), function literal, lambda abstraction, or
-  [lambda expression](https://en.wikipedia.org/wiki/Lambda_calculus).
+* "Formula" -> [anonymous function](https://en.wikipedia.org/wiki/Anonymous_function), function literal, lambda abstraction/expression, or just
+  ["lambda"](https://en.wikipedia.org/wiki/Lambda_calculus).
 * "Defining a formula" -> [function definition](https://en.wikipedia.org/wiki/Function_(mathematics)),
   [user-defined operators](https://en.wikipedia.org/wiki/Operator_(computer_programming)), or
   parametrization as some form of
@@ -30,22 +30,34 @@ These informal notions have corresponding, technical terms in computing (and mat
 
 Examples:
 
-definition/application | Math Notation | Clojure (et.al.) | Scala (et.al.)
+definition/application | Math Notation | Clojure | Scala
 :----|:----|:----|:----
-def | `a = 3`              | `(def a 3)`             | `val a = 3`
-def | `f(x) = x + 4`       | `(def f #(+ % 4))`      | `def f(x: Int) = x + 4`
-def | `g: x -> x + 5`      | `(defn g [x] (+ x 5))`  | `val g: Int => Int = x => x + 5`
-app | `f(a) = 3 + 4 = 7`   | `(f a)        ;; => 7`  | `f(a)                    // => 7`
-app | `f(2) = 2 + 4 = 6`   | `(f 2)        ;; => 6`  | `f(2)                    // => 6`
-app | `f(9) = 9 + 4 = 13`  | `(f 9)        ;; => 13` | `f(9)                    // => 13`
-app | `(x -> x + 4)(2)`    | `(#(* % 3) 2) ;; => 6`  | `((x: Int) => x + 4)(2)  // => 6`
-app | `g(a) = 3 + 5 = 8`   | `(g a)        ;; => 8`  | `g(a)                    // => 8`
+ 1\. def     | `x \|-> x - 2`                | `#(- % 2)`                  | `(x: Int) => x - 2`
+ 2\. def     | `(x, y) \|-> x - y`           | `#(- %1 %2)`                | `(x: Int, y: Int) => x - y`
+ 3\. def     | `f: x \|-> x + 4`             | `(def f #(+ % 4))`          | `val f = (x: Int) => x + 4`
+ 4\. def     | `g(x) := x + 5`               | `(defn g [x] (+ x 5))`      | `def g(x: Int) = x + 5`
+ 5\. def     | `h: (x, y) \|-> x * y`        | `(defn h [x, y] (* x y))`   | `def h(x: Int, y: Int) = x * y`
+ 6\. def     | `i: () \|-> 5`                | `(defn i [] 5)`             | `def i(): Int = 5`
+ 8\. app     | `f(2) = 2 + 4 = 6`            | `(f 2)             ;; => 6` | `f(2)                               // => 6`
+ 9\. app     | `f(9) = 9 + 4 = 13`           | `(f 9)             ;; => 13`| `f(9)                               // => 13`
+10\. app     | `g(3) = 3 + 5 = 8`            | `(g 3)             ;; => 8` | `g(3)                               // => 8`
+11\. app     | `h(3, 4) = 12`                | `(h 3 4)           ;; => 12`| `h(3, 4)                            // => 12`
+12\. app     | `i() = 5`                     | `(i)               ;; => 5` | `i()                                // => 5`
+13\. def+app | `(x \|-> x + 3)(1) = 4`       | `(#(%1 + 3) 1)     ;; => 4` | `((x: Int) => x + 3)(1)             // => 4`
+14\. def+app | `(x, y \|-> x - y)(5, 3) = 2` | `(#(- %1 %2) 5 3)  ;; => 2` | `((x: Int, y: Int) => x - y)(5, 3)  // => 2`
 
 ___Notes:___
 
-* Clojure and Scala offer multiple notations (short forms) by which an anonymous or named function can be defined.
-* Functions should be given a name that's short yet meaningful (chosing a good name can be a task in itself).
-* Programming languages and projects typically have conventions about how to form composite function names, like
+* Clojure and Scala offer multiple notations, short forms, for defining a function (see 3. and 4.) (some variants of definition/application not shown here).
+* A function can remain anonymous ("lambda"), that is, just defining the mapping of input to output (1., 2.); or it can be defined with a name, under which it may then be called (4. - 6.).
+* The typical use case for lambdas is to pass them as arguments to other functions (which is not shown here), but they can also be assigned a name (3.) and then called later (10.).
+* In Clojure, the `defn` form is usually preferred (4. - 6.), except for short lambdas (1., 2.).
+* In Scala, the `def` form is usually preferred (4. - 6.), except for short lambdas (1., 2.) (technically, `def` defines a _method_, see _Further Reading_ below, if interested).
+* In Scala, the type ascription `: Int` (1. - 6.) on the parameters `(x: Int) => ...` or the result `(...): Int` is not needed when it can be inferred.
+* Functions may take one argument (1., 3., 4., 13.), two arguments (2., 5., 14.), zero arguments (6.), or any other positive number.
+* Functions should be given a name that's short yet meaningful (sometimes a challenge).
+  For example, these two function names, `miles-to-meters` and `meters-to-miles`, make it clear "what goes in" and "what comes out" (though, some might prefer singular units like `meter`).
+* Programming languages typically have conventions about how to form composite function names, like
   ["kebab-case"](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles),
   ["snake_case"](https://en.wikipedia.org/wiki/Snake_case), or
   ["CamelCase"](https://en.wikipedia.org/wiki/Camel_case), see
@@ -53,10 +65,18 @@ ___Notes:___
 
 ___Further Reading:___
 
-* If names can be assigned to both, data and functions, what happens if there's a name "clash" between them?
-  It's a curiosity that both older languages, Lisp and Java, allow for data and a function to be given the same name (the usage/context decides which one is meant).  In contrast, both younger languages forbid such a case, both data and functions "share the same namespace"; see
+* Since names can be assigned to both, data and functions, what happens if there's a name "clash" between them?
+  Curiously, both older languages, Lisp and Java, allow for data and a function to be given the same name (the usage/context decides which one is meant).
+  Yet, both younger languages forbid such a case, both data and functions "share the same namespace"; see
   Clojure following [Scheme as a Lisp-1 language](https://en.wikipedia.org/w/index.php?title=Common_Lisp&oldid=402600249#The_function_namespace) and
-  namespaces in [Scala vs Java](https://quizful.com/theory/447/scala_namespaces_for_definitions).
+  [namespaces in Scala vs Java](https://quizful.com/theory/447/scala_namespaces_for_definitions).
+
+* In computing, there are a couple of technical terms that refer to functions.  However, there are relevant yet subtle differences, see
+  [subroutine](https://en.wikipedia.org/wiki/Subroutine),
+  [method](https://en.wikipedia.org/wiki/Method_(computer_programming)),
+  [lambda](https://en.wikipedia.org/wiki/Anonymous_function),
+  [closure](https://en.wikipedia.org/wiki/Closure_(computer_programming)),
+  [function object](https://en.wikipedia.org/wiki/Function_object).
 
 ####  3.1.1 Define and evaluate functions: [exercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/07/30/chapter-6.html).
 
@@ -84,12 +104,10 @@ Exercise | Clojure | Scala
 
 ___Notes:___
 
-* Clojure as well as Scala offer multiple notations for defining and applying functions.
-* In Clojure, named functions are typically  written like this: `(defn add [x y] (+ x y))`.
-* In Scala, named functions are typically  written like this: `def add(x: Int, y: Int): Int = x + y`.
-* In Clojure, short anonymous functions are typically  written like this: `#(+ %1 %2)`.
-* In Scala, short anonymous functions are typically  written like this: `(x: Int, y: Int) => x + y` (often, the type ascription can be dropped).
-* Clojure also offers an explicit `apply` operator which takes a list of function arguments (ie. `apply` needs `(list ...)` or ` '(...) ` )
+* Clojure and Scala offer multiple notations for defining and applying functions (see [above](ch3_1_formulas_and_functions.md)).
+  - In Clojure, named functions are often written as `(defn add [x y] (+ x y))` and short lambdas as `#(+ %1 %2)`.
+  - In Scala, named functions are often written as `def add(x: Int, y: Int): Int = x + y` and short lambdas as `(x, y) => x + y` or even shorter `_ + _` (when the types can be inferred).
+* Clojure also offers an explicit `apply` operator which takes a function name and a list of arguments (for example, `(apply f '(2 3))`).
 
 ### 3.2 Type Signature, Arity, and Nullary Functions
 
@@ -152,6 +170,10 @@ scala> util.Random.nextInt() // => 1950804395
 
 ___Further Reading:___
 
+* Many programming languages also support to define
+  - multi-arity functions per [overloading](https://en.wikipedia.org/wiki/Function_overloading), which accept a varying but predefined number of arguments,
+  - [variadic functions](https://en.wikipedia.org/wiki/Variadic_function), which accept a variable number of arguments.
+
 * The curious case of nullary functions highlights a difference between mathematics and computing:
   - A [mathematical function](https://en.wikipedia.org/wiki/Function_(mathematics)) `f` is defined by its
     set of ordered pairs `(x, f(x))`, also called its
@@ -179,7 +201,42 @@ ___Further Reading:___
 
 #### 3.2.1 Try out what happens if a function call's number of arguments does not match the arity.
 
-__TODO__: example...
+Both, Clojure and Scala, report an error (in form of an exception) if too few or too many arguments are provided.
+
+```clojure
+user=> (defn g [x] (+ x 5))
+#'user/g
+
+user=> (g)
+ArityException Wrong number of args (0) passed to: user/g  clojure.lang.AFn.throwArity (AFn.java:429)
+
+user=> (g 2)
+7
+
+user=> (g 2 3)
+ArityException Wrong number of args (2) passed to: user/g  clojure.lang.AFn.throwArity (AFn.java:429)
+```
+
+```scala
+scala> def g(x: Int) = x + 5
+g: (x: Int)Int
+
+scala> g()
+<console>:13: error: not enough arguments for method g: (x: Int)Int.
+
+scala> g(2)
+res18: Int = 7
+
+scala> g(2, 3)
+<console>:13: error: too many arguments (2) for method g: (x: Int)Int
+```
+___Further Reading:___
+
+* Clojure and Scala allow to define functions that take a varying, predefined or unknown, number of arguments.
+  - For Scala examples, see multi-arity functions per [overloading](https://www.javatpoint.com/scala-method-overloading),
+    [variadic functions](https://alvinalexander.com/scala/how-to-define-methods-variable-arguments-varargs-fields).
+  - For Clojure examples, see [multi-arity functions](ahttp://clojure-doc.org/articles/language/functions.html#multi-arity-functions),
+    [variadic-functions](http://clojure-doc.org/articles/language/functions.html#variadic-functions).
 
 #### 3.2.2 Try out what happens if a function call's argument type does not match the signature.
 
