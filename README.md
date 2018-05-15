@@ -1,7 +1,7 @@
 # fpintro
 Learning How to Program -- with Examples in Clojure and Scala
 
-This tutorial contains the notes and about 60 coding exercises of an introductory session on programming with a high school student. 
+This tutorial contains the notes and coding exercises of an introductory session on programming with a high school student.
 
 Many websites about ["getting kids excited about programming"](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming) employ coding with visual feedback (for example, moving around objects using directional commands, loops, and branches).  Our interest, however, was to get to understand the core concepts of _abstraction_ and _application_, that is, to start with [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming).  Happily, this tutorial, whose coding examples are basic arithmetics in a Lisp-based language, came our way: [_Klipse for Kids_](http://kids.klipse.tech).
 
@@ -33,7 +33,7 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 [2.0.4 Write `list` expressions: exercise KfK, chapter 4: Evaluating Several Expressions.](ch2_expressions.md#204-write-list-expressions-exercise-kfk-chapter-4-evaluating-several-expressions)\
 [2.0.5 Write expressions without evaluating them: exercise KfK, chapter 5: Please, tell me "what's your name?".](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name)\
 [2.0.6 Write comparison operator expressions: exercise KfK, chapter 7: True or False (Pinocchio).](ch2_expressions.md#206-write-comparison-operator-expressions-exercise-kfk-chapter-7-true-or-false-pinocchio)\
-[2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)\
+[2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)
 
 [ 3.1.1 Define and evaluate functions: exercise KfK, chapter 6: Functions (Happy birthday).](ch3_1_formulas_and_functions.md#311-define-and-evaluate-functions-exercise-kfk-chapter-6-functions-happy-birthday)
 
@@ -97,7 +97,6 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 ... and now we understand:
 
 ![](https://imgs.xkcd.com/comics/functional_2x.png)
-
 
 -------------------
 

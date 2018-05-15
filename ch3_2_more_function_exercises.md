@@ -10,7 +10,17 @@ Hence, a few concepts on working with booleans.
 
 #### Predicates.
 
-A function that returns a boolean value is often called a _test_ or [predicate](https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)).
+A function that performs a binary test or that returns a Boolean value is often called a
+[_predicate_](https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)).
+
+Usually, languages employ naming conventions for predicates.  A function testing a property `Xyz` holds for an argument is often named:
+* `isXyz`/`is_xyz` or `hasXyz`/`has_xyz` (in Java- and C-based languages),
+* `xyzp` or `xyz?` (in Lisp-based languages, the `p` stands for "predicate"),
+
+A predicate that tests whether a property does not hold usually inserts a `not`, for example: `isNotXyz`, `has_not_xyz`, or `not-xyz?` etc.
+
+Note how such a naming convention is especially important in programming languages where the function's return type is not explictely stated or which don't offer a primitive Boolean data type.  See
+[2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)
 
 #### Assertions.
 
@@ -41,12 +51,12 @@ the correctness of a function: placing the function call with the expected resul
 
 #### Conditionals.
 
-Sometimes a different value should be chosen depending upon a boolean condition.  A
+Sometimes, a computation must return a different value depending upon whether a condition is `true`/`false`.  A
 [_conditional_](<https://en.wikipedia.org/wiki/Conditional_(computer_programming))
 or `if-then-else` is a predefined operator that takes 3 arguments:
 1) a boolean value, 2) an expression for the "then case", and 3) an expression for the "else case".
 
-The first operand decides whether the "then"- or "else"-value is chosen as a result for the entire conditional expression.  The syntax and behaviour:
+The first operand decides whether the "then"- or "else"-value is chosen as a result for the entire conditional expression.  The syntax and behaviour is:
 
 ```scala
     scala> assert((if (true) 1 else 2) == 1)
@@ -221,7 +231,7 @@ Since some of the operators are predefined names, name the predicates `not0` `an
 ```clojure
 (def not0 #(if %1 false true))
 
-(def and0 #(if %1 %2 false)) 
+(def and0 #(if %1 %2 false))
 
 (def or0 #(if %1 true %2))
 
@@ -231,7 +241,7 @@ Since some of the operators are predefined names, name the predicates `not0` `an
 ```
 ___Notes:___
 
-* An even more compact version of function `xor0` would be: `(def xor0 #(not= %1 %2))`. 
+* An even more compact version of function `xor0` would be: `(def xor0 #(not= %1 %2))`.
 
 #### 3.2.10 Test the predicates `not0` `and0`, `or0`, `nand0`, `xor0`.
 

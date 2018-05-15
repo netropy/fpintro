@@ -1,7 +1,10 @@
-## 2.0 Expressions
+## 2.0 Forms and Expressions
 
 This chapter contains exercises on how to write
-[expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)).
+[expressions](https://en.wikipedia.org/wiki/Expression_(computer_science)), or
+[forms](http://www.n-a-n-o.com/lisp/cmucl-tutorials/LISP-tutorial-9.html)
+as they are called in Lisp-based languages.
+
 Most coding exercises are from the tutorial
 [Klipse for Kids](http://kids.klipse.tech)
 with answers given here in Clojure and Scala; also added is an excercise for boolean operations.
@@ -69,7 +72,7 @@ ___Further Reading:___
   [operator precedence](https://en.wikipedia.org/wiki/Order_of_operations) and
   [associativity](https://en.wikipedia.org/wiki/Associative_property).
 * [Prefix notation](https://en.wikipedia.org/wiki/Polish_notation)
-  is characteristic for languages derived from 
+  is characteristic for languages derived from
   [Lisp](https://en.wikipedia.org/wiki/Lisp).
 * [Postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
   eliminates the need for parentheses (if the operators'
@@ -135,6 +138,8 @@ Compose a list of ...
 3. the ages of your siblings or friends
 4. a list of the ages of your siblings or friends followed by the age differences between them and you
 5. a list of the ages of your siblings or friends and a list of the age differences between them and you
+6. an empty list
+7. a list containing the empty list
 
 Exercise | Clojure | Scala
 :-------|:------|:------
@@ -148,16 +153,28 @@ Exercise | Clojure | Scala
 ... | `;; => ((12 7 7) 3 10 10)` | `// => List(List(12, 7, 7), 3, 10, 10)`
 5\. | `(list ages (list 3 10 10))` | `List(ages, List(3, 10, 10))`
 ... | `;; => ((12 7 7) (3 10 10))` | `// => List(List(12, 7, 7), List(3, 10, 10))`
+6\. | `(list)` | ``List()`
+... | `;; => ()` | `// => List()`
+7\. | `(list (list))` | ``List(List())`
+... | `;; => (())` | `// => List(List())`
 
 ___Notes:___
 
+* Lists may be empty.
 * Lists may contain lists.
-* In Clojure, a list is constructed as `(list ...)` with elements separated by a space.
-* In Scala, a list is constructed as `List(...)` with elements separated by a comma.
-* In Scala, functions and operators are usually written in lower case, while data types (eg. `Int`, `Boolean`, `List`...) are written in upper case.
+* In Clojure, a list is constructed as `(list ...)` with elements separated by a space (or comma).
+* In Scala, a list is constructed as `List(...)` with elements separated by a comma.  Data types like `Int` or `List` start with upper case.
 * Creating a list is itself an expression with `list` or `List` as operator followed by the list elements as operands.
 
 ___Further Reading:___
+
+* More information on lists in Clojure:
+  [the `list` operator and related functions](https://clojure.org/reference/data_structures#Lists),
+  [the empty list `'()` vs `nil`](https://clojure.org/reference/lisps)
+
+* More information on Lists in Scala:
+  [working with Lists](https://www.scala-lang.org/api/current/scala/collection/immutable/List.html),
+  [creating Lists](https://www.scala-lang.org/api/current/scala/collection/immutable/List$.html)
 
 * Refresher (mathematics):
   [sets](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) vs.
@@ -167,7 +184,7 @@ ___Further Reading:___
   - lists: homogeneous, order counts, multiples allowed: `(list 2 1) != (list 1 2) != (list 1 2 2)`
   - tuples: heterogeneous, order counts, multiples allowed: `(1, 2, 'a') != ('a', 2, 1) != (2, 2, 1, 'a', 'a')`
 
-* Scala, Clojure, and most languages also provide other, predefined collection types, for example:
+* Most programming languages also provide other collection types, for example:
   [arrays or vectors](https://en.wikipedia.org/wiki/Array_data_structure) or
   [maps](https://en.wikipedia.org/wiki/Associative_array).
 
@@ -276,6 +293,26 @@ ___Notes:___
   compare to the intended expression `(false && false) == false` yielding `true`.
 
 ___Further reading:___
+
+* Lisp or older language versions of C did not introduce a primitive, dedicated data type for Booleans.
+  Instead, a boolean test performs in
+  - Lisp as: A value of `nil` or `'()` means `false`; any non-`nil` value means `true`; often, the atom `t` is predefined for convenience.
+  - C (prior ISO C99) as: An `int` value `0` means `false`; any non-zero value means `true`; often, predefined macros (or `typedef`) provide for a type and values `bool`, `false`, `true` (or an all-caps version thereof).
+
+* In Clojure, some operators (conditionals) also treat
+  [`nil`](https://clojure.org/reference/data_structures#nil) as `false` (note, however, that the empty list `'()` differs from `nil`,
+  [unlike in other Lisps](https://clojure.org/reference/lisps)).
+
+* Java offers two related types: the primitive data type `boolean` and the reference type
+  [`java.lang.Boolean`](https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html),
+  also called "boxed" or "wrapper" type.  While the reference type has the
+  [`null` reference](https://en.wikipedia.org/wiki/Null_pointer) as valid value,
+  there's never an implicit conversion from `null` to `false` (despite
+  [auto\[un\]boxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html)).
+
+* Scala just defines a single type `Boolean`, which is a
+  [value type](https://docs.scala-lang.org/tour/unified-types.html), so the
+  [`null` reference](https://www.scala-lang.org/api/current/scala/Null.html) is not a value of it.
 
 * Scala (and other languages) offer the addititional operators `&` and `|` as (bitwise) _and_ and _or_ besides the (logical) `&&` and `||`.  The "single" and "double" letter operators differ in their so-called
   [_strictness_](https://en.wikipedia.org/wiki/Strict_function): versions `&` and `|` are

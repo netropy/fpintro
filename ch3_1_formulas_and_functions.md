@@ -11,7 +11,7 @@ Writing computations as formulas has several advantages, mainly:
 2. A formula may be given a _name_, under which it then can be referred to.
 3. A formula can be _applied_ by substituting numbers for its variables and calculating a result.
 
-These informally described notions have corresponding, technical terms in computing (and mathematics or logic):
+These informal notions have corresponding, technical terms in computing (and mathematics or logic):
 
 * "Formula" -> [anonymous function](https://en.wikipedia.org/wiki/Anonymous_function), function literal, lambda abstraction, or
   [lambda expression](https://en.wikipedia.org/wiki/Lambda_calculus).
@@ -43,13 +43,20 @@ app | `g(a) = 3 + 5 = 8`   | `(g a)        ;; => 8`  | `g(a)                    
 
 ___Notes:___
 
-* Some programming languages offer multiple notations (short forms) by which an anonymous or named function can be defined.
+* Clojure and Scala offer multiple notations (short forms) by which an anonymous or named function can be defined.
 * Functions should be given a name that's short yet meaningful (chosing a good name can be a task in itself).
 * Programming languages and projects typically have conventions about how to form composite function names, like
   ["kebab-case"](https://en.wikipedia.org/wiki/Letter_case#Special_case_styles),
   ["snake_case"](https://en.wikipedia.org/wiki/Snake_case), or
   ["CamelCase"](https://en.wikipedia.org/wiki/Camel_case), see
   [exercise 2.0.3](ch2_expressions.md#203-write-and-use-named-expressions-exercise-kfk-chapter-3-giving-names-to-expressions).
+
+___Further Reading:___
+
+* If names can be assigned to both, data and functions, what happens if there's a name "clash" between them?
+  It's a curiosity that both older languages, Lisp and Java, allow for data and a function to be given the same name (the usage/context decides which one is meant).  In contrast, both younger languages forbid such a case, both data and functions "share the same namespace"; see
+  Clojure following [Scheme as a Lisp-1 language](https://en.wikipedia.org/w/index.php?title=Common_Lisp&oldid=402600249#The_function_namespace) and
+  namespaces in [Scala vs Java](https://quizful.com/theory/447/scala_namespaces_for_definitions).
 
 ####  3.1.1 Define and evaluate functions: [exercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/07/30/chapter-6.html).
 
@@ -78,13 +85,10 @@ Exercise | Clojure | Scala
 ___Notes:___
 
 * Clojure as well as Scala offer multiple notations for defining and applying functions.
-* In Clojure, named functions are typically  written like this: `(defn add [x y] (+ x y))`
-* In Scala, named functions are typically  written like this: `def add(x: Int, y: Int): Int = x + y`
-* In Clojure, anonymous functions are typically  written like this: `(def #(+ %1 %2))`
-* In Scala, anonymous functions are typically  written like this: `(x: Int, y: Int) => x + y`
-* Functions may have 0, 1 or more variables ("parameters"); zero parameters means no input values (nullary function).
-* Upon applying a function, a value ("arguments") must be given for each parameter; nullary functions take no value (think of an "empty tuple").
-* With a nullary functions one has the control over when a calculation is run.
+* In Clojure, named functions are typically  written like this: `(defn add [x y] (+ x y))`.
+* In Scala, named functions are typically  written like this: `def add(x: Int, y: Int): Int = x + y`.
+* In Clojure, short anonymous functions are typically  written like this: `#(+ %1 %2)`.
+* In Scala, short anonymous functions are typically  written like this: `(x: Int, y: Int) => x + y` (often, the type ascription can be dropped).
 * Clojure also offers an explicit `apply` operator which takes a list of function arguments (ie. `apply` needs `(list ...)` or ` '(...) ` )
 
 ### 3.2 Type Signature, Arity, and Nullary Functions
@@ -175,11 +179,11 @@ ___Further Reading:___
 
 #### 3.2.1 Try out what happens if a function call's number of arguments does not match the arity.
 
-TODO: example...
+__TODO__: example...
 
 #### 3.2.2 Try out what happens if a function call's argument type does not match the signature.
 
-TODO: example...
+__TODO__: example...
 
 #### 3.2.3 Write the computation of [excercise 2.0.5](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name) as an anonymous, nullary function.
 
