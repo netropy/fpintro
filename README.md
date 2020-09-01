@@ -6,7 +6,7 @@ self-directed session on programming by a high school student (with a family
 member who's software engineer).
 
 We'd noticed websites about
-["getting kids excited about programming"]((https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming)
+[getting kids excited about programming](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming)
 that stress the aspect of visual feedback, for instance, by moving around
 objects using directional commands, loops, and branches etc. 
 
