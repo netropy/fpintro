@@ -1,5 +1,10 @@
 ### 3.1 Formulas and Functions
 
+TODO:
+https://docs.scala-lang.org/tutorials/scala-for-java-programmers.html#methods-without-arguments
+without putting the empty pair of parenthesis. This is perfectly doable in Scala, simply by defining them as methods without arguments. Such methods differ from methods with zero arguments in that they don’t have parenthesis after their name, neither in their definition nor in their use.
+
+
 Most of the time, we want to write a calculation not with fixed,
 ["hard-coded"](https://en.wikipedia.org/wiki/Hard_coding) numbers, but in a _general_ form using
 [variables](https://en.wikipedia.org/wiki/Variable_(mathematics)) in mathematics, like `(x + y) * z`.
@@ -78,7 +83,7 @@ ___Further Reading:___
   [closure](https://en.wikipedia.org/wiki/Closure_(computer_programming)),
   [function object](https://en.wikipedia.org/wiki/Function_object).
 
-####  3.1.1 Define and evaluate functions: [exercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/07/30/chapter-6.html).
+#### 3.1.1 Define and evaluate functions: [exercise KfK, chapter 6: Functions (Happy birthday)](http://kids.klipse.tech/clojure/2016/07/30/chapter-6.html).
 
 Define and apply a _named_ or _anonymous_ function ("formula") ...
 1. write a function hours->minutes transforming hours into minutes
@@ -154,7 +159,7 @@ The possibilities for a nullary function are:
 
 An interesting use case of nullary functions is to _provide_ a computation that is to be executed at a later time.
 The constant function defines a computation (case 2\.), which is only evaluated when called (in case of a nullary function, with no arguments).
-Note that this use case is somewhat similar to the `quote` operator in Lisp-based languages from
+Note that this use case is somewhat similar to the `quote` operator in Lisp-like languages from
 [excercise 2.0.5](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name).
 Unlike `quote`, however, the ability to define, pass as argument, and later call functions (or
 [function objects](https://en.wikipedia.org/wiki/Function_object)) is supported by most programming languages.
@@ -240,7 +245,13 @@ ___Further Reading:___
 
 #### 3.2.2 Try out what happens if a function call's argument type does not match the signature.
 
-__TODO__: example...
+```clojure
+user=> (defn g [x] (+ x 5))
+#'user/g
+
+user=> (g true)
+ClassCastException java.lang.Boolean cannot be cast to java.lang.Number  clojure.lang.Numbers.add (Numbers.java:128)
+```
 
 #### 3.2.3 Write the computation of [excercise 2.0.5](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name) as an anonymous, nullary function.
 

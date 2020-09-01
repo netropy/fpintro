@@ -4,6 +4,8 @@ Many functions are not just of arithmetic nature, taking and returning a number,
 [Boolean](https://en.wikipedia.org/wiki/Boolean_data_type),
 for example, as a parameter or result type within the definition.
 
+TODO: truthiness, falsey, if-let, when-first etc
+
 See also exercise [2.0.7 Write boolean operator expressions](ch2_expressions.md#207-write-boolean-operator-expressions) on boolean operators and expressions.
 
 Hence, a few concepts on working with booleans.
@@ -14,10 +16,12 @@ A function that performs a binary test or that returns a Boolean value is often 
 [_predicate_](https://en.wikipedia.org/wiki/Predicate_(mathematical_logic)).
 
 Usually, languages employ naming conventions for predicates.  A function testing a property `Xyz` holds for an argument is often named:
-* `isXyz`/`is_xyz` or `hasXyz`/`has_xyz` (in Java- and C-based languages),
-* `xyzp` or `xyz?` (in Lisp-based languages, the `p` stands for "predicate"),
+* `isXyz`/`is_xyz` or `hasXyz`/`has_xyz` (in Java- and C-like languages),
+* `xyzp` or `xyz?` (in Lisp-like languages, the trailing `p` stands for "predicate").
 
-A predicate that tests whether a property does not hold usually inserts a `not`, for example: `isNotXyz`, `has_not_xyz`, or `not-xyz?` etc.
+TODO: https://github.com/bbatsov/clojure-style-guide#pred-with-question-mark
+
+A predicate that tests whether a property does not hold typically inserts a `not`, for example: `isNotXyz`, `has_not_xyz`, or `not-xyz?` etc.
 
 Note how such a naming convention is especially important in programming languages where the function's return type is not explictely stated or which don't offer a primitive Boolean data type.  See
 [2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)

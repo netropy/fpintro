@@ -27,7 +27,7 @@ ___Notes:___
   - .doc is binary: `\320\317^Q\340\241\261^Z\341^@^@^@^@`
   - .rtf is plain text: `{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400 ... this is a sample text}`
   - .xml is plain text: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>...</w:body></w:wordDocument>`
-  - .html is plain text: `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" ...><html>...</body></html>`  
+  - .html is plain text: `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" ...><html>...</body></html>`
 * File formats are _languages_.
 
 #### 0.0.2 Write formatted text in plain-text "Markdown" and render in a browser.
@@ -67,7 +67,7 @@ Install manually or via a [package manager](https://en.wikipedia.org/wiki/Packag
 * [Leiningen](https://leiningen.org) for [Clojure](https://clojure.org)
 * [Scala](https://www.scala-lang.org/download)
 
-A _language shell_ or [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) reads (typically small) chunks of programming code as text input, then directly executes (evaluates) it, and prints the result as text output.  
+A _language shell_ or [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) reads (typically small) chunks of programming code as text input, then directly executes (evaluates) it, and prints the result as text output.
 
 To run the Clojure shell:
 ```
@@ -83,7 +83,7 @@ To run the Clojure shell:
         Exit: Control+D or (exit) or (quit)
      Results: Stored in vars *1, *2, *3, an exception in *e
 
-    user=> 
+    user=>
 ```
 
 To run the Scala shell:
@@ -92,7 +92,7 @@ To run the Scala shell:
     Welcome to Scala 2.12.5 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_172).
     Type in expressions for evaluation. Or try :help.
 
-    scala> 
+    scala>
 ```
 
 ___Further Reading:___

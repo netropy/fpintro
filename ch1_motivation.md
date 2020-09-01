@@ -1,6 +1,9 @@
-## 1. Motivation: An Ever-Changing World of Languages?
+## 1. Motivation: An Ever-Changing World of Languages
 
-[_All languages change continually_](http://martinweisser.org/courses/intro/histLing.html#Language%20Change).  This gives rise to [language families](https://en.wikipedia.org/wiki/Language_family), often rendered as
+[_All languages change continually_](http://martinweisser.org/courses/intro/histLing.html#Language%20Change).
+This gives rise to
+[language families](https://en.wikipedia.org/wiki/Language_family),
+often rendered as
 ["trees"](https://www.theguardian.com/education/gallery/2015/jan/23/a-language-family-tree-in-pictures).
 
 ___Questions:___

@@ -1,21 +1,46 @@
 # fpintro
 Learning How to Program -- with Examples in Clojure and Scala
 
-This tutorial contains the notes and coding exercises of an introductory session on programming with a high school student.
+This tutorial contains the notes and coding exercises of an introductory,
+self-directed session on programming by a high school student (with a family
+member who's software engineer).
 
-Many websites about ["getting kids excited about programming"](https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming) employ coding with visual feedback (for example, moving around objects using directional commands, loops, and branches).  Our interest, however, was to get to understand the core concepts of _abstraction_ and _application_, that is, to start with [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming).  Happily, this tutorial, whose coding examples are basic arithmetics in a Lisp-based language, came our way: [_Klipse for Kids_](http://kids.klipse.tech).
+We'd noticed websites about
+["getting kids excited about programming"]((https://www.makeuseof.com/tag/10-tools-to-get-kids-excited-about-programming)
+that stress the aspect of visual feedback, for instance, by moving around
+objects using directional commands, loops, and branches etc. 
 
-The _Klipse for Kids_ tutorial worked well for us.  It does not assume prior coding experience, quickly enables to write calculations and functions, and offers many, small coding excercises, which run locally in the browser's script engine and, thus, invite to experiment with language concepts just learned.  Due to rapid progress, we added exercises ourselves on working with [Booleans](https://en.wikipedia.org/wiki/Boolean_data_type), composing [functions](https://en.wikipedia.org/wiki/Function_(mathematics)), and added an entire chapter on [_recursion_](https://en.wikipedia.org/wiki/Recursion).  As a self-directed study on programming, this document also carries many links to technical terms and concepts on [Wikipedia](https://www.wikipedia.org/) for further reading.
+This tutorial project rather tried to get to understanding a core concept:
+function _abstraction_ and _application_.  Happily, this tutorial, whose
+coding examples are basic arithmetics in a Lisp-like language, came our way:
+[Klipse for Kids](http://kids.klipse.tech).
 
-Moreover, we did most coding excercises in two languages, [Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org).  Clojure, as a modern descendant of LISP, is the language used in _Klipse for Kids_.  Scala makes it easier to later incorporate [Object-oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming) concepts (or add [Java](https://java.com) as another language).  Starting with two programming languages turned out not delaying the learning progress but came naturally to the student who happened to grow up bilingually :-)
+The _Klipse for Kids_ tutorial worked well.  It does not assume prior coding
+experience, quickly enables to write calculations and functions, and offers
+many, small coding excercises, which run locally in the browser's script
+engine and, thus, invite to experiment with language concepts just learned.
 
-See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0).
+Due to rapid progress, we added exercises ourselves on working with
+[Booleans](https://en.wikipedia.org/wiki/Boolean_data_type), composing
+[functions](https://en.wikipedia.org/wiki/Function_(mathematics)), and added
+an entire chapter on [_recursion_](https://en.wikipedia.org/wiki/Recursion).
+As a self-directed study on programming, this document carries many links to
+[Wikipedia](https://www.wikipedia.org/) for further reading.
+
+Moreover, the student did most coding excercises in two languages,
+[Clojure](https://clojure.org) and [Scala](https://www.scala-lang.org).
+Clojure as the language used in _Klipse for Kids_, and as a quick path to
+function abstraction and application.  Scala for its availability of infix
+operators (and the concept of static typing).
+ 
+Alternating between two programming languages came naturally to the student
+who happened to grow up bilingual :-)
 
 ## Table of Content
 
 [0. Preliminaries: Writing Text](ch0_preliminaries.md)
 
-[1. Motivation: An Ever-Changing World of Languages?](ch1_motivation.md)
+[1. Motivation: An Ever-Changing World of Languages](ch1_motivation.md)
 
 [2. Expressions](ch2_expressions.md)
 
@@ -32,8 +57,8 @@ See the [LICENSE](License.txt) file for license rights and limitations (CC0-1.0)
 [2.0.3 Write and use named expressions: exercise KfK, chapter 3: Giving Names to Expressions.](ch2_expressions.md#203-write-and-use-named-expressions-exercise-kfk-chapter-3-giving-names-to-expressions)\
 [2.0.4 Write `list` expressions: exercise KfK, chapter 4: Evaluating Several Expressions.](ch2_expressions.md#204-write-list-expressions-exercise-kfk-chapter-4-evaluating-several-expressions)\
 [2.0.5 Write expressions without evaluating them: exercise KfK, chapter 5: Please, tell me "what's your name?".](ch2_expressions.md#205-write-expressions-without-evaluating-them-exercise-kfk-chapter-5-please-tell-me-whats-your-name)\
-[2.0.6 Write comparison operator expressions: exercise KfK, chapter 7: True or False (Pinocchio).](ch2_expressions.md#206-write-comparison-operator-expressions-exercise-kfk-chapter-7-true-or-false-pinocchio)\
-[2.0.7 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)
+[2.0.6 Write boolean operator expressions.](ch2_expressions.md#207-write-boolean-operator-expressions)
+[2.0.7 Write comparison operator expressions: exercise KfK, chapter 7: True or False (Pinocchio).](ch2_expressions.md#207-write-comparison-operator-expressions-exercise-kfk-chapter-7-true-or-false-pinocchio)\
 
 [ 3.1.1 Define and evaluate functions: exercise KfK, chapter 6: Functions (Happy birthday).](ch3_1_formulas_and_functions.md#311-define-and-evaluate-functions-exercise-kfk-chapter-6-functions-happy-birthday)
 
